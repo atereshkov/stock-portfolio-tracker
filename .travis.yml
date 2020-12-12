@@ -1,0 +1,14 @@
+language: swift
+os: osx
+osx_image: xcode12.1
+xcode_workspace: stock-portfolio-tracker.xcworkspace
+xcode_scheme: stock-portfolio-tracker
+xcode_destination: platform=iOS Simulator,OS=14.1,name=iPhone 12 Pro
+
+before_install:
+ - gem install cocoapods
+ - pod repo update
+ - pod install
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -J 'stock-portfolio-tracker'
