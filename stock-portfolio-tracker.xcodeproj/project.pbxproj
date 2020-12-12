@@ -10,11 +10,19 @@
 		00F0F7E250E0F2F119EBAED5 /* Pods_stock_portfolio_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E5224317C60F03EA4509F /* Pods_stock_portfolio_tracker.framework */; };
 		B6B32960114A19670B827D14 /* Pods_stock_portfolio_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */; };
 		BCF981C385AEB93DC8BC6D24 /* Pods_stock_portfolio_tracker_prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED78FEE3EDB5DC675F87D5 /* Pods_stock_portfolio_tracker_prod.framework */; };
-		C62B2EECB90F1E40DF9240B7 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		C62B2EECB90F1E40DF9240B7 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		CB378AE5258513AE00A5F14D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* ContentView.swift */; };
 		CB378AE6258513AE00A5F14D /* stock_portfolio_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
 		CB378AEB258513AE00A5F14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Assets.xcassets */; };
+		CB378B532585470900A5F14D /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B522585470900A5F14D /* SessionType.swift */; };
+		CB378B542585470900A5F14D /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B522585470900A5F14D /* SessionType.swift */; };
+		CB378B5A2585471A00A5F14D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B592585471A00A5F14D /* Session.swift */; };
+		CB378B5B2585471A00A5F14D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B592585471A00A5F14D /* Session.swift */; };
+		CB378B652585478900A5F14D /* ContentViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B642585478900A5F14D /* ContentViewModelType.swift */; };
+		CB378B662585478900A5F14D /* ContentViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B642585478900A5F14D /* ContentViewModelType.swift */; };
+		CB378B6C2585479900A5F14D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B6B2585479900A5F14D /* ContentViewModel.swift */; };
+		CB378B6D2585479900A5F14D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B6B2585479900A5F14D /* ContentViewModel.swift */; };
 		CB43648C2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */; };
 		CB43648E2584DCCA0074FBD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* ContentView.swift */; };
 		CB4364902584DCCD0074FBD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Assets.xcassets */; };
@@ -55,6 +63,10 @@
 		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB378AF1258513AE00A5F14D /* stock-portfolio-tracker-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "stock-portfolio-tracker-prod-Info.plist"; path = "/Users/nb-058-41b/Personal/stock-portfolio-tracker/stock-portfolio-tracker-prod-Info.plist"; sourceTree = "<absolute>"; };
+		CB378B522585470900A5F14D /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		CB378B592585471A00A5F14D /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		CB378B642585478900A5F14D /* ContentViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelType.swift; sourceTree = "<group>"; };
+		CB378B6B2585479900A5F14D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		CB4364882584DCCA0074FBD0 /* stock-portfolio-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stock_portfolio_trackerApp.swift; sourceTree = "<group>"; };
 		CB43648D2584DCCA0074FBD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62B2EECB90F1E40DF9240B7 /* BuildFile in Frameworks */,
+				C62B2EECB90F1E40DF9240B7 /* (null) in Frameworks */,
 				00F0F7E250E0F2F119EBAED5 /* Pods_stock_portfolio_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +170,57 @@
 			path = Prod;
 			sourceTree = "<group>";
 		};
+		CB378B50258546CD00A5F14D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB378B51258546F400A5F14D /* DI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CB378B51258546F400A5F14D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CB378B522585470900A5F14D /* SessionType.swift */,
+				CB378B592585471A00A5F14D /* Session.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CB378B602585473A00A5F14D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB378B612585474400A5F14D /* Content */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CB378B612585474400A5F14D /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB378B632585475100A5F14D /* View */,
+				CB378B622585474D00A5F14D /* ViewModel */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		CB378B622585474D00A5F14D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB378B642585478900A5F14D /* ContentViewModelType.swift */,
+				CB378B6B2585479900A5F14D /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB378B632585475100A5F14D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB43648D2584DCCA0074FBD0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CB43647F2584DCC90074FBD0 = {
 			isa = PBXGroup;
 			children = (
@@ -184,9 +247,10 @@
 		CB43648A2584DCCA0074FBD0 /* stock-portfolio-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				CB378B50258546CD00A5F14D /* Core */,
+				CB378B602585473A00A5F14D /* UI */,
 				CB378B162585157B00A5F14D /* Firebase */,
 				CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */,
-				CB43648D2584DCCA0074FBD0 /* ContentView.swift */,
 				CB43648F2584DCCD0074FBD0 /* Assets.xcassets */,
 				CB4364942584DCCD0074FBD0 /* Info.plist */,
 				CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */,
@@ -545,7 +609,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB378B5B2585471A00A5F14D /* Session.swift in Sources */,
 				CB378AE5258513AE00A5F14D /* ContentView.swift in Sources */,
+				CB378B6D2585479900A5F14D /* ContentViewModel.swift in Sources */,
+				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
+				CB378B662585478900A5F14D /* ContentViewModelType.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* stock_portfolio_trackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,7 +622,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB378B5A2585471A00A5F14D /* Session.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* ContentView.swift in Sources */,
+				CB378B6C2585479900A5F14D /* ContentViewModel.swift in Sources */,
+				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
+				CB378B652585478900A5F14D /* ContentViewModelType.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

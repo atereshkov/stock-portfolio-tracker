@@ -11,6 +11,8 @@ import Firebase
 @main
 struct stock_portfolio_trackerApp: App {
     
+    private let session = Session()
+    
     init() {
         FirebaseApp.configure()
     }

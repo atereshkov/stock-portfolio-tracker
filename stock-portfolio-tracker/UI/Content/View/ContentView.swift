@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import DICE
 
 struct ContentView: View {
+    
+    @EnvironmentObservableInjected var viewModel: ContentViewModel
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(viewModel.testString)
             .padding()
     }
 }
