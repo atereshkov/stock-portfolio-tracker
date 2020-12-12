@@ -8,6 +8,12 @@ def app_pods
   
   # Firebase
   pod 'Firebase/Analytics'
+  
+  # Code generation
+  pod 'SwiftGen', '~> 6.4'
+  
+  # Code style
+  pod 'SwiftLint', '~> 0.41'
 end
 
 target 'stock-portfolio-tracker' do

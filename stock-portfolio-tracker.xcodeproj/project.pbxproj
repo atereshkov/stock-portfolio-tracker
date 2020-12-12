@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F0F7E250E0F2F119EBAED5 /* Pods_stock_portfolio_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E5224317C60F03EA4509F /* Pods_stock_portfolio_tracker.framework */; };
 		B6B32960114A19670B827D14 /* Pods_stock_portfolio_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */; };
 		BCF981C385AEB93DC8BC6D24 /* Pods_stock_portfolio_tracker_prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED78FEE3EDB5DC675F87D5 /* Pods_stock_portfolio_tracker_prod.framework */; };
-		C62B2EECB90F1E40DF9240B7 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		C62B2EECB90F1E40DF9240B7 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		CB378AE5258513AE00A5F14D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* ContentView.swift */; };
 		CB378AE6258513AE00A5F14D /* stock_portfolio_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		18F4089C0B85142977CEB22E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AED78FEE3EDB5DC675F87D5 /* Pods_stock_portfolio_tracker_prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker_prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300E5224317C60F03EA4509F /* Pods_stock_portfolio_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4749E1618532E6B081381AC7 /* Pods-stock-portfolio-tracker-prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-prod.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-prod/Pods-stock-portfolio-tracker-prod.debug.xcconfig"; sourceTree = "<group>"; };
 		8B8FD35B0FCBDB900B11D30B /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8A3DC31DF6CBF70BC0EAA15 /* Pods-stock-portfolio-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62B2EECB90F1E40DF9240B7 /* (null) in Frameworks */,
+				C62B2EECB90F1E40DF9240B7 /* BuildFile in Frameworks */,
+				00F0F7E250E0F2F119EBAED5 /* Pods_stock_portfolio_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +114,7 @@
 				18F4089C0B85142977CEB22E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */,
 				EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */,
 				2AED78FEE3EDB5DC675F87D5 /* Pods_stock_portfolio_tracker_prod.framework */,
+				300E5224317C60F03EA4509F /* Pods_stock_portfolio_tracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
