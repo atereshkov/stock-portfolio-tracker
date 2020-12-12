@@ -1,0 +1,6 @@
+framework module Pods_stock_portfolio_trackerTests {
+  umbrella header "Pods-stock-portfolio-trackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
