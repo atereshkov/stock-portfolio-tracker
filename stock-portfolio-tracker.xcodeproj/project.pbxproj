@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6B32960114A19670B827D14 /* Pods_stock_portfolio_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */; };
 		C62B2EECB90F1E40DF9240B7 /* Pods_stock_portfolio_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C9ADA6BA9466647F86455E /* Pods_stock_portfolio_tracker.framework */; };
+		CB378ADE2585102F00A5F14D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */; };
 		CB43648C2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */; };
 		CB43648E2584DCCA0074FBD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* ContentView.swift */; };
 		CB4364902584DCCD0074FBD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		ADA836DB756C8C8B64A3D807 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-trackerTests.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-trackerTests/Pods-stock-portfolio-trackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0C9ADA6BA9466647F86455E /* Pods_stock_portfolio_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB241F32F137740F0645FFB2 /* Pods-stock-portfolio-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-trackerTests.release.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-trackerTests/Pods-stock-portfolio-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB4364882584DCCA0074FBD0 /* stock-portfolio-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stock_portfolio_trackerApp.swift; sourceTree = "<group>"; };
 		CB43648D2584DCCA0074FBD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				CB43648B2584DCCA0074FBD0 /* stock_portfolio_trackerApp.swift */,
 				CB43648D2584DCCA0074FBD0 /* ContentView.swift */,
 				CB43648F2584DCCD0074FBD0 /* Assets.xcassets */,
+				CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */,
 				CB4364942584DCCD0074FBD0 /* Info.plist */,
 				CB4364912584DCCD0074FBD0 /* Preview Content */,
 			);
@@ -280,6 +283,7 @@
 			files = (
 				CB4364932584DCCD0074FBD0 /* Preview Assets.xcassets in Resources */,
 				CB4364902584DCCD0074FBD0 /* Assets.xcassets in Resources */,
+				CB378ADE2585102F00A5F14D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

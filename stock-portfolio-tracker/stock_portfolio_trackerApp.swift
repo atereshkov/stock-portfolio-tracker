@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct stock_portfolio_trackerApp: App {
     
     init() {
-        Swift.print("Init")
+        FirebaseApp.configure()
     }
     
     var body: some Scene {
