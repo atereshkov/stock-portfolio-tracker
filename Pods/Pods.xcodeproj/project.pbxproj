@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F89CF6C05F1CABA3B4DFEC0A4E9F22 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F028F41E3116C69A25B763ECBEEBAFE1 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1934335D4EB742A96DF3E4B22758898F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2267BF24843F55868AA5C0E89FE675A9 /* Pods-stock-portfolio-trackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF86F53057F7778398D505380583EAB /* Pods-stock-portfolio-trackerTests-dummy.m */; };
-		26C7D397D9DCDCE58EDA0D3B7E1FEC04 /* Pods-stock-portfolio-tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 300823DE475B2A4D97E7411F50F5F79D /* Pods-stock-portfolio-tracker-dummy.m */; };
+		100C1212EB6CA96C167BD24679C7E9E7 /* EnvironmentInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55662740FA33460A040F95A786CB9812 /* EnvironmentInjected.swift */; };
+		2267BF24843F55868AA5C0E89FE675A9 /* Pods-stock-portfolio-trackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4101E8C4C9AEDBBFD757CDD83067587C /* Pods-stock-portfolio-trackerTests-dummy.m */; };
+		23E924D357ED61F40DFDF21F269C7DAB /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76591508313EFB558B1CC0A413C86E46 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BA39F7DEC8479B79EFCB979B89EE6A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2C7C0C21EE6D70360767B56906021D0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9463EE937D68737961668F6B89913862 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF71A87E0CFA54FF216B7C5EFB40E1D /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */; };
-		B1E0226ABC3DB0564F5377F794E5DC63 /* Pods-stock-portfolio-trackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5121923B80A9B3E0E2972D935E24AEE8 /* Pods-stock-portfolio-trackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1ACCA695053177CC62720C280802B8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FEF66D92045A6639EDB0AECC1DBDC096 /* Pods-stock-portfolio-tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4428DE27C2FD582A8F49D93389650653 /* Pods-stock-portfolio-tracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D659C30F5357CF1D81D21176ED633C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3477F7EEBED5B43FF00A85E305DFE689 /* DICE+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0875B1E62C83A5F140ED59BCDEDF2 /* DICE+SwiftUI.swift */; };
+		3EE3462F4318E1019CB660A13985E013 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39AAB95AC86F582B704AECF995EE741 /* Injected.swift */; };
+		4232B9494E1D74C828474AFFAC31239D /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD189CD99DA20AE23E249A9235D283DA /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */; };
+		44C49C8DEF539AD798CFDD8F829F93B1 /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A28748EE5B2A1C442CCB601EF83F25 /* DIContainerBuilder.swift */; };
+		498DA0650DD3BBFF4A1B4DF88D31163A /* InjectableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7FBED094D12FC256E9944600936F7 /* InjectableProperty.swift */; };
+		52C2203634390B1F258D51308AC68D63 /* DICE-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C696C22577AA7906F4426B62C49E03AA /* DICE-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		579F167F07D43ADA6A1FA2D697FC6A83 /* DICE.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0F6FE375F5433D9F9FEC146DD8C95D /* DICE.swift */; };
+		5A3FCCC02E2AED583E903B5B51142B64 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = E556A5AEBB7040E4F2E572124231AC35 /* DIScope.swift */; };
+		82FC87776C77957E4DD70C293C7083FC /* Pods-stock-portfolio-tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1708114873391A53B4D424B787A472FA /* Pods-stock-portfolio-tracker-dummy.m */; };
+		84DC4EED664378E2738B70FE2C442550 /* LazyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D37AACDD4B45E200E8F705F8C7B224 /* LazyObject.swift */; };
+		88C93E1C80BA1DA7502D02F1B404F005 /* DIContainerEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FB8287C6310C61F9837ECDEAF96945 /* DIContainerEnvironmentKey.swift */; };
+		9C188EADD22C4B9313811F88A011D63B /* DIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC02708F8931B726E0C66251FA45A82 /* DIObject.swift */; };
+		9DA20DD0CDBC3F6F7F8E2CCEEF58FCCA /* DICE-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD7A5A83177C3092EE9AF1330D1B1E /* DICE-dummy.m */; };
+		9FD2F1E494F58FB5160453AA0F866861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A0D094CC9CDD37B9BEA8934A44D3059C /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B8EEBABB8611BDCE2C3DA01246515B /* DIContainer.swift */; };
+		B1E0226ABC3DB0564F5377F794E5DC63 /* Pods-stock-portfolio-trackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA51444FA55382AF215045E887206D49 /* Pods-stock-portfolio-trackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA7060F08D393C2D712DDC6A6D9A04E7 /* DIContainerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2400C4AF26FA3A9ADC1BCEDBF85B71 /* DIContainerStorage.swift */; };
+		C38C2ADC6A9241988813E4CBC29B91FB /* Pods-stock-portfolio-tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9FEE4402AEECAFB577EDA1B19CAD56 /* Pods-stock-portfolio-tracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDD4CE29D895A5D0863C4D3BC833BC79 /* DependencyKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F8C283851E41AE1C261182B84AD12 /* DependencyKey.swift */; };
+		D9F35A3D7EFB2F82D7A0B20BB1EA9817 /* EnvironmentObservableInjected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798799AB8F82422D7045A9475FCF3E95 /* EnvironmentObservableInjected.swift */; };
+		E2013AE18B98559817BB31946CBE6CF6 /* NSRecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850226CA2D9FEE2A100AC4C7AEC64A3 /* NSRecursiveLock.swift */; };
+		FA69D1E80AB2D0F7753F225EAF2FB46F /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61537DE3423DAF3519F4F7E1B1950957 /* WeakObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0F8EDB9BC2738E8079780E869D4116C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD653DCF41FD040E69EC5DF2CF1713E5;
+			remoteInfo = DICE;
+		};
 		10A7204D98972807FC5BB70FC31CCD83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -26,46 +52,94 @@
 			remoteGlobalIDString = 97AA816538F194D628023E443DDD6173;
 			remoteInfo = "Pods-stock-portfolio-tracker";
 		};
+		C5CB95DB8DBE029EDEDC36B90D617B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD653DCF41FD040E69EC5DF2CF1713E5;
+			remoteInfo = DICE;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0888D7C56705FC004473FFA362967328 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-trackerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0AD1A2F0E27F6EFB3BC88AC74653BF6E /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap"; sourceTree = "<group>"; };
-		16DF5E4093F4B1C72B4C7A78011A41E2 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist"; sourceTree = "<group>"; };
-		175159C69AC0B73B98B54AB4F1CAA2BF /* Pods-stock-portfolio-tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		0132F0B9967C642896F9CB965B73A0AA /* Pods-stock-portfolio-tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-tracker.modulemap"; sourceTree = "<group>"; };
+		06FB8287C6310C61F9837ECDEAF96945 /* DIContainerEnvironmentKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerEnvironmentKey.swift; path = DICE/Classes/SwiftUI/DIContainerEnvironmentKey.swift; sourceTree = "<group>"; };
+		0850226CA2D9FEE2A100AC4C7AEC64A3 /* NSRecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSRecursiveLock.swift; path = DICE/Classes/Extensions/NSRecursiveLock.swift; sourceTree = "<group>"; };
+		11F1B7DA5F50C5825D4A9B1C69FBF4A3 /* Pods-stock-portfolio-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		132C4C2BAEA3F6E6CF7B5723DE76FE6B /* DICE-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-prefix.pch"; sourceTree = "<group>"; };
+		14A28748EE5B2A1C442CCB601EF83F25 /* DIContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerBuilder.swift; path = DICE/Classes/DIContainerBuilder.swift; sourceTree = "<group>"; };
+		153F8C283851E41AE1C261182B84AD12 /* DependencyKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyKey.swift; path = DICE/Classes/DependencyKey.swift; sourceTree = "<group>"; };
+		1708114873391A53B4D424B787A472FA /* Pods-stock-portfolio-tracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-tracker-dummy.m"; sourceTree = "<group>"; };
+		1D143C064A1BC04FF51CE890161B91D6 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		212E71D3AE886952D2A6D6CEA8490107 /* Pods-stock-portfolio-tracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stock-portfolio-tracker-frameworks.sh"; sourceTree = "<group>"; };
+		29B8A882DC6749E7D7EBCC1676D77888 /* Pods-stock-portfolio-trackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-trackerTests.modulemap"; sourceTree = "<group>"; };
 		2C1A51EACBA04A340C17258FC4553882 /* Pods_stock_portfolio_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stock_portfolio_tracker.framework; path = "Pods-stock-portfolio-tracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		300823DE475B2A4D97E7411F50F5F79D /* Pods-stock-portfolio-tracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-tracker-dummy.m"; sourceTree = "<group>"; };
+		30B936CF4CD606AB35F14E404CDE08C0 /* Pods-stock-portfolio-trackerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-trackerTests-Info.plist"; sourceTree = "<group>"; };
+		3167B0A6604B98719742986AF7A4D8C6 /* Pods-stock-portfolio-tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3C494753A5D88ABBE598931F8CFA0986 /* Pods-stock-portfolio-trackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-trackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4428DE27C2FD582A8F49D93389650653 /* Pods-stock-portfolio-tracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-tracker-umbrella.h"; sourceTree = "<group>"; };
+		4056FF60079EABDE1E4A5947836FD7DD /* DICE.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DICE.xcconfig; sourceTree = "<group>"; };
+		4101E8C4C9AEDBBFD757CDD83067587C /* Pods-stock-portfolio-trackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-trackerTests-dummy.m"; sourceTree = "<group>"; };
 		447CA1B2F626F8B00C3A85918E740A15 /* Pods_stock_portfolio_trackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stock_portfolio_trackerTests.framework; path = "Pods-stock-portfolio-trackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5121923B80A9B3E0E2972D935E24AEE8 /* Pods-stock-portfolio-trackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-trackerTests-umbrella.h"; sourceTree = "<group>"; };
-		5BAD8173C116E66796FA108E21F12F9A /* Pods-stock-portfolio-trackerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-trackerTests-Info.plist"; sourceTree = "<group>"; };
-		5EAF2B97D2088AA00FD1D26295BF17B2 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		68C862ED37B11A5823F5B340F7B2C591 /* Pods-stock-portfolio-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		6DE867524C89E45521F41399B71FA0AD /* Pods-stock-portfolio-tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6FB562985288199446FEFA0EC93FE5A5 /* Pods-stock-portfolio-trackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-trackerTests.modulemap"; sourceTree = "<group>"; };
-		79C723CCB28C8437E839DC2BCAE4C96C /* Pods-stock-portfolio-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
-		7DBBFCEC1473FB56293F000FA567C2AF /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48D925ECBE28DFA2366BCCC5653FFE63 /* Pods-stock-portfolio-tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AFD7A5A83177C3092EE9AF1330D1B1E /* DICE-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DICE-dummy.m"; sourceTree = "<group>"; };
+		4CC02708F8931B726E0C66251FA45A82 /* DIObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIObject.swift; path = DICE/Classes/DIObject.swift; sourceTree = "<group>"; };
+		55662740FA33460A040F95A786CB9812 /* EnvironmentInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnvironmentInjected.swift; path = DICE/Classes/PropertyWrapper/EnvironmentInjected.swift; sourceTree = "<group>"; };
+		55F0875B1E62C83A5F140ED59BCDEDF2 /* DICE+SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DICE+SwiftUI.swift"; path = "DICE/Classes/Extensions/DICE+SwiftUI.swift"; sourceTree = "<group>"; };
+		61537DE3423DAF3519F4F7E1B1950957 /* WeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakObject.swift; path = DICE/Classes/WeakObject.swift; sourceTree = "<group>"; };
+		6315C9A5636F6EA383D179AFA75BACA4 /* Pods-stock-portfolio-trackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-trackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		72B8EEBABB8611BDCE2C3DA01246515B /* DIContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = DICE/Classes/DIContainer.swift; sourceTree = "<group>"; };
+		740C35919A5E2ABCE0CFFC4CFA373C99 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		76591508313EFB558B1CC0A413C86E46 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h"; sourceTree = "<group>"; };
+		798799AB8F82422D7045A9475FCF3E95 /* EnvironmentObservableInjected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnvironmentObservableInjected.swift; path = DICE/Classes/PropertyWrapper/EnvironmentObservableInjected.swift; sourceTree = "<group>"; };
+		7AB7FBED094D12FC256E9944600936F7 /* InjectableProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InjectableProperty.swift; path = DICE/Classes/InjectableProperty.swift; sourceTree = "<group>"; };
+		7B7FC63A9909EC09967BA823C53A2057 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BAF3CC8D1EA78B93923CB04DED5EC19 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap"; sourceTree = "<group>"; };
 		7E1044568D4C9F041926D0CB4146B92E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		99BA3A31CE3688F258B5434E8AF91A59 /* Pods-stock-portfolio-tracker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-Info.plist"; sourceTree = "<group>"; };
-		9AF86F53057F7778398D505380583EAB /* Pods-stock-portfolio-trackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-trackerTests-dummy.m"; sourceTree = "<group>"; };
+		7FAD65E6D028EFEBC4EB94CA8DB45557 /* DICE.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DICE.modulemap; sourceTree = "<group>"; };
+		81D37AACDD4B45E200E8F705F8C7B224 /* LazyObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LazyObject.swift; path = DICE/Classes/LazyObject.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5471B73E2E390F23FCE72E2EDF819E4 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA1472FEB41576E04E94200F26164E45 /* Pods-stock-portfolio-tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-stock-portfolio-tracker.modulemap"; sourceTree = "<group>"; };
-		B9451E37CB163FF491196E129549125E /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DEC84DAB30E07459A77870742C978E2A /* Pods-stock-portfolio-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker.release.xcconfig"; sourceTree = "<group>"; };
-		F028F41E3116C69A25B763ECBEEBAFE1 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h"; sourceTree = "<group>"; };
-		FBF71A87E0CFA54FF216B7C5EFB40E1D /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m"; sourceTree = "<group>"; };
-		FC9ABF2E656387C49BA1A5A7EE83DE61 /* Pods-stock-portfolio-trackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-trackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0DE4EE9BB2F006A1BB0DB9AB904C499 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist"; sourceTree = "<group>"; };
+		A0F89759D10300C702ADB9F301BE57E0 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-trackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD189CD99DA20AE23E249A9235D283DA /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m"; sourceTree = "<group>"; };
+		BA0F6FE375F5433D9F9FEC146DD8C95D /* DICE.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DICE.swift; path = DICE/Classes/DICE.swift; sourceTree = "<group>"; };
+		BE9FEE4402AEECAFB577EDA1B19CAD56 /* Pods-stock-portfolio-tracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-tracker-umbrella.h"; sourceTree = "<group>"; };
+		C006566A64D338771E53315DFED74522 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C05014AF8DE2E00D4FAA506E1C3A822A /* Pods-stock-portfolio-tracker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-stock-portfolio-tracker-Info.plist"; sourceTree = "<group>"; };
+		C696C22577AA7906F4426B62C49E03AA /* DICE-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DICE-umbrella.h"; sourceTree = "<group>"; };
+		D2C8E77577A3BBAF407EDC0BF8A9AE10 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DA51444FA55382AF215045E887206D49 /* Pods-stock-portfolio-trackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-stock-portfolio-trackerTests-umbrella.h"; sourceTree = "<group>"; };
+		DCA843B68C041F2E316A25208DC8CD80 /* DICE-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DICE-Info.plist"; sourceTree = "<group>"; };
+		DF9E51DA6EA36E258B67638D80F1F097 /* Pods-stock-portfolio-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E38B44BC4625F7482F3F723539F248B5 /* Pods-stock-portfolio-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-stock-portfolio-tracker.release.xcconfig"; sourceTree = "<group>"; };
+		E39AAB95AC86F582B704AECF995EE741 /* Injected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Injected.swift; path = DICE/Classes/PropertyWrapper/Injected.swift; sourceTree = "<group>"; };
+		E556A5AEBB7040E4F2E572124231AC35 /* DIScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIScope.swift; path = DICE/Classes/DIScope.swift; sourceTree = "<group>"; };
+		EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DICE.framework; path = DICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2400C4AF26FA3A9ADC1BCEDBF85B71 /* DIContainerStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DIContainerStorage.swift; path = DICE/Classes/DIContainerStorage.swift; sourceTree = "<group>"; };
+		ED37BAA4D9193FF0CCDE1F21864FC444 /* Pods-stock-portfolio-trackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-stock-portfolio-trackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A78C74FD779BD7468CF7B20B652E07D2 /* Frameworks */ = {
+		03A2A63AD11914C897D936B7D0979CC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1ACCA695053177CC62720C280802B8F /* Foundation.framework in Frameworks */,
+				9FD2F1E494F58FB5160453AA0F866861 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD681D382A4DFC6ACEA65BA580D643FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA39F7DEC8479B79EFCB979B89EE6A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B4A280F435449918AC6ACC6E169390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D659C30F5357CF1D81D21176ED633C7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,36 +151,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCCA30578C5F8297E2423916EDF43367 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1934335D4EB742A96DF3E4B22758898F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		204141A1678D2A66CEF450101F0E3428 /* Pods-stock-portfolio-trackerTests */ = {
+		086CD25C74491ACDF0FAFF4A22DB58FE /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6FB562985288199446FEFA0EC93FE5A5 /* Pods-stock-portfolio-trackerTests.modulemap */,
-				FC9ABF2E656387C49BA1A5A7EE83DE61 /* Pods-stock-portfolio-trackerTests-acknowledgements.markdown */,
-				3C494753A5D88ABBE598931F8CFA0986 /* Pods-stock-portfolio-trackerTests-acknowledgements.plist */,
-				9AF86F53057F7778398D505380583EAB /* Pods-stock-portfolio-trackerTests-dummy.m */,
-				5BAD8173C116E66796FA108E21F12F9A /* Pods-stock-portfolio-trackerTests-Info.plist */,
-				5121923B80A9B3E0E2972D935E24AEE8 /* Pods-stock-portfolio-trackerTests-umbrella.h */,
-				0888D7C56705FC004473FFA362967328 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */,
-				79C723CCB28C8437E839DC2BCAE4C96C /* Pods-stock-portfolio-trackerTests.release.xcconfig */,
+				7BAF3CC8D1EA78B93923CB04DED5EC19 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap */,
+				1D143C064A1BC04FF51CE890161B91D6 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown */,
+				740C35919A5E2ABCE0CFFC4CFA373C99 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist */,
+				AD189CD99DA20AE23E249A9235D283DA /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */,
+				D2C8E77577A3BBAF407EDC0BF8A9AE10 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-frameworks.sh */,
+				A0DE4EE9BB2F006A1BB0DB9AB904C499 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist */,
+				76591508313EFB558B1CC0A413C86E46 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */,
+				C006566A64D338771E53315DFED74522 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */,
+				7B7FC63A9909EC09967BA823C53A2057 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */,
 			);
-			name = "Pods-stock-portfolio-trackerTests";
-			path = "Target Support Files/Pods-stock-portfolio-trackerTests";
+			name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
+			path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
 			sourceTree = "<group>";
 		};
-		5CB3D0380177B8012DD454AEC689B0B7 /* Products */ = {
+		4F882F1195F580C78610B34FD199F478 /* DICE */ = {
 			isa = PBXGroup;
 			children = (
+				153F8C283851E41AE1C261182B84AD12 /* DependencyKey.swift */,
+				BA0F6FE375F5433D9F9FEC146DD8C95D /* DICE.swift */,
+				55F0875B1E62C83A5F140ED59BCDEDF2 /* DICE+SwiftUI.swift */,
+				72B8EEBABB8611BDCE2C3DA01246515B /* DIContainer.swift */,
+				14A28748EE5B2A1C442CCB601EF83F25 /* DIContainerBuilder.swift */,
+				06FB8287C6310C61F9837ECDEAF96945 /* DIContainerEnvironmentKey.swift */,
+				ED2400C4AF26FA3A9ADC1BCEDBF85B71 /* DIContainerStorage.swift */,
+				4CC02708F8931B726E0C66251FA45A82 /* DIObject.swift */,
+				E556A5AEBB7040E4F2E572124231AC35 /* DIScope.swift */,
+				55662740FA33460A040F95A786CB9812 /* EnvironmentInjected.swift */,
+				798799AB8F82422D7045A9475FCF3E95 /* EnvironmentObservableInjected.swift */,
+				7AB7FBED094D12FC256E9944600936F7 /* InjectableProperty.swift */,
+				E39AAB95AC86F582B704AECF995EE741 /* Injected.swift */,
+				81D37AACDD4B45E200E8F705F8C7B224 /* LazyObject.swift */,
+				0850226CA2D9FEE2A100AC4C7AEC64A3 /* NSRecursiveLock.swift */,
+				61537DE3423DAF3519F4F7E1B1950957 /* WeakObject.swift */,
+				5977A0127C1060F2C110974507F3BD9E /* Support Files */,
+			);
+			name = DICE;
+			path = DICE;
+			sourceTree = "<group>";
+		};
+		5977A0127C1060F2C110974507F3BD9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FAD65E6D028EFEBC4EB94CA8DB45557 /* DICE.modulemap */,
+				4056FF60079EABDE1E4A5947836FD7DD /* DICE.xcconfig */,
+				4AFD7A5A83177C3092EE9AF1330D1B1E /* DICE-dummy.m */,
+				DCA843B68C041F2E316A25208DC8CD80 /* DICE-Info.plist */,
+				132C4C2BAEA3F6E6CF7B5723DE76FE6B /* DICE-prefix.pch */,
+				C696C22577AA7906F4426B62C49E03AA /* DICE-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DICE";
+			sourceTree = "<group>";
+		};
+		811AFB6A557127BF409EEDE91443B4A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */,
 				2C1A51EACBA04A340C17258FC4553882 /* Pods_stock_portfolio_tracker.framework */,
 				7E1044568D4C9F041926D0CB4146B92E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */,
 				447CA1B2F626F8B00C3A85918E740A15 /* Pods_stock_portfolio_trackerTests.framework */,
@@ -114,46 +221,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7419EB46BE1AE8E1A429EEA6ABAF4884 /* Pods-stock-portfolio-tracker */ = {
+		9C6EB0452ECE74E8F17EFE8E81063241 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA1472FEB41576E04E94200F26164E45 /* Pods-stock-portfolio-tracker.modulemap */,
-				6DE867524C89E45521F41399B71FA0AD /* Pods-stock-portfolio-tracker-acknowledgements.markdown */,
-				175159C69AC0B73B98B54AB4F1CAA2BF /* Pods-stock-portfolio-tracker-acknowledgements.plist */,
-				300823DE475B2A4D97E7411F50F5F79D /* Pods-stock-portfolio-tracker-dummy.m */,
-				99BA3A31CE3688F258B5434E8AF91A59 /* Pods-stock-portfolio-tracker-Info.plist */,
-				4428DE27C2FD582A8F49D93389650653 /* Pods-stock-portfolio-tracker-umbrella.h */,
-				68C862ED37B11A5823F5B340F7B2C591 /* Pods-stock-portfolio-tracker.debug.xcconfig */,
-				DEC84DAB30E07459A77870742C978E2A /* Pods-stock-portfolio-tracker.release.xcconfig */,
-			);
-			name = "Pods-stock-portfolio-tracker";
-			path = "Target Support Files/Pods-stock-portfolio-tracker";
-			sourceTree = "<group>";
-		};
-		7881D547DBA69C8EB7DD37306DF69872 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0AD1A2F0E27F6EFB3BC88AC74653BF6E /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap */,
-				A5471B73E2E390F23FCE72E2EDF819E4 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.markdown */,
-				B9451E37CB163FF491196E129549125E /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-acknowledgements.plist */,
-				FBF71A87E0CFA54FF216B7C5EFB40E1D /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m */,
-				16DF5E4093F4B1C72B4C7A78011A41E2 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist */,
-				F028F41E3116C69A25B763ECBEEBAFE1 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h */,
-				7DBBFCEC1473FB56293F000FA567C2AF /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */,
-				5EAF2B97D2088AA00FD1D26295BF17B2 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */,
-			);
-			name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
-			path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
-			sourceTree = "<group>";
-		};
-		8B081810EAD1D13FBFF673A38762DB02 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7419EB46BE1AE8E1A429EEA6ABAF4884 /* Pods-stock-portfolio-tracker */,
-				7881D547DBA69C8EB7DD37306DF69872 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */,
-				204141A1678D2A66CEF450101F0E3428 /* Pods-stock-portfolio-trackerTests */,
+				CFA25357411BAF2D2CC6E501AF35EBC1 /* Pods-stock-portfolio-tracker */,
+				086CD25C74491ACDF0FAFF4A22DB58FE /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */,
+				AF51FF3AD9FD8F3E9A933814C6F030E2 /* Pods-stock-portfolio-trackerTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AF51FF3AD9FD8F3E9A933814C6F030E2 /* Pods-stock-portfolio-trackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				29B8A882DC6749E7D7EBCC1676D77888 /* Pods-stock-portfolio-trackerTests.modulemap */,
+				ED37BAA4D9193FF0CCDE1F21864FC444 /* Pods-stock-portfolio-trackerTests-acknowledgements.markdown */,
+				6315C9A5636F6EA383D179AFA75BACA4 /* Pods-stock-portfolio-trackerTests-acknowledgements.plist */,
+				4101E8C4C9AEDBBFD757CDD83067587C /* Pods-stock-portfolio-trackerTests-dummy.m */,
+				30B936CF4CD606AB35F14E404CDE08C0 /* Pods-stock-portfolio-trackerTests-Info.plist */,
+				DA51444FA55382AF215045E887206D49 /* Pods-stock-portfolio-trackerTests-umbrella.h */,
+				A0F89759D10300C702ADB9F301BE57E0 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */,
+				DF9E51DA6EA36E258B67638D80F1F097 /* Pods-stock-portfolio-trackerTests.release.xcconfig */,
+			);
+			name = "Pods-stock-portfolio-trackerTests";
+			path = "Target Support Files/Pods-stock-portfolio-trackerTests";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -169,9 +260,27 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				5CB3D0380177B8012DD454AEC689B0B7 /* Products */,
-				8B081810EAD1D13FBFF673A38762DB02 /* Targets Support Files */,
+				EA624F0C613FE81DC7C691D6ECE8F2AE /* Pods */,
+				811AFB6A557127BF409EEDE91443B4A9 /* Products */,
+				9C6EB0452ECE74E8F17EFE8E81063241 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFA25357411BAF2D2CC6E501AF35EBC1 /* Pods-stock-portfolio-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				0132F0B9967C642896F9CB965B73A0AA /* Pods-stock-portfolio-tracker.modulemap */,
+				3167B0A6604B98719742986AF7A4D8C6 /* Pods-stock-portfolio-tracker-acknowledgements.markdown */,
+				48D925ECBE28DFA2366BCCC5653FFE63 /* Pods-stock-portfolio-tracker-acknowledgements.plist */,
+				1708114873391A53B4D424B787A472FA /* Pods-stock-portfolio-tracker-dummy.m */,
+				212E71D3AE886952D2A6D6CEA8490107 /* Pods-stock-portfolio-tracker-frameworks.sh */,
+				C05014AF8DE2E00D4FAA506E1C3A822A /* Pods-stock-portfolio-tracker-Info.plist */,
+				BE9FEE4402AEECAFB577EDA1B19CAD56 /* Pods-stock-portfolio-tracker-umbrella.h */,
+				11F1B7DA5F50C5825D4A9B1C69FBF4A3 /* Pods-stock-portfolio-tracker.debug.xcconfig */,
+				E38B44BC4625F7482F3F723539F248B5 /* Pods-stock-portfolio-tracker.release.xcconfig */,
+			);
+			name = "Pods-stock-portfolio-tracker";
+			path = "Target Support Files/Pods-stock-portfolio-tracker";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -182,9 +291,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EA624F0C613FE81DC7C691D6ECE8F2AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F882F1195F580C78610B34FD199F478 /* DICE */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1F351AF776435279CBABD6694E1321BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C2203634390B1F258D51308AC68D63 /* DICE-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3706D9D97E388B9B61DDE437DDAD04D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,19 +318,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5194545B4242942F1438DBA6CE200D07 /* Headers */ = {
+		894548584CCB79AF185D16D6432A564F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF66D92045A6639EDB0AECC1DBDC096 /* Pods-stock-portfolio-tracker-umbrella.h in Headers */,
+				23E924D357ED61F40DFDF21F269C7DAB /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E35A405AEEC0D169B003D333938AC8D1 /* Headers */ = {
+		C031E44E09133557156D2ECCAB92F71E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F89CF6C05F1CABA3B4DFEC0A4E9F22 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-umbrella.h in Headers */,
+				C38C2ADC6A9241988813E4CBC29B91FB /* Pods-stock-portfolio-tracker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +339,17 @@
 /* Begin PBXNativeTarget section */
 		71BC00D21889010A7E1CEA0742FDE644 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF320F366A6B8124FDFDCD8B98CE5117 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests" */;
+			buildConfigurationList = 71BDA8C637862B8D7F6A35868CB06905 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests" */;
 			buildPhases = (
-				E35A405AEEC0D169B003D333938AC8D1 /* Headers */,
-				9789D6872B9DDA658BEAE3D4F98DC417 /* Sources */,
-				FCCA30578C5F8297E2423916EDF43367 /* Frameworks */,
-				5F11D53AB5444458835B25E4B07BFD7B /* Resources */,
+				894548584CCB79AF185D16D6432A564F /* Headers */,
+				2A71E3A363164BD880BE234381A10D6C /* Sources */,
+				C5B4A280F435449918AC6ACC6E169390 /* Frameworks */,
+				D721F357A075107266C5EBE3E0894844 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C52DF649DE5D3082206D80E8238F50D3 /* PBXTargetDependency */,
 			);
 			name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
 			productName = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests";
@@ -232,20 +358,39 @@
 		};
 		97AA816538F194D628023E443DDD6173 /* Pods-stock-portfolio-tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 974A51AAB6ACCE45FBB956D3F1865998 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker" */;
+			buildConfigurationList = 9510794C7170D282FDB94531B7227C7B /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker" */;
 			buildPhases = (
-				5194545B4242942F1438DBA6CE200D07 /* Headers */,
-				5CB943633B7C388836B58808E7D9857B /* Sources */,
-				A78C74FD779BD7468CF7B20B652E07D2 /* Frameworks */,
-				3BAE8212B2395F33102355717C83C5CB /* Resources */,
+				C031E44E09133557156D2ECCAB92F71E /* Headers */,
+				472921D4040140111546A91DDC3CDB1B /* Sources */,
+				03A2A63AD11914C897D936B7D0979CC1 /* Frameworks */,
+				F9AF9F847A180C6104661C35848A2E34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86A49B16EAF4DD205F13FC299167ED1B /* PBXTargetDependency */,
+			);
+			name = "Pods-stock-portfolio-tracker";
+			productName = "Pods-stock-portfolio-tracker";
+			productReference = 2C1A51EACBA04A340C17258FC4553882 /* Pods_stock_portfolio_tracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD653DCF41FD040E69EC5DF2CF1713E5 /* DICE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E640B845BC164943DB9B307FFB13724 /* Build configuration list for PBXNativeTarget "DICE" */;
+			buildPhases = (
+				1F351AF776435279CBABD6694E1321BD /* Headers */,
+				06A7E39F580C6E2B685E4B9EF290FE2F /* Sources */,
+				BD681D382A4DFC6ACEA65BA580D643FE /* Frameworks */,
+				BDF5C2B78FBFAEE0F640364A9351A750 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-stock-portfolio-tracker";
-			productName = "Pods-stock-portfolio-tracker";
-			productReference = 2C1A51EACBA04A340C17258FC4553882 /* Pods_stock_portfolio_tracker.framework */;
+			name = DICE;
+			productName = DICE;
+			productReference = EB3A19E0AD0C1B728490040EA7E06EB9 /* DICE.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DED4806ED7F73998EF7EBCBFE362FE6C /* Pods-stock-portfolio-trackerTests */ = {
@@ -285,10 +430,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5CB3D0380177B8012DD454AEC689B0B7 /* Products */;
+			productRefGroup = 811AFB6A557127BF409EEDE91443B4A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				DD653DCF41FD040E69EC5DF2CF1713E5 /* DICE */,
 				97AA816538F194D628023E443DDD6173 /* Pods-stock-portfolio-tracker */,
 				71BC00D21889010A7E1CEA0742FDE644 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests */,
 				DED4806ED7F73998EF7EBCBFE362FE6C /* Pods-stock-portfolio-trackerTests */,
@@ -297,13 +443,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3BAE8212B2395F33102355717C83C5CB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		57945BFDCF9856FB432E9869851B82E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,7 +450,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F11D53AB5444458835B25E4B07BFD7B /* Resources */ = {
+		BDF5C2B78FBFAEE0F640364A9351A750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721F357A075107266C5EBE3E0894844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AF9F847A180C6104661C35848A2E34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +474,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CB943633B7C388836B58808E7D9857B /* Sources */ = {
+		06A7E39F580C6E2B685E4B9EF290FE2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C7D397D9DCDCE58EDA0D3B7E1FEC04 /* Pods-stock-portfolio-tracker-dummy.m in Sources */,
+				CDD4CE29D895A5D0863C4D3BC833BC79 /* DependencyKey.swift in Sources */,
+				3477F7EEBED5B43FF00A85E305DFE689 /* DICE+SwiftUI.swift in Sources */,
+				9DA20DD0CDBC3F6F7F8E2CCEEF58FCCA /* DICE-dummy.m in Sources */,
+				579F167F07D43ADA6A1FA2D697FC6A83 /* DICE.swift in Sources */,
+				A0D094CC9CDD37B9BEA8934A44D3059C /* DIContainer.swift in Sources */,
+				44C49C8DEF539AD798CFDD8F829F93B1 /* DIContainerBuilder.swift in Sources */,
+				88C93E1C80BA1DA7502D02F1B404F005 /* DIContainerEnvironmentKey.swift in Sources */,
+				BA7060F08D393C2D712DDC6A6D9A04E7 /* DIContainerStorage.swift in Sources */,
+				9C188EADD22C4B9313811F88A011D63B /* DIObject.swift in Sources */,
+				5A3FCCC02E2AED583E903B5B51142B64 /* DIScope.swift in Sources */,
+				100C1212EB6CA96C167BD24679C7E9E7 /* EnvironmentInjected.swift in Sources */,
+				D9F35A3D7EFB2F82D7A0B20BB1EA9817 /* EnvironmentObservableInjected.swift in Sources */,
+				498DA0650DD3BBFF4A1B4DF88D31163A /* InjectableProperty.swift in Sources */,
+				3EE3462F4318E1019CB660A13985E013 /* Injected.swift in Sources */,
+				84DC4EED664378E2738B70FE2C442550 /* LazyObject.swift in Sources */,
+				E2013AE18B98559817BB31946CBE6CF6 /* NSRecursiveLock.swift in Sources */,
+				FA69D1E80AB2D0F7753F225EAF2FB46F /* WeakObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9789D6872B9DDA658BEAE3D4F98DC417 /* Sources */ = {
+		2A71E3A363164BD880BE234381A10D6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9463EE937D68737961668F6B89913862 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m in Sources */,
+				4232B9494E1D74C828474AFFAC31239D /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		472921D4040140111546A91DDC3CDB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82FC87776C77957E4DD70C293C7083FC /* Pods-stock-portfolio-tracker-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,12 +531,24 @@
 			target = 97AA816538F194D628023E443DDD6173 /* Pods-stock-portfolio-tracker */;
 			targetProxy = 10A7204D98972807FC5BB70FC31CCD83 /* PBXContainerItemProxy */;
 		};
+		86A49B16EAF4DD205F13FC299167ED1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DICE;
+			target = DD653DCF41FD040E69EC5DF2CF1713E5 /* DICE */;
+			targetProxy = 0F8EDB9BC2738E8079780E869D4116C8 /* PBXContainerItemProxy */;
+		};
+		C52DF649DE5D3082206D80E8238F50D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DICE;
+			target = DD653DCF41FD040E69EC5DF2CF1713E5 /* DICE */;
+			targetProxy = C5CB95DB8DBE029EDEDC36B90D617B00 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		138014235E3030D31DE7789C6C486831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0888D7C56705FC004473FFA362967328 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */;
+			baseConfigurationReference = A0F89759D10300C702ADB9F301BE57E0 /* Pods-stock-portfolio-trackerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -394,160 +583,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3AD7ED609834827A4B5173AC73169D92 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEC84DAB30E07459A77870742C978E2A /* Pods-stock-portfolio-tracker.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4EA094D62487A3CBD5DBC77CDC338465 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DBBFCEC1473FB56293F000FA567C2AF /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5306EE6774ADA1C760D572016C20535B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68C862ED37B11A5823F5B340F7B2C591 /* Pods-stock-portfolio-tracker.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		67B4AA38C55FB20773C89B44AB9400BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EAF2B97D2088AA00FD1D26295BF17B2 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -613,6 +648,45 @@
 			};
 			name = Debug;
 		};
+		A200C9AC1366CCCB5609152CA7CB04FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7FC63A9909EC09967BA823C53A2057 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -673,9 +747,47 @@
 			};
 			name = Release;
 		};
+		B3342E3AEA296256702EDABEE962C453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C006566A64D338771E53315DFED74522 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BBBABB0E594454A114F2B3EAFCDF6FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79C723CCB28C8437E839DC2BCAE4C96C /* Pods-stock-portfolio-trackerTests.release.xcconfig */;
+			baseConfigurationReference = DF9E51DA6EA36E258B67638D80F1F097 /* Pods-stock-portfolio-trackerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -712,6 +824,156 @@
 			};
 			name = Release;
 		};
+		C7CEA0013196C5B91E5522719BF3740C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38B44BC4625F7482F3F723539F248B5 /* Pods-stock-portfolio-tracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1F6937D7B94AD27CD097DC5CAD4DEDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F1B7DA5F50C5825D4A9B1C69FBF4A3 /* Pods-stock-portfolio-tracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D67D08DA0D2CCAD660FE75479D4D7EDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4056FF60079EABDE1E4A5947836FD7DD /* DICE.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
+				PRODUCT_MODULE_NAME = DICE;
+				PRODUCT_NAME = DICE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE3D58287573AF8D0DD0AEADA7AD8DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4056FF60079EABDE1E4A5947836FD7DD /* DICE.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DICE/DICE-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DICE/DICE-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DICE/DICE.modulemap";
+				PRODUCT_MODULE_NAME = DICE;
+				PRODUCT_NAME = DICE;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -733,20 +995,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		974A51AAB6ACCE45FBB956D3F1865998 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker" */ = {
+		6E640B845BC164943DB9B307FFB13724 /* Build configuration list for PBXNativeTarget "DICE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5306EE6774ADA1C760D572016C20535B /* Debug */,
-				3AD7ED609834827A4B5173AC73169D92 /* Release */,
+				D67D08DA0D2CCAD660FE75479D4D7EDF /* Debug */,
+				DE3D58287573AF8D0DD0AEADA7AD8DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF320F366A6B8124FDFDCD8B98CE5117 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests" */ = {
+		71BDA8C637862B8D7F6A35868CB06905 /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA094D62487A3CBD5DBC77CDC338465 /* Debug */,
-				67B4AA38C55FB20773C89B44AB9400BF /* Release */,
+				B3342E3AEA296256702EDABEE962C453 /* Debug */,
+				A200C9AC1366CCCB5609152CA7CB04FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9510794C7170D282FDB94531B7227C7B /* Build configuration list for PBXNativeTarget "Pods-stock-portfolio-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1F6937D7B94AD27CD097DC5CAD4DEDE /* Debug */,
+				C7CEA0013196C5B91E5522719BF3740C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

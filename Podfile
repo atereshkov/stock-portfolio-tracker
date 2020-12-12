@@ -6,6 +6,8 @@ target 'stock-portfolio-tracker' do
   use_frameworks!
 
   # Pods for stock-portfolio-tracker
+  
+  pod 'DICE', '~> 0.9.0'
 
   target 'stock-portfolio-trackerTests' do
     inherit! :search_paths

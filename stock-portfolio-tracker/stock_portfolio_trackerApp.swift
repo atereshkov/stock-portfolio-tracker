@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct stock_portfolio_trackerApp: App {
+    
+    init() {
+        Swift.print("Init")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

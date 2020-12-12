@@ -1,0 +1,6 @@
+framework module DICE {
+  umbrella header "DICE-umbrella.h"
+
+  export *
+  module * { export * }
+}
