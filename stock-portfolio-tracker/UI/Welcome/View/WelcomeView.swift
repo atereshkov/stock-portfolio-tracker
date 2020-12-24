@@ -11,8 +11,11 @@ struct WelcomeView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                startButton
+            ZStack {
+                backgroundColor
+                VStack {
+                    startButton
+                }
             }
         }
     }
@@ -25,6 +28,10 @@ struct WelcomeView: View {
         ) {
             Text(L10n.Welcome.Button.Start.title)
         }
+    }
+    
+    var backgroundColor: some View {
+        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
     }
 }
 
