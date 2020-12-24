@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct stock_portfolio_trackerApp: App {
+struct SPTApp: App {
     
     private let session = Session()
     
@@ -19,7 +19,7 @@ struct stock_portfolio_trackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }

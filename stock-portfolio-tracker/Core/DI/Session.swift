@@ -31,7 +31,10 @@ private extension Session {
     
     func bindViewModel() {
         container.register { _ in
-            return ContentViewModel(session: self)
+            return MainViewModel(session: self)
+        }
+        container.register { _ in
+            return WelcomeViewModel(session: self)
         }
     }
     
