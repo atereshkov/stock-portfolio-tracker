@@ -23,7 +23,7 @@ struct WelcomeView: View {
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
         ) {
-            Text("Let's start")
+            Text(L10n.Welcome.Button.Start.title)
         }
     }
 }
