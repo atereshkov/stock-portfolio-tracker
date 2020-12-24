@@ -43,6 +43,10 @@
 		CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
 		CBE4E96D25951247002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
 		CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
+		CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9AE2595162B002ECCF0 /* MainViewModelInput.swift */; };
+		CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9AE2595162B002ECCF0 /* MainViewModelInput.swift */; };
+		CBE4E9B625951636002ECCF0 /* MainViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9B525951636002ECCF0 /* MainViewModelOutput.swift */; };
+		CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9B525951636002ECCF0 /* MainViewModelOutput.swift */; };
 		F838B7B281DCE019524DE053 /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4089C0B85142977CEB22E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +105,8 @@
 		CBE4E9542595122E002ECCF0 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
 		CBE4E9552595122E002ECCF0 /* assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
 		CBE4E99D259514B5002ECCF0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBE4E9AE2595162B002ECCF0 /* MainViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelInput.swift; sourceTree = "<group>"; };
+		CBE4E9B525951636002ECCF0 /* MainViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelOutput.swift; sourceTree = "<group>"; };
 		EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_trackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F062C0CE57B7F63A5FB7C91C /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +238,8 @@
 			children = (
 				CB378B642585478900A5F14D /* MainViewModelType.swift */,
 				CB378B6B2585479900A5F14D /* MainViewModel.swift */,
+				CBE4E9AE2595162B002ECCF0 /* MainViewModelInput.swift */,
+				CBE4E9B525951636002ECCF0 /* MainViewModelOutput.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -799,8 +807,10 @@
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
+				CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E9572595122E002ECCF0 /* strings.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
+				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,8 +827,10 @@
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
+				CBE4E9B625951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
 				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
+				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

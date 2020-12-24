@@ -8,5 +8,6 @@
 import Combine
 
 protocol MainViewModelType: ObservableObject {
-    var testString: String { get }
+    var input: MainViewModelInputType { get }
+    var ouput: MainViewModelOutputType { get }
 }

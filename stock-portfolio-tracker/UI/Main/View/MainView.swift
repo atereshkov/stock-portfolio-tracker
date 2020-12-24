@@ -12,6 +12,10 @@ struct MainView: View {
     
     @EnvironmentObservableInjected var viewModel: MainViewModel
     
+    init() {
+        viewModel.input.viewDidLoad()
+    }
+    
     var body: some View {
         Text(viewModel.testString)
             .padding()
