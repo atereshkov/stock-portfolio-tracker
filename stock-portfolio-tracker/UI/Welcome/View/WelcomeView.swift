@@ -28,7 +28,7 @@ struct WelcomeView: View {
     }
 }
 
-struct WelcomeView_Previews: PreviewProvider {
+struct WelcomeViewPreviews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
     }

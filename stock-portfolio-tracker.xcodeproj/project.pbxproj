@@ -14,7 +14,7 @@
 		CB378AE5258513AE00A5F14D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB378AE6258513AE00A5F14D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
-		CB378AEB258513AE00A5F14D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Assets.xcassets */; };
+		CB378AEB258513AE00A5F14D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Images.xcassets */; };
 		CB378B532585470900A5F14D /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B522585470900A5F14D /* SessionType.swift */; };
 		CB378B542585470900A5F14D /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B522585470900A5F14D /* SessionType.swift */; };
 		CB378B5A2585471A00A5F14D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B592585471A00A5F14D /* Session.swift */; };
@@ -25,13 +25,24 @@
 		CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB378B6B2585479900A5F14D /* MainViewModel.swift */; };
 		CB43648C2584DCCA0074FBD0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
-		CB4364902584DCCD0074FBD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Assets.xcassets */; };
+		CB4364902584DCCD0074FBD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Images.xcassets */; };
 		CB4364932584DCCD0074FBD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
 		CB43649E2584DCCE0074FBD0 /* stock_portfolio_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43649D2584DCCE0074FBD0 /* stock_portfolio_trackerTests.swift */; };
 		CB4364A92584DCCE0074FBD0 /* stock_portfolio_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4364A82584DCCE0074FBD0 /* stock_portfolio_trackerUITests.swift */; };
 		CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
 		CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
 		CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
+		CBE4E92E25951122002ECCF0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE4E92D25951122002ECCF0 /* Colors.xcassets */; };
+		CBE4E93E2595114D002ECCF0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBE4E9402595114D002ECCF0 /* Localizable.strings */; };
+		CBE4E9562595122E002ECCF0 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9542595122E002ECCF0 /* strings.swift */; };
+		CBE4E9572595122E002ECCF0 /* strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9542595122E002ECCF0 /* strings.swift */; };
+		CBE4E9582595122E002ECCF0 /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9552595122E002ECCF0 /* assets.swift */; };
+		CBE4E9592595122E002ECCF0 /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9552595122E002ECCF0 /* assets.swift */; };
+		CBE4E95E25951237002ECCF0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE4E92D25951122002ECCF0 /* Colors.xcassets */; };
+		CBE4E9632595123B002ECCF0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBE4E9402595114D002ECCF0 /* Localizable.strings */; };
+		CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
+		CBE4E96D25951247002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
+		CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
 		F838B7B281DCE019524DE053 /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4089C0B85142977CEB22E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +84,7 @@
 		CB4364882584DCCA0074FBD0 /* stock-portfolio-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43648B2584DCCA0074FBD0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB43648D2584DCCA0074FBD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		CB43648F2584DCCD0074FBD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB43648F2584DCCD0074FBD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB4364942584DCCD0074FBD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB4364992584DCCE0074FBD0 /* stock-portfolio-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stock-portfolio-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +96,10 @@
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelType.swift; sourceTree = "<group>"; };
 		CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		CBE4E92D25951122002ECCF0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CBE4E93F2595114D002ECCF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBE4E9542595122E002ECCF0 /* strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = strings.swift; sourceTree = "<group>"; };
+		CBE4E9552595122E002ECCF0 /* assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
 		EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_trackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F062C0CE57B7F63A5FB7C91C /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,7 +273,7 @@
 				CB378B50258546CD00A5F14D /* Core */,
 				CB378B602585473A00A5F14D /* UI */,
 				CB378B162585157B00A5F14D /* Firebase */,
-				CB43648F2584DCCD0074FBD0 /* Assets.xcassets */,
+				CBE4E92A259510AC002ECCF0 /* Resources */,
 				CB4364942584DCCD0074FBD0 /* Info.plist */,
 				CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */,
 				CB4364912584DCCD0074FBD0 /* Preview Content */,
@@ -326,6 +341,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CBE4E92A259510AC002ECCF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E93325951139002ECCF0 /* Localization */,
+				CBE4E92B25951111002ECCF0 /* Images */,
+				CBE4E92C25951118002ECCF0 /* Colors */,
+				CBE4E9532595122E002ECCF0 /* Generated */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBE4E92B25951111002ECCF0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CB43648F2584DCCD0074FBD0 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CBE4E92C25951118002ECCF0 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E92D25951122002ECCF0 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		CBE4E93325951139002ECCF0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E9402595114D002ECCF0 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		CBE4E9532595122E002ECCF0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E9542595122E002ECCF0 /* strings.swift */,
+				CBE4E9552595122E002ECCF0 /* assets.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +397,8 @@
 				CB378AE7258513AE00A5F14D /* Frameworks */,
 				CB378AE9258513AE00A5F14D /* Resources */,
 				CB378AED258513AE00A5F14D /* [CP] Embed Pods Frameworks */,
+				CBE4E94D259511B7002ECCF0 /* Run SwiftLint */,
+				CBE4E94E259511C9002ECCF0 /* Run SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -358,6 +419,8 @@
 				CB4364862584DCC90074FBD0 /* Resources */,
 				F43424BB6C7425215CF5DC4D /* [CP] Embed Pods Frameworks */,
 				CB378B21258515D800A5F14D /* Set up Firebase GoogleServices plist */,
+				CBE4E9452595118D002ECCF0 /* Run SwiftLint */,
+				CBE4E9472595119E002ECCF0 /* Run SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -455,8 +518,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE4E95E25951237002ECCF0 /* Colors.xcassets in Resources */,
+				CBE4E9632595123B002ECCF0 /* Localizable.strings in Resources */,
 				CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */,
-				CB378AEB258513AE00A5F14D /* Assets.xcassets in Resources */,
+				CB378AEB258513AE00A5F14D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,8 +529,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE4E92E25951122002ECCF0 /* Colors.xcassets in Resources */,
+				CBE4E93E2595114D002ECCF0 /* Localizable.strings in Resources */,
 				CB4364932584DCCD0074FBD0 /* Preview Assets.xcassets in Resources */,
-				CB4364902584DCCD0074FBD0 /* Assets.xcassets in Resources */,
+				CB4364902584DCCD0074FBD0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,6 +693,78 @@
 			shellPath = /bin/sh;
 			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to dev or prod version of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO=${PROJECT_DIR}/stock-portfolio-tracker/Firebase/Dev/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure this version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO}\"\nif [ ! -f $GOOGLESERVICE_INFO ]\nthen\necho \"No GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\necho \"Using ${GOOGLESERVICE_INFO} (Dev)\"\ncp \"${GOOGLESERVICE_INFO}\" \"${PLIST_DESTINATION}\"\n";
 		};
+		CBE4E9452595118D002ECCF0 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CBE4E9472595119E002ECCF0 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
+		CBE4E94D259511B7002ECCF0 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CBE4E94E259511C9002ECCF0 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
 		F43424BB6C7425215CF5DC4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -651,11 +790,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB378B5B2585471A00A5F14D /* Session.swift in Sources */,
+				CBE4E96D25951247002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB378AE5258513AE00A5F14D /* MainView.swift in Sources */,
+				CBE4E9592595122E002ECCF0 /* assets.swift in Sources */,
 				CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
+				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
+				CBE4E9572595122E002ECCF0 /* strings.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
+				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE4E9582595122E002ECCF0 /* assets.swift in Sources */,
 				CB378B5A2585471A00A5F14D /* Session.swift in Sources */,
 				CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */,
@@ -671,6 +816,7 @@
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
+				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +851,17 @@
 			targetProxy = CB4364A52584DCCE0074FBD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBE4E9402595114D002ECCF0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBE4E93F2595114D002ECCF0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CB378AEF258513AE00A5F14D /* Debug */ = {

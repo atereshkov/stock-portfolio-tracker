@@ -1,0 +1,14 @@
+output_dir: stock-portfolio-tracker/Resources/Generated/
+strings:
+  inputs: 'stock-portfolio-tracker/Resources/Localization/en.lproj/Localizable.strings'
+  outputs:
+    templateName: structured-swift5
+    output: strings.swift
+xcassets:
+  inputs: [
+    'stock-portfolio-tracker/Resources/Images/Images.xcassets',
+    'stock-portfolio-tracker/Resources/Colors/Colors.xcassets'
+  ]
+  outputs:
+    templateName: swift5
+    output: assets.swift
