@@ -31,6 +31,7 @@ struct WelcomeView: View {
         ) {
             Text(L10n.Welcome.Button.Start.title)
         }
+        // .navigationViewStyle(StackNavigationViewStyle())
     }
     
     var backgroundColor: some View {
