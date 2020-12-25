@@ -34,9 +34,3 @@ struct WelcomeView: View {
         Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
     }
 }
-
-struct WelcomeViewPreviews: PreviewProvider {
-    static var previews: some View {
-        WelcomeView()
-    }
-}

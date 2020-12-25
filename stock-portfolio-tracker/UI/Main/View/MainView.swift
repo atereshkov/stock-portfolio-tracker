@@ -21,9 +21,3 @@ struct MainView: View {
             .padding()
     }
 }
-
-struct MainViewPreviews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
