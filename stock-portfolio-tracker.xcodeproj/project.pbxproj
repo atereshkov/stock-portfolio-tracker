@@ -57,6 +57,16 @@
 		CBE4E9DC259608F7002ECCF0 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9DA259608F7002ECCF0 /* ViewModelType.swift */; };
 		CBE4E9E725964E7D002ECCF0 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */; };
 		CBE4E9E825964E7D002ECCF0 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */; };
+		CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9F42596712D002ECCF0 /* LoginView.swift */; };
+		CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9F42596712D002ECCF0 /* LoginView.swift */; };
+		CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9FF25967150002ECCF0 /* LoginViewModelType.swift */; };
+		CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E9FF25967150002ECCF0 /* LoginViewModelType.swift */; };
+		CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA062596715E002ECCF0 /* LoginViewModel.swift */; };
+		CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA062596715E002ECCF0 /* LoginViewModel.swift */; };
+		CBE4EA0E259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */; };
+		CBE4EA0F259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */; };
+		CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */; };
+		CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */; };
 		F838B7B281DCE019524DE053 /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4089C0B85142977CEB22E /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +132,11 @@
 		CBE4E9CF25960707002ECCF0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		CBE4E9DA259608F7002ECCF0 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		CBE4E9F42596712D002ECCF0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CBE4E9FF25967150002ECCF0 /* LoginViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelType.swift; sourceTree = "<group>"; };
+		CBE4EA062596715E002ECCF0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelInput.swift; sourceTree = "<group>"; };
+		CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelOutput.swift; sourceTree = "<group>"; };
 		EF0D97B90AC0E6FF5A743E34 /* Pods_stock_portfolio_trackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_trackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F062C0CE57B7F63A5FB7C91C /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,9 +249,10 @@
 		CB378B602585473A00A5F14D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CBE4E9E525964E71002ECCF0 /* View */,
 				CBE4E90D2595025B002ECCF0 /* Welcome */,
+				CBE4E9F125966D6B002ECCF0 /* Login */,
 				CB378B612585474400A5F14D /* Main */,
+				CBE4E9E525964E71002ECCF0 /* View */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -426,6 +442,34 @@
 			isa = PBXGroup;
 			children = (
 				CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBE4E9F125966D6B002ECCF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E9F325967121002ECCF0 /* View */,
+				CBE4E9F225967112002ECCF0 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CBE4E9F225967112002ECCF0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E9FF25967150002ECCF0 /* LoginViewModelType.swift */,
+				CBE4EA062596715E002ECCF0 /* LoginViewModel.swift */,
+				CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */,
+				CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBE4E9F325967121002ECCF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBE4E9F42596712D002ECCF0 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,17 +886,22 @@
 				CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CBE4E9D125960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
+				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
+				CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DC259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E9572595122E002ECCF0 /* strings.swift in Sources */,
+				CBE4EA0F259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */,
 				CBE4E9E825964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
+				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
+				CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,17 +916,22 @@
 				CB378B6C2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CBE4E9D025960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
+				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
+				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DB259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
 				CBE4E9B625951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
+				CBE4EA0E259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */,
 				CBE4E9E725964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
+				CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
+				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
