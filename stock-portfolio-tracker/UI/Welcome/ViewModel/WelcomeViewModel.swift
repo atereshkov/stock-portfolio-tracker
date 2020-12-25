@@ -9,8 +9,8 @@ import Combine
 
 class WelcomeViewModel: BaseViewModel<WelcomeViewModelInputType, WelcomeViewModelOutputType>, WelcomeViewModelType {
     
-    init(session: SessionType) {
-        
+    override init(session: SessionType) {
+        super.init(session: session)
     }
     
 }

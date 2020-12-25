@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import DICE
 
 struct WelcomeView: View {
+    
+    @EnvironmentObservableInjected var viewModel: WelcomeViewModel
     
     var body: some View {
         NavigationView {

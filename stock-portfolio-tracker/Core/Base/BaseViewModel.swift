@@ -14,4 +14,10 @@ class BaseViewModel<InputType, OutputType>: ViewModelType {
     var output: OutputType { return self as! OutputType }
     // swiftlint:enable force_cast
     
+    let session: SessionType
+    
+    init(session: SessionType) {
+        self.session = session
+    }
+    
 }

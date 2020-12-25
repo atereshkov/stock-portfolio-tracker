@@ -9,8 +9,8 @@ import Combine
 
 class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputType>, MainViewModelType {
     
-    init(session: SessionType) {
-        
+    override init(session: SessionType) {
+        super.init(session: session)
     }
     
     // MARK: - MainViewModelOutputType Variables
