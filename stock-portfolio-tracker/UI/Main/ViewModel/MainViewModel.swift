@@ -7,14 +7,15 @@
 
 import Combine
 
-class MainViewModel: MainViewModelType {
-    
-    var input: MainViewModelInputType { return self }
-    var ouput: MainViewModelOutputType { return self }
+class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputType>, MainViewModelType {
     
     init(session: SessionType) {
         
     }
+    
+    // MARK: - MainViewModelOutputType Variables
+    
+    @Published var testString: String?
     
 }
 
@@ -26,8 +27,8 @@ extension MainViewModel: MainViewModelInputType {
     
 }
 
+// MARK: - MainViewModelOutputType
+
 extension MainViewModel: MainViewModelOutputType {
-    var testString: String {
-        return "Test"
-    }
+    
 }

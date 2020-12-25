@@ -7,6 +7,6 @@
 
 import Combine
 
-protocol WelcomeViewModelType: ObservableObject {
+protocol WelcomeViewModelType: ViewModelType, ObservableObject {
     
 }

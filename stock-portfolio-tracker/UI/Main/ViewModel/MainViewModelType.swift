@@ -7,7 +7,6 @@
 
 import Combine
 
-protocol MainViewModelType: ObservableObject {
-    var input: MainViewModelInputType { get }
-    var ouput: MainViewModelOutputType { get }
+protocol MainViewModelType: ViewModelType, ObservableObject {
+    
 }

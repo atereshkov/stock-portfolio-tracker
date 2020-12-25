@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MainViewModelOutputType {
-    var testString: String { get }
+    var testString: String? { get }
 }

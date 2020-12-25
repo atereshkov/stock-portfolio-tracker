@@ -7,10 +7,20 @@
 
 import Combine
 
-class WelcomeViewModel: WelcomeViewModelType {
+class WelcomeViewModel: BaseViewModel<WelcomeViewModelInputType, WelcomeViewModelOutputType>, WelcomeViewModelType {
     
     init(session: SessionType) {
         
     }
     
 }
+
+extension WelcomeViewModel: WelcomeViewModelInputType {
+    
+    func startButtonAction() {
+        
+    }
+    
+}
+
+extension WelcomeViewModel: WelcomeViewModelOutputType { }

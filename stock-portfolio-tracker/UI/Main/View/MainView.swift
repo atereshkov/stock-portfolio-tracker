@@ -14,10 +14,14 @@ struct MainView: View {
     
     init() {
         viewModel.input.viewDidLoad()
+        
+        _ = viewModel.$testString.sink { value in
+            Swift.print("[TEST] Value: \(String(describing: value))")
+        }
     }
     
     var body: some View {
-        Text(viewModel.testString)
+        Text(viewModel.output.testString ?? "")
             .padding()
     }
 }
