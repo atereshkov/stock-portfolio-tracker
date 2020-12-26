@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct PrimaryButton: View {
-    let title: String
-    let action: () -> Void
-
-    var body: some View {
-        Button(title, action: action)
+struct PrimaryButton: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration
+            .label
+            .frame(maxWidth: .infinity)
             .foregroundColor(.white)
             .padding()
-            .background(Color.accentColor)
+            .background(Color(Asset.Colors.primaryLight.color))
             .cornerRadius(4)
+            .shadow(color: Color.black.opacity(0.05), radius: 7, x: 0, y: 6)
     }
 }

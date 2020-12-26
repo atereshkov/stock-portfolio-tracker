@@ -24,8 +24,6 @@ extension MainViewModel: MainViewModelInputType {
     
     func viewDidLoad() {
         Swift.print("[TEST] Main View Model onViewDidLoad")
-        
-        testString = "TESTTT"
     }
     
 }

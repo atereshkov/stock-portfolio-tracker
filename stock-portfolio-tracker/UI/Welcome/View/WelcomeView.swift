@@ -17,9 +17,9 @@ struct WelcomeView: View {
             ZStack {
                 backgroundColor
                 GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.25) {
-                        title.padding(.leading, 21)
-                        subtitle.padding(.leading, 21)
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.15) {
+                        title.padding([.leading, .trailing], 21)
+                        subtitle.padding([.leading, .trailing], 21)
                         startButton.padding([.leading, .trailing], 21)
                     }
                 }
@@ -34,11 +34,15 @@ struct WelcomeView: View {
     var title: some View {
         Text("Stock\nPortfolio\nTracker")
             .foregroundColor(Color.white)
+            .font(.system(size: 48))
+            .fontWeight(.semibold)
     }
     
     var subtitle: some View {
-        Text("Track your investments and dividends. Simple and easy.")
+        Text("Track your investments and dividends.\nSimple and easy.")
             .foregroundColor(Color.white)
+            .font(.system(size: 22))
+            .fontWeight(.light)
     }
     
     var startButton: some View {
@@ -48,7 +52,7 @@ struct WelcomeView: View {
                         .navigationBarHidden(true)
         ) {
             Text(L10n.Welcome.Button.Start.title)
-        }
+        }.buttonStyle(PrimaryButton())
         // .navigationViewStyle(StackNavigationViewStyle())
     }
     
