@@ -17,10 +17,8 @@ class WelcomeViewModel: BaseViewModel<WelcomeViewModelInputType, WelcomeViewMode
 
 extension WelcomeViewModel: WelcomeViewModelInputType {
     
-    func startButtonAction() {
-        
-    }
-    
 }
 
-extension WelcomeViewModel: WelcomeViewModelOutputType { }
+extension WelcomeViewModel: WelcomeViewModelOutputType {
+    
+}

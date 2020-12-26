@@ -16,16 +16,34 @@ struct WelcomeView: View {
         NavigationView {
             ZStack {
                 backgroundColor
-                VStack {
-                    startButton
+                GeometryReader { metrics in
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.25) {
+                        title.padding(.leading, 21)
+                        subtitle.padding(.leading, 21)
+                        startButton.padding([.leading, .trailing], 21)
+                    }
                 }
             }
         }
     }
     
+    var backgroundColor: some View {
+        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
+    }
+    
+    var title: some View {
+        Text("Stock\nPortfolio\nTracker")
+            .foregroundColor(Color.white)
+    }
+    
+    var subtitle: some View {
+        Text("Track your investments and dividends. Simple and easy.")
+            .foregroundColor(Color.white)
+    }
+    
     var startButton: some View {
         NavigationLink(destination:
-                        MainView()
+                        LoginView()
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
         ) {
@@ -34,7 +52,4 @@ struct WelcomeView: View {
         // .navigationViewStyle(StackNavigationViewStyle())
     }
     
-    var backgroundColor: some View {
-        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
-    }
 }
