@@ -15,7 +15,7 @@ struct MainView: View {
     init() {
         viewModel.input.viewDidLoad()
         
-        _ = viewModel.$testString.sink { value in
+        _ = viewModel.output.testPublisher.sink { value in
             Swift.print("[TEST] Value: \(String(describing: value))")
         }
     }

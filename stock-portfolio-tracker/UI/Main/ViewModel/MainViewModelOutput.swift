@@ -9,4 +9,5 @@ import Foundation
 
 protocol MainViewModelOutputType {
     var testString: String? { get }
+    var testPublisher: Published<String?>.Publisher { get }
 }

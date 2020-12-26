@@ -16,13 +16,16 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
     // MARK: - MainViewModelOutputType Variables
     
     @Published var testString: String?
+    var testPublisher: Published<String?>.Publisher { $testString }
     
 }
 
 extension MainViewModel: MainViewModelInputType {
     
     func viewDidLoad() {
-        Swift.print("Main View Model onViewDidLoad")
+        Swift.print("[TEST] Main View Model onViewDidLoad")
+        
+        testString = "TESTTT"
     }
     
 }
