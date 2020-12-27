@@ -17,6 +17,10 @@ class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutpu
 
 extension LoginViewModel: LoginViewModelInputType {
     
+    func signInAction() {
+        
+    }
+    
 }
 
 extension LoginViewModel: LoginViewModelOutputType {

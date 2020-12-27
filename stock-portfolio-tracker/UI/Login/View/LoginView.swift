@@ -16,11 +16,20 @@ struct LoginView: View {
         NavigationView {
             ZStack {
                 backgroundColor
-                VStack {
-                    
+                GeometryReader { metrics in
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.15) {
+                        logo.padding([.leading, .trailing], 21)
+                    }
                 }
             }
         }
+    }
+    
+    var logo: some View {
+        Text("Stock\nPortfolio\nTracker")
+            .foregroundColor(Color.white)
+            .font(.system(size: 36))
+            .fontWeight(.semibold)
     }
     
     var backgroundColor: some View {
