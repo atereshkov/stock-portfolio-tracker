@@ -11,12 +11,23 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
 
+  internal enum Common {
+    internal enum Label {
+      /// Stock\nPortfolio\nTracker
+      internal static let logo = L10n.tr("Localizable", "common.label.logo")
+    }
+  }
+
   internal enum Welcome {
     internal enum Button {
       internal enum Start {
         /// Let's start
         internal static let title = L10n.tr("Localizable", "welcome.button.start.title")
       }
+    }
+    internal enum Label {
+      /// Track your investments and dividends.\nSimple and easy.
+      internal static let subtitle = L10n.tr("Localizable", "welcome.label.subtitle")
     }
   }
 }

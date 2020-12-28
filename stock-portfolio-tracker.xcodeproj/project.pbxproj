@@ -11,6 +11,8 @@
 		36E127B5B46D7D31FBBE3A7A /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A246F25A26630FCA567C4286 /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */; };
 		45558E35B49F822FD5A8FEA8 /* Pods_stock_portfolio_tracker_prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73525670CC67CB787F8535D6 /* Pods_stock_portfolio_tracker_prod.framework */; };
 		CAC637C288E7062734FF3657 /* Pods_stock_portfolio_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD13168307EFB6089C716C /* Pods_stock_portfolio_trackerTests.framework */; };
+		CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
+		CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB378AE5258513AE00A5F14D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB378AE6258513AE00A5F14D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
@@ -98,6 +100,7 @@
 		7A6631CE7735A7FBE4092A50 /* Pods_stock_portfolio_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6F80D0ECBAA0ED26509226 /* Pods-stock-portfolio-tracker-prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-prod.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-prod/Pods-stock-portfolio-tracker-prod.debug.xcconfig"; sourceTree = "<group>"; };
 		A246F25A26630FCA567C4286 /* Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stock_portfolio_tracker_stock_portfolio_trackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB378AF1258513AE00A5F14D /* stock-portfolio-tracker-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "stock-portfolio-tracker-prod-Info.plist"; path = "/Users/nb-058-41b/Personal/stock-portfolio-tracker/stock-portfolio-tracker-prod-Info.plist"; sourceTree = "<absolute>"; };
@@ -463,6 +466,7 @@
 			children = (
 				CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */,
 				CB6F985D2597356B002A89AD /* PimaryButton.swift */,
+				CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -926,6 +930,7 @@
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
 				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
+				CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */,
@@ -957,6 +962,7 @@
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
+				CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,

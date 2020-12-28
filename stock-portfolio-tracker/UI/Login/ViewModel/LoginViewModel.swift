@@ -6,12 +6,16 @@
 //
 
 import Combine
+import SwiftUI
 
 class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutputType>, LoginViewModelType {
     
     override init(session: SessionType) {
         super.init(session: session)
     }
+    
+    @Published var email = ""
+    @Published var password = ""
     
 }
 

@@ -32,14 +32,14 @@ struct WelcomeView: View {
     }
     
     var title: some View {
-        Text("Stock\nPortfolio\nTracker")
+        Text(L10n.Common.Label.logo)
             .foregroundColor(Color.white)
             .font(.system(size: 48))
             .fontWeight(.semibold)
     }
     
     var subtitle: some View {
-        Text("Track your investments and dividends.\nSimple and easy.")
+        Text(L10n.Welcome.Label.subtitle)
             .foregroundColor(Color.white)
             .font(.system(size: 22))
             .fontWeight(.light)
