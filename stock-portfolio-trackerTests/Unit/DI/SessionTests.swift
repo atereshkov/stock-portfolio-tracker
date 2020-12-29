@@ -17,6 +17,7 @@ class SessionTests: XCTestCase {
         let _ : MainViewModel = session.resolve()
         let _ : WelcomeViewModel = session.resolve()
         let _ : LoginViewModel = session.resolve()
+        let _ : SignUpViewModel = session.resolve()
     }
 
 }

@@ -39,6 +39,9 @@ private extension Session {
         container.register { _ in
             return LoginViewModel(session: self)
         }
+        container.register { _ in
+            return SignUpViewModel(session: self)
+        }
     }
     
 }

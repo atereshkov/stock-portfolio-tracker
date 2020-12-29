@@ -63,9 +63,15 @@ struct LoginView: View {
     }
     
     var dontHaveAccountLabel: some View {
-        Text("I don't have an account")
-            .foregroundColor(Color.white)
-            .underline()
+        NavigationLink(destination:
+                        SignUpView()
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+        ) {
+            Text("I don't have an account")
+                .foregroundColor(Color.white)
+                .underline()
+        }
     }
     
     var backgroundColor: some View {
