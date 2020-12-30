@@ -9,4 +9,10 @@ import Foundation
 
 protocol SignUpViewModelInputType {
     func viewDidLoad()
+    
+    func signUpAction()
+    
+    var email: String { get }
+    var password: String { get }
+    var confirmPassword: String { get }
 }

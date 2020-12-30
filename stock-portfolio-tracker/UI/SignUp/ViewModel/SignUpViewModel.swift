@@ -13,6 +13,10 @@ class SignUpViewModel: BaseViewModel<SignUpViewModelInputType, SignUpViewModelOu
         super.init(session: session)
     }
     
+    @Published var email = ""
+    @Published var password = ""
+    @Published var confirmPassword = ""
+    
 }
 
 // MARK: - SignUpViewModelInputType
@@ -20,6 +24,10 @@ class SignUpViewModel: BaseViewModel<SignUpViewModelInputType, SignUpViewModelOu
 extension SignUpViewModel: SignUpViewModelInputType {
     
     func viewDidLoad() {
+        
+    }
+    
+    func signUpAction() {
         
     }
     

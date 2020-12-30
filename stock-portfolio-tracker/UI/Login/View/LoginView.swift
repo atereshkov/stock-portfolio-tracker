@@ -19,7 +19,7 @@ struct LoginView: View {
                 GeometryReader { metrics in
                     VStack(alignment: .leading, spacing: metrics.size.height * 0.15) {
                         logo.padding([.leading, .trailing], 21)
-                        container
+                        content
                     }
                 }
             }
@@ -33,7 +33,7 @@ struct LoginView: View {
             .fontWeight(.semibold)
     }
     
-    var container: some View {
+    var content: some View {
         VStack {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField.padding([.leading, .trailing], 21)
