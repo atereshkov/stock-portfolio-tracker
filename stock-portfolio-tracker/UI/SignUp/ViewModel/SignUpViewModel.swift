@@ -9,13 +9,16 @@ import Combine
 
 class SignUpViewModel: BaseViewModel<SignUpViewModelInputType, SignUpViewModelOutputType>, SignUpViewModelType {
     
+    private let authService: AuthServiceType
+    
     override init(session: SessionType) {
+        self.authService = session.resolve()
         super.init(session: session)
     }
     
-    @Published var email = ""
-    @Published var password = ""
-    @Published var confirmPassword = ""
+    @Published var email: String?
+    @Published var password: String?
+    @Published var confirmPassword: String?
     
 }
 
@@ -28,7 +31,8 @@ extension SignUpViewModel: SignUpViewModelInputType {
     }
     
     func signUpAction() {
-        
+        guard let email = email?.trim(), let pw = password?.trim() else { return }
+        authService.createUser(email: email, password: pw)
     }
     
 }

@@ -25,9 +25,15 @@ private extension Session {
     
     func bind() {
         bindViewModel()
+        bindService()
+        bindRepository()
         
         DICE.use(container)
     }
+    
+}
+
+private extension Session {
     
     func bindViewModel() {
         container.register { _ in
@@ -41,6 +47,26 @@ private extension Session {
         }
         container.register { _ in
             return SignUpViewModel(session: self)
+        }
+    }
+    
+}
+
+private extension Session {
+    
+    func bindService() {
+        container.register(AuthServiceType.self) { _ in
+            return AuthService()
+        }
+    }
+    
+}
+
+private extension Session {
+    
+    func bindRepository() {
+        container.register(AuthRepositoryType.self) { _ in
+            return FirebaseAuthRepository()
         }
     }
     

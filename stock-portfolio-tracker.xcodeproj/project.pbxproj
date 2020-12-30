@@ -23,6 +23,14 @@
 		CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DA0259BB420004BA1FD /* SignUpViewModelInput.swift */; };
 		CB0D1DA8259BB429004BA1FD /* SignUpViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DA7259BB429004BA1FD /* SignUpViewModelOutput.swift */; };
 		CB0D1DA9259BB429004BA1FD /* SignUpViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DA7259BB429004BA1FD /* SignUpViewModelOutput.swift */; };
+		CB0D1DB1259CA5B0004BA1FD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DB0259CA5B0004BA1FD /* AuthService.swift */; };
+		CB0D1DB2259CA5B0004BA1FD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DB0259CA5B0004BA1FD /* AuthService.swift */; };
+		CB0D1DB9259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DB8259CA961004BA1FD /* FirebasesAuthRepository.swift */; };
+		CB0D1DBA259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DB8259CA961004BA1FD /* FirebasesAuthRepository.swift */; };
+		CB0D1DC1259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */; };
+		CB0D1DC2259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */; };
+		CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */; };
+		CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */; };
 		CB378AE5258513AE00A5F14D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB378AE6258513AE00A5F14D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
@@ -116,6 +124,10 @@
 		CB0D1D99259BB411004BA1FD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		CB0D1DA0259BB420004BA1FD /* SignUpViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelInput.swift; sourceTree = "<group>"; };
 		CB0D1DA7259BB429004BA1FD /* SignUpViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelOutput.swift; sourceTree = "<group>"; };
+		CB0D1DB0259CA5B0004BA1FD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CB0D1DB8259CA961004BA1FD /* FirebasesAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasesAuthRepository.swift; sourceTree = "<group>"; };
+		CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryType.swift; sourceTree = "<group>"; };
+		CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB378AF1258513AE00A5F14D /* stock-portfolio-tracker-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "stock-portfolio-tracker-prod-Info.plist"; path = "/Users/nb-058-41b/Personal/stock-portfolio-tracker/stock-portfolio-tracker-prod-Info.plist"; sourceTree = "<absolute>"; };
@@ -253,6 +265,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB0D1DAE259CA50F004BA1FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D1DB0259CA5B0004BA1FD /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CB0D1DAF259CA585004BA1FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB0D1DB7259CA951004BA1FD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D1DBF259CA980004BA1FD /* Auth */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CB0D1DBF259CA980004BA1FD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */,
+				CB0D1DB8259CA961004BA1FD /* FirebasesAuthRepository.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CB0D1DFD259CBE8C004BA1FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CB378B162585157B00A5F14D /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,7 +416,11 @@
 				CBE4E8FC25950136002ECCF0 /* App */,
 				CB378B50258546CD00A5F14D /* Core */,
 				CB378B602585473A00A5F14D /* UI */,
+				CB0D1DAF259CA585004BA1FD /* Model */,
+				CB0D1DB7259CA951004BA1FD /* Repository */,
+				CB0D1DAE259CA50F004BA1FD /* Service */,
 				CB378B162585157B00A5F14D /* Firebase */,
+				CB0D1DFD259CBE8C004BA1FD /* Extension */,
 				CBE4E92A259510AC002ECCF0 /* Resources */,
 				CB4364942584DCCD0074FBD0 /* Info.plist */,
 				CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */,
@@ -964,7 +1020,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0D1DC2259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */,
 				CB378B5B2585471A00A5F14D /* Session.swift in Sources */,
+				CB0D1DBA259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
+				CB0D1DB2259CA5B0004BA1FD /* AuthService.swift in Sources */,
 				CBE4E96D25951247002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB378AE5258513AE00A5F14D /* MainView.swift in Sources */,
 				CB6F985F2597356B002A89AD /* PimaryButton.swift in Sources */,
@@ -977,6 +1036,7 @@
 				CB0D1D94259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
+				CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
 				CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
@@ -1001,7 +1061,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0D1DC1259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */,
 				CBE4E9582595122E002ECCF0 /* assets.swift in Sources */,
+				CB0D1DB9259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
+				CB0D1DB1259CA5B0004BA1FD /* AuthService.swift in Sources */,
 				CB378B5A2585471A00A5F14D /* Session.swift in Sources */,
 				CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */,
@@ -1014,6 +1077,7 @@
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
+				CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
 				CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,

@@ -8,6 +8,7 @@ def app_pods
   
   # Firebase
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
   
   # Code generation
   pod 'SwiftGen', '~> 6.4'

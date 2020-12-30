@@ -2,6 +2,9 @@ PODS:
   - DICE (0.9.1)
   - Firebase/Analytics (7.1.0):
     - Firebase/Core
+  - Firebase/Auth (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 7.1.0)
   - Firebase/Core (7.1.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 7.1.0)
@@ -16,6 +19,11 @@ PODS:
     - GoogleUtilities/Network (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
     - nanopb (~> 2.30906.0)
+  - FirebaseAuth (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
   - FirebaseCore (7.1.0):
     - FirebaseCoreDiagnostics (~> 7.0)
     - GoogleUtilities/Environment (~> 7.0)
@@ -57,6 +65,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.1.0):
     - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.5.0)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
     - nanopb/encode (= 2.30906.0)
@@ -69,6 +78,7 @@ PODS:
 DEPENDENCIES:
   - DICE (~> 0.9.0)
   - Firebase/Analytics
+  - Firebase/Auth
   - SwiftGen (~> 6.4)
   - SwiftLint (~> 0.41)
 
@@ -77,12 +87,14 @@ SPEC REPOS:
     - DICE
     - Firebase
     - FirebaseAnalytics
+    - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseInstallations
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - GTMSessionFetcher
     - nanopb
     - PromisesObjC
     - SwiftGen
@@ -92,17 +104,19 @@ SPEC CHECKSUMS:
   DICE: e63254a93117ded4819cd95a97a4e7edecbee850
   Firebase: 78e8dd2e39d653de6270432ad84fe8b59f7bf4e8
   FirebaseAnalytics: 7f165a56dea86ddd5b8ce02af3bee982c683405c
+  FirebaseAuth: f82c2cfcc1c107bb0a97735cdbce4eb2a601f710
   FirebaseCore: 20046127eef0fcb8fa25df7fc12f7b97d4e48611
   FirebaseCoreDiagnostics: 872cdb9b749b23346dddd5c1014d1babd2257de3
   FirebaseInstallations: 3de38553e86171b5f81d83cdeef63473d37bfdb0
   GoogleAppMeasurement: 89e1a64593f968713b0506ba1b53b38a154bf9a5
   GoogleDataTransport: e4085e6762f36a6141738f46b0153473ce57fb18
   GoogleUtilities: f734da554aade8cc7928a31c2f3311897933a1bd
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
 
-PODFILE CHECKSUM: 7d66197b176f269ac4e99227a817813987c2c193
+PODFILE CHECKSUM: 920e9ae8101b131054530cad6e6f2c1d5e34cd15
 
 COCOAPODS: 1.10.0

@@ -12,7 +12,7 @@ protocol SignUpViewModelInputType {
     
     func signUpAction()
     
-    var email: String { get }
-    var password: String { get }
-    var confirmPassword: String { get }
+    var email: String? { get }
+    var password: String? { get }
+    var confirmPassword: String? { get }
 }

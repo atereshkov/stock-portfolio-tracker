@@ -48,21 +48,21 @@ struct SignUpView: View {
     
     var emailTextField: some View {
         TextField("E-mail", text: Binding(
-                    get: { viewModel.email },
+                    get: { viewModel.email ?? "" },
                     set: { viewModel.email = $0 })
         ).textFieldStyle(PrimaryTextField())
     }
     
     var passwordTextField: some View {
         SecureField("Password", text: Binding(
-                    get: { viewModel.password },
+                    get: { viewModel.password ?? "" },
                     set: { viewModel.password = $0 })
         ).textFieldStyle(PrimaryTextField())
     }
     
     var confirmPasswordTextField: some View {
         SecureField("Confirm password", text: Binding(
-                    get: { viewModel.confirmPassword },
+                    get: { viewModel.confirmPassword ?? "" },
                     set: { viewModel.confirmPassword = $0 })
         ).textFieldStyle(PrimaryTextField())
     }
