@@ -90,6 +90,8 @@
 		CBE4EA0F259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */; };
 		CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */; };
 		CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */; };
+		CBF8429825A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8429725A660E700C116B4 /* PlaceholderViewModifier.swift */; };
+		CBF8429925A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF8429725A660E700C116B4 /* PlaceholderViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +172,7 @@
 		CBE4EA0D259671A0002ECCF0 /* LoginViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelInput.swift; sourceTree = "<group>"; };
 		CBE4EA14259671B5002ECCF0 /* LoginViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelOutput.swift; sourceTree = "<group>"; };
 		CBF684FBD3C4D3B809F9D265 /* Pods-stock-portfolio-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-trackerTests.release.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-trackerTests/Pods-stock-portfolio-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBF8429725A660E700C116B4 /* PlaceholderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewModifier.swift; sourceTree = "<group>"; };
 		D5E261E788ED05604EF62781 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E74B736F3F9B3AB0E10C3F18 /* Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests/Pods-stock-portfolio-tracker-stock-portfolio-trackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FF91B69167E1C1226DD44DCF /* Pods-stock-portfolio-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stock-portfolio-tracker.release.xcconfig"; path = "Target Support Files/Pods-stock-portfolio-tracker/Pods-stock-portfolio-tracker.release.xcconfig"; sourceTree = "<group>"; };
@@ -355,6 +358,7 @@
 				CB378B612585474400A5F14D /* Main */,
 				CB0D1D84259BB3CE004BA1FD /* SignUp */,
 				CBE4E9E525964E71002ECCF0 /* View */,
+				CBF8429625A660CC00C116B4 /* ViewModifier */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -613,6 +617,14 @@
 				CB6F984925972EAE002A89AD /* DI */,
 			);
 			path = Unit;
+			sourceTree = "<group>";
+		};
+		CBF8429625A660CC00C116B4 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8429725A660E700C116B4 /* PlaceholderViewModifier.swift */,
+			);
+			path = ViewModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1041,6 +1053,7 @@
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
+				CBF8429925A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DC259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
@@ -1082,6 +1095,7 @@
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CB0D1DA1259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
+				CBF8429825A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DB259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,

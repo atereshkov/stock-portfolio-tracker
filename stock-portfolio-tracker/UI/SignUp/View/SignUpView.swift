@@ -19,7 +19,7 @@ struct SignUpView: View {
             ZStack {
                 backgroundColor
                 GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.15) {
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
                         logo.padding([.leading, .trailing], 21)
                         content
                     }
@@ -38,45 +38,67 @@ struct SignUpView: View {
     var content: some View {
         VStack {
             emailTextField.padding([.leading, .trailing], 21)
-            passwordTextField.padding([.leading, .trailing], 21)
-            confirmPasswordTextField.padding([.leading, .trailing], 21)
-            signUpButton.padding([.leading, .trailing], 21)
-            dontWantToSignUpButton.padding([.leading, .trailing], 21)
-            alreadyHaveAccountLabel.padding()
+            passwordTextField
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 24)
+            confirmPasswordTextField
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 24)
+            signUpButton
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 24)
+            dontWantToSignUpButton
+                .padding([.leading, .trailing], 21)
+                .padding([.top], 15)
+            alreadyHaveAccountLabel
+                .padding()
+                .padding([.top], 24)
         }
     }
     
     var emailTextField: some View {
-        TextField("E-mail", text: Binding(
+        TextField("", text: Binding(
                     get: { viewModel.email ?? "" },
                     set: { viewModel.email = $0 })
-        ).textFieldStyle(PrimaryTextField())
+        )
+        .textFieldStyle(PrimaryTextField())
+        .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
     var passwordTextField: some View {
-        SecureField("Password", text: Binding(
+        SecureField("", text: Binding(
                     get: { viewModel.password ?? "" },
                     set: { viewModel.password = $0 })
-        ).textFieldStyle(PrimaryTextField())
+        )
+        .textFieldStyle(PrimaryTextField())
+        .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     
     var confirmPasswordTextField: some View {
-        SecureField("Confirm password", text: Binding(
+        SecureField("", text: Binding(
                     get: { viewModel.confirmPassword ?? "" },
                     set: { viewModel.confirmPassword = $0 })
         ).textFieldStyle(PrimaryTextField())
+        .placeHolder(Text("Confirm password"), show: viewModel.confirmPassword?.isEmpty ?? true)
     }
     
     var signUpButton: some View {
         Button("Sign Up") {
             viewModel.input.signUpAction()
-        }
+        }.buttonStyle(PrimaryButton())
     }
     
     var dontWantToSignUpButton: some View {
         Button("I don't want to sign up") {
             
         }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .foregroundColor(.white)
+        .font(.system(size: 16, weight: .semibold))
+        .background(Color.clear)
+        .shadow(color: Color.black.opacity(0.05), radius: 7, x: 0, y: 6)
+        .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.white, lineWidth: 1))
     }
     
     var alreadyHaveAccountLabel: some View {
