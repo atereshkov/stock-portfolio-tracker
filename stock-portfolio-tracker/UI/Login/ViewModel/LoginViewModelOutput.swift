@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginViewModelOutputType {
-    
+    var state: LoginViewState { get }
 }

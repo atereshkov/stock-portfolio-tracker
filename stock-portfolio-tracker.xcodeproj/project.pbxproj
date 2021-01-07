@@ -59,6 +59,12 @@
 		CB41434B25A71C21006D06F2 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41434925A71C21006D06F2 /* AppViewModel.swift */; };
 		CB41435925A72221006D06F2 /* AuthListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListener.swift */; };
 		CB41435A25A72221006D06F2 /* AuthListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListener.swift */; };
+		CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41436825A73DE3006D06F2 /* LoginViewState.swift */; };
+		CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41436825A73DE3006D06F2 /* LoginViewState.swift */; };
+		CB41437425A7426C006D06F2 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41437325A7426C006D06F2 /* CircleLoadingView.swift */; };
+		CB41437525A7426C006D06F2 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41437325A7426C006D06F2 /* CircleLoadingView.swift */; };
+		CB41437C25A787EB006D06F2 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41437B25A787EB006D06F2 /* LoginRouting.swift */; };
+		CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41437B25A787EB006D06F2 /* LoginRouting.swift */; };
 		CB43648C2584DCCA0074FBD0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB4364902584DCCD0074FBD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Images.xcassets */; };
@@ -161,6 +167,9 @@
 		CB41433D25A71BBD006D06F2 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		CB41434925A71C21006D06F2 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		CB41435825A72221006D06F2 /* AuthListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthListener.swift; sourceTree = "<group>"; };
+		CB41436825A73DE3006D06F2 /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
+		CB41437325A7426C006D06F2 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
+		CB41437B25A787EB006D06F2 /* LoginRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouting.swift; sourceTree = "<group>"; };
 		CB4364882584DCCA0074FBD0 /* stock-portfolio-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43648B2584DCCA0074FBD0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB43648D2584DCCA0074FBD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -443,6 +452,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		CB41437A25A787D6006D06F2 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CB41437B25A787EB006D06F2 /* LoginRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		CB43647F2584DCC90074FBD0 = {
 			isa = PBXGroup;
 			children = (
@@ -627,6 +644,7 @@
 				CBE4E9E625964E7D002ECCF0 /* NavigationLazyView.swift */,
 				CB6F985D2597356B002A89AD /* PimaryButton.swift */,
 				CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */,
+				CB41437325A7426C006D06F2 /* CircleLoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -634,6 +652,7 @@
 		CBE4E9F125966D6B002ECCF0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				CB41437A25A787D6006D06F2 /* Routing */,
 				CBE4E9F325967121002ECCF0 /* View */,
 				CBE4E9F225967112002ECCF0 /* ViewModel */,
 			);
@@ -655,6 +674,7 @@
 			isa = PBXGroup;
 			children = (
 				CBE4E9F42596712D002ECCF0 /* LoginView.swift */,
+				CB41436825A73DE3006D06F2 /* LoginViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1109,6 +1129,7 @@
 				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
+				CB41437525A7426C006D06F2 /* CircleLoadingView.swift in Sources */,
 				CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
@@ -1125,9 +1146,11 @@
 				CB41433725A71B79006D06F2 /* RootRouting.swift in Sources */,
 				CBE4E9E825964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
+				CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432925A7121D006D06F2 /* Store.swift in Sources */,
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
+				CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB41433F25A71BBD006D06F2 /* CancelBag.swift in Sources */,
@@ -1159,6 +1182,7 @@
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
+				CB41437425A7426C006D06F2 /* CircleLoadingView.swift in Sources */,
 				CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
@@ -1175,9 +1199,11 @@
 				CB41433625A71B79006D06F2 /* RootRouting.swift in Sources */,
 				CBE4E9E725964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
+				CB41437C25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432825A7121D006D06F2 /* Store.swift in Sources */,
 				CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
+				CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB41433E25A71BBD006D06F2 /* CancelBag.swift in Sources */,

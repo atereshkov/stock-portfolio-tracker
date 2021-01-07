@@ -24,6 +24,16 @@ struct LoginView: View {
                 }
             }
         }
+        .alert(isPresented: $viewModel.routingState.showErrorAlert, content: {
+            switch viewModel.output.state {
+            case .loginFailed(let error):
+                return Alert(title: Text("Error"),
+                             message: Text(error),
+                             dismissButton: .default(Text("OK")))
+            default:
+                return Alert(title: Text(""))
+            }
+        })
     }
     
     var logo: some View {
@@ -34,6 +44,17 @@ struct LoginView: View {
     }
     
     var content: some View {
+        switch viewModel.state {
+        case .start:
+            return AnyView(form)
+        case .loading:
+            return AnyView(loadingIndicator)
+        case .loginFailed(_):
+            return AnyView(form)
+        }
+    }
+    
+    var form: some View {
         VStack {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField
@@ -43,6 +64,14 @@ struct LoginView: View {
                 .padding([.leading, .trailing], 21)
                 .padding([.top], 24)
             dontHaveAccountLabel.padding()
+        }
+    }
+    
+    var loadingIndicator: some View {
+        GeometryReader { metrics in
+            CircleLoadingView(color: Color.white)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: metrics.size.height * 0.2)
         }
     }
     
@@ -57,8 +86,8 @@ struct LoginView: View {
     
     var passwordTextField: some View {
         SecureField("", text: Binding(
-                    get: { viewModel.password },
-                    set: { viewModel.password = $0 })
+                        get: { viewModel.password },
+                        set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
         .placeHolder(Text("Password"), show: viewModel.password.isEmpty)

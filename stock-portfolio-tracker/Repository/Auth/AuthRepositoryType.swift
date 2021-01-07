@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 protocol AuthRepositoryType {
     
-    func createUser(email: String, password: String)
+    func createUser(email: String, password: String) -> Future<Void, Error>
+    
+    func signIn(email: String, password: String) -> Future<Void, Error>
     
     func logout()
 }

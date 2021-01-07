@@ -6,14 +6,35 @@
 //
 
 import FirebaseAuth
+import Combine
 
 class FirebaseAuthRepository: AuthRepositoryType {
     
-    func createUser(email: String, password: String) {
-//        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-//            Swift.print(authResult)
-//            Swift.print(error)
-//        }
+    private var cancelBag = CancelBag()
+    
+    func createUser(email: String, password: String) -> Future<Void, Error> {
+        return Future { resolve in
+            Auth.auth().createUser(withEmail: email, password: password) { _, error in
+                if let error = error {
+                    resolve(.failure(error))
+                } else {
+                    resolve(.success(()))
+                }
+            }
+        }
+    }
+    
+    func signIn(email: String, password: String) -> Future<Void, Error> {
+        return Future { resolve in
+            Auth.auth().signIn(withEmail: email, password: password) { _, error in
+                if let error = error {
+                    // handle AuthErrorCode, map to custom error
+                    resolve(.failure(error))
+                } else {
+                    resolve(.success(()))
+                }
+            }
+        }
     }
     
     func logout() {

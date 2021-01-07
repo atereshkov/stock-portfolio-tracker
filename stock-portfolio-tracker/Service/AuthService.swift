@@ -6,10 +6,13 @@
 //
 
 import DICE
+import Combine
 
 protocol AuthServiceType {
     
-    func createUser(email: String, password: String)
+    func createUser(email: String, password: String) -> Future<Void, Error>
+    
+    func signIn(email: String, password: String) -> Future<Void, Error>
     
     func logout()
     
@@ -23,8 +26,12 @@ class AuthService: AuthServiceType {
 
 extension AuthService {
     
-    func createUser(email: String, password: String) {
-        authRepository.createUser(email: email, password: password)
+    func createUser(email: String, password: String) -> Future<Void, Error> {
+        return authRepository.createUser(email: email, password: password)
+    }
+    
+    func signIn(email: String, password: String) -> Future<Void, Error> {
+        return authRepository.signIn(email: email, password: password)
     }
     
     func logout() {

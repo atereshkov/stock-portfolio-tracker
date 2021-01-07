@@ -11,18 +11,19 @@ import Combine
 class AppViewModel: ObservableObject {
     
     @Published var routingState: RootRouting
-    @Published var isAuthorized: Bool = false
+    @Published var isAuthorized: Bool = true
     
     let session: SessionType
-    
-    private var cancelBag = CancelBag()
+    let cancelBag = CancelBag()
     
     init(session: SessionType) {
         self.session = session
         
         _routingState = .init(initialValue: session.appState.value.routing.root)
         
-        session.appState.map(\.userData.isAuthorized)
+        // TODO check local auth service/etc to and set isAuthorized to improve UX
+        
+        session.appState.map(\.auth.isAuthorized)
             .removeDuplicates()
             .assign(to: \.isAuthorized, on: self)
             .store(in: cancelBag)

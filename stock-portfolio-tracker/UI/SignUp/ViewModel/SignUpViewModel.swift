@@ -6,10 +6,13 @@
 //
 
 import Combine
+import SwiftUI
 
 class SignUpViewModel: BaseViewModel<SignUpViewModelInputType, SignUpViewModelOutputType>, SignUpViewModelType {
     
     private let authService: AuthServiceType
+    
+    private var cancelBag = CancelBag()
     
     override init(session: SessionType) {
         self.authService = session.resolve()
@@ -32,7 +35,20 @@ extension SignUpViewModel: SignUpViewModelInputType {
     
     func signUpAction() {
         guard let email = email?.trim(), let pw = password?.trim() else { return }
-        authService.createUser(email: email, password: pw)
+        authService
+            .createUser(email: email, password: pw)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    Swift.print("Error: \(error)")
+                case .finished:
+                    break
+                }
+            }, receiveValue: { _ in
+                
+            })
+            .store(in: cancelBag)
     }
     
 }

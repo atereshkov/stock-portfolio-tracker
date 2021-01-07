@@ -30,8 +30,8 @@ private extension AuthListener {
     
     private func listenAuthChanges() {
         Auth.auth().addStateDidChangeListener { [weak self] _, user in
-            Swift.print("[TEST] Listener auth user: \(String(describing: user))")
-            self?.appState[\.userData.isAuthorized] = user != nil
+            self?.appState[\.auth.isAuthorized] = user != nil
+            self?.appState[\.user.id] = user?.uid
         }
     }
     
