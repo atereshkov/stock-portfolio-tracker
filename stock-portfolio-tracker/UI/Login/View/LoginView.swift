@@ -81,6 +81,8 @@ struct LoginView: View {
                     set: { viewModel.email = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .keyboardType(.emailAddress)
+        .disableAutocorrection(true)
         .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
@@ -90,6 +92,7 @@ struct LoginView: View {
                         set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     

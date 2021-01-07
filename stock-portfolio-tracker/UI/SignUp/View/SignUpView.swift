@@ -62,6 +62,8 @@ struct SignUpView: View {
                     set: { viewModel.email = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .keyboardType(.emailAddress)
+        .disableAutocorrection(true)
         .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
@@ -71,6 +73,7 @@ struct SignUpView: View {
                     set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     
@@ -78,7 +81,9 @@ struct SignUpView: View {
         SecureField("", text: Binding(
                     get: { viewModel.confirmPassword ?? "" },
                     set: { viewModel.confirmPassword = $0 })
-        ).textFieldStyle(PrimaryTextField())
+        )
+        .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
         .placeHolder(Text("Confirm password"), show: viewModel.confirmPassword?.isEmpty ?? true)
     }
     
