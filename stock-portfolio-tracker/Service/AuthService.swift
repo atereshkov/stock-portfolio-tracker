@@ -8,7 +8,11 @@
 import DICE
 
 protocol AuthServiceType {
+    
     func createUser(email: String, password: String)
+    
+    func logout()
+    
 }
 
 class AuthService: AuthServiceType {
@@ -21,6 +25,10 @@ extension AuthService {
     
     func createUser(email: String, password: String) {
         authRepository.createUser(email: email, password: password)
+    }
+    
+    func logout() {
+        authRepository.logout()
     }
     
 }

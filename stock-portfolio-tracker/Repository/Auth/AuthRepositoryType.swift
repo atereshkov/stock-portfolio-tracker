@@ -8,5 +8,8 @@
 import Foundation
 
 protocol AuthRepositoryType {
+    
     func createUser(email: String, password: String)
+    
+    func logout()
 }

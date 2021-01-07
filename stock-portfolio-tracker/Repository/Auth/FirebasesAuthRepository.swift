@@ -10,9 +10,17 @@ import FirebaseAuth
 class FirebaseAuthRepository: AuthRepositoryType {
     
     func createUser(email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            Swift.print(authResult)
-            Swift.print(error)
+//        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+//            Swift.print(authResult)
+//            Swift.print(error)
+//        }
+    }
+    
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+        } catch {
+            Swift.print(error.localizedDescription)
         }
     }
     

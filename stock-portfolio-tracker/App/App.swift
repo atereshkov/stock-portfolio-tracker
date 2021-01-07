@@ -6,20 +6,26 @@
 //
 
 import SwiftUI
-import Firebase
+import DICE
 
 @main
 struct SPTApp: App {
     
-    private let session = Session()
+    let environment = AppEnvironment.boot()
+    
+    @EnvironmentObservableInjected var viewModel: AppViewModel
     
     init() {
-        FirebaseApp.configure()
+        
     }
     
     var body: some Scene {
         WindowGroup {
-            WelcomeView()
+            if viewModel.isAuthorized {
+                MainView()
+            } else {
+                WelcomeView()
+            }
         }
     }
 }

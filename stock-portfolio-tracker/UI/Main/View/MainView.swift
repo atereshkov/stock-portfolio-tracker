@@ -21,7 +21,24 @@ struct MainView: View {
     }
     
     var body: some View {
-        Text(viewModel.output.testString ?? "")
-            .padding()
+        NavigationView {
+            ZStack {
+                backgroundColor
+                GeometryReader { metrics in
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
+                        Text(viewModel.output.testString ?? "")
+                            .padding()
+                        Button("Sign Out") {
+                            viewModel.input.signOutAction()
+                        }.buttonStyle(PrimaryButton())
+                    }
+                }
+            }
+        }
     }
+    
+    var backgroundColor: some View {
+        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
+    }
+    
 }

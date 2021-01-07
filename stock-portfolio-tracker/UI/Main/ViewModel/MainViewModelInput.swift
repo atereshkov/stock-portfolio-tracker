@@ -9,4 +9,6 @@ import Foundation
 
 protocol MainViewModelInputType {
     func viewDidLoad()
+    
+    func signOutAction()
 }

@@ -9,7 +9,10 @@ import Combine
 
 class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputType>, MainViewModelType {
     
+    private let authService: AuthServiceType
+    
     override init(session: SessionType) {
+        self.authService = session.resolve()
         super.init(session: session)
     }
     
@@ -24,6 +27,10 @@ extension MainViewModel: MainViewModelInputType {
     
     func viewDidLoad() {
         Swift.print("[TEST] Main View Model onViewDidLoad")
+    }
+    
+    func signOutAction() {
+        authService.logout()
     }
     
 }

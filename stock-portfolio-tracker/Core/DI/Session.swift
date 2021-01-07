@@ -9,9 +9,12 @@ import DICE
 
 class Session: SessionType {
     
-    private(set) var container: DIContainer = DIContainer()
+    let container: DIContainer
+    let appState: Store<AppState>
     
-    init() {
+    init(container: DIContainer, appState: Store<AppState>) {
+        self.container = container
+        self.appState = appState
         bind()
     }
     
@@ -37,6 +40,9 @@ private extension Session {
     
     func bindViewModel() {
         container.register { _ in
+            return AppViewModel(session: self)
+        }
+        container.register { _ in
             return MainViewModel(session: self)
         }
         container.register { _ in
@@ -57,6 +63,9 @@ private extension Session {
     func bindService() {
         container.register(AuthServiceType.self) { _ in
             return AuthService()
+        }
+        container.register(AuthListenerServiceType.self, scope: .single) { _ in
+            return AuthListenerService(appState: self.appState)
         }
     }
     

@@ -9,6 +9,7 @@ import DICE
 
 protocol SessionType {
     var container: DIContainer { get }
+    var appState: Store<AppState> { get }
     
     func resolve<T>() -> T
 }
