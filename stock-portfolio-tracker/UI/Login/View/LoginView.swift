@@ -17,9 +17,9 @@ struct LoginView: View {
             ZStack {
                 backgroundColor
                 GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
+                    VStack(alignment: .leading) {
                         logo.padding([.leading, .trailing], 21)
-                        content
+                        content.padding(.top, metrics.size.height * 0.07)
                     }
                 }
             }
@@ -59,10 +59,10 @@ struct LoginView: View {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 24)
+                .padding([.top], 18)
             signInButton
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 24)
+                .padding([.top], 18)
             dontHaveAccountLabel.padding()
         }
     }

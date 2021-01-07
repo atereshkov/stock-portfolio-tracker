@@ -19,9 +19,9 @@ struct SignUpView: View {
             ZStack {
                 backgroundColor
                 GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
+                    VStack(alignment: .leading) {
                         logo.padding([.leading, .trailing], 21)
-                        content
+                        content.padding(.top, metrics.size.height * 0.07)
                     }
                 }
             }
@@ -40,19 +40,19 @@ struct SignUpView: View {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 24)
+                .padding([.top], 18)
             confirmPasswordTextField
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 24)
+                .padding([.top], 18)
             signUpButton
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 24)
+                .padding([.top], 18)
             dontWantToSignUpButton
                 .padding([.leading, .trailing], 21)
-                .padding([.top], 15)
+                .padding([.top], 9)
             alreadyHaveAccountLabel
                 .padding()
-                .padding([.top], 24)
+                .padding([.top], 18)
         }
     }
     
