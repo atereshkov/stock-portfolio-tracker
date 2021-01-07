@@ -21,19 +21,35 @@ struct MainView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                backgroundColor
-                GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
-                        Text(viewModel.output.testString ?? "")
-                            .padding()
-                        Button("Sign Out") {
-                            viewModel.input.signOutAction()
-                        }.buttonStyle(PrimaryButton())
-                    }
+        content
+//        NavigationView {
+//            ZStack {
+//                backgroundColor
+//                GeometryReader { metrics in
+//                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
+//                        Text(viewModel.output.testString ?? "")
+//                            .padding()
+//                        Button("Sign Out") {
+//                            viewModel.input.signOutAction()
+//                        }.buttonStyle(PrimaryButton())
+//                    }
+//                }
+//            }
+//        }
+    }
+    
+    var content: some View {
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Menu")
                 }
-            }
+            DividendsView()
+                .tabItem {
+                    Image(systemName: "square.and.pencil")
+                    Text("Dividends")
+                }
         }
     }
     

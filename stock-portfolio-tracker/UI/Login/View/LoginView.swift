@@ -44,7 +44,7 @@ struct LoginView: View {
     }
     
     var content: some View {
-        switch viewModel.state {
+        switch viewModel.output.state {
         case .start:
             return AnyView(form)
         case .loading:

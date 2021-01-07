@@ -16,12 +16,14 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
         super.init(session: session)
     }
     
-    // MARK: - MainViewModelOutputType Variables
+    // MARK: - MainViewModelOutputType
     
     @Published var testString: String?
     var testPublisher: Published<String?>.Publisher { $testString }
     
 }
+
+// MARK: - MainViewModelInputType
 
 extension MainViewModel: MainViewModelInputType {
     

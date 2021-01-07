@@ -53,6 +53,12 @@ private extension Session {
         container.register { _ in
             return SignUpViewModel(session: self)
         }
+        container.register { _ in
+            return HomeViewModel(session: self)
+        }
+        container.register { _ in
+            return DividendsViewModel(session: self)
+        }
     }
     
 }
