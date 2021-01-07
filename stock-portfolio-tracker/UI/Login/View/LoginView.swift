@@ -77,20 +77,20 @@ struct LoginView: View {
     
     var emailTextField: some View {
         TextField("", text: Binding(
-                    get: { viewModel.email },
+                    get: { viewModel.email ?? "" },
                     set: { viewModel.email = $0 })
         )
         .textFieldStyle(PrimaryTextField())
-        .placeHolder(Text("E-mail"), show: viewModel.email.isEmpty)
+        .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
     var passwordTextField: some View {
         SecureField("", text: Binding(
-                        get: { viewModel.password },
+                        get: { viewModel.password ?? "" },
                         set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
-        .placeHolder(Text("Password"), show: viewModel.password.isEmpty)
+        .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     
     var signInButton: some View {

@@ -10,6 +10,6 @@ import SwiftUI
 protocol LoginViewModelInputType {
     func signInAction()
     
-    var email: String { get set }
-    var password: String { get set }
+    var email: String? { get set }
+    var password: String? { get set }
 }

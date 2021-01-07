@@ -35,6 +35,8 @@ extension SignUpViewModel: SignUpViewModelInputType {
     
     func signUpAction() {
         guard let email = email?.trim(), let pw = password?.trim() else { return }
+        guard !email.isEmpty, !pw.isEmpty else { return }
+        
         authService
             .createUser(email: email, password: pw)
             .receive(on: DispatchQueue.main)
