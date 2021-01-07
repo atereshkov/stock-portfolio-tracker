@@ -31,6 +31,10 @@
 		CB0D1DC2259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */; };
 		CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */; };
 		CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */; };
+		CB0FDE9F25A7A398009D7BDB /* SignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDE9E25A7A398009D7BDB /* SignUpViewState.swift */; };
+		CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDE9E25A7A398009D7BDB /* SignUpViewState.swift */; };
+		CB0FDEA825A7A420009D7BDB /* SignUpRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDEA725A7A420009D7BDB /* SignUpRouting.swift */; };
+		CB0FDEA925A7A420009D7BDB /* SignUpRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDEA725A7A420009D7BDB /* SignUpRouting.swift */; };
 		CB378AE5258513AE00A5F14D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB378AE6258513AE00A5F14D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
@@ -152,6 +156,8 @@
 		CB0D1DB8259CA961004BA1FD /* FirebasesAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasesAuthRepository.swift; sourceTree = "<group>"; };
 		CB0D1DC0259CA98E004BA1FD /* AuthRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryType.swift; sourceTree = "<group>"; };
 		CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		CB0FDE9E25A7A398009D7BDB /* SignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewState.swift; sourceTree = "<group>"; };
+		CB0FDEA725A7A420009D7BDB /* SignUpRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouting.swift; sourceTree = "<group>"; };
 		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB378AF1258513AE00A5F14D /* stock-portfolio-tracker-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "stock-portfolio-tracker-prod-Info.plist"; path = "/Users/nb-058-41b/Personal/stock-portfolio-tracker/stock-portfolio-tracker-prod-Info.plist"; sourceTree = "<absolute>"; };
@@ -276,6 +282,7 @@
 		CB0D1D84259BB3CE004BA1FD /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				CB0FDEA525A7A40E009D7BDB /* Routing */,
 				CB0D1D86259BB3DB004BA1FD /* View */,
 				CB0D1D85259BB3D6004BA1FD /* ViewModel */,
 			);
@@ -297,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */,
+				CB0FDE9E25A7A398009D7BDB /* SignUpViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +348,14 @@
 				CB0D1DFE259CBE9F004BA1FD /* StringExtensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CB0FDEA525A7A40E009D7BDB /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CB0FDEA725A7A420009D7BDB /* SignUpRouting.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		CB378B162585157B00A5F14D /* Firebase */ = {
@@ -1148,9 +1164,11 @@
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
 				CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432925A7121D006D06F2 /* Store.swift in Sources */,
+				CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */,
+				CB0FDEA925A7A420009D7BDB /* SignUpRouting.swift in Sources */,
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB41433F25A71BBD006D06F2 /* CancelBag.swift in Sources */,
@@ -1201,9 +1219,11 @@
 				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
 				CB41437C25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432825A7121D006D06F2 /* Store.swift in Sources */,
+				CB0FDE9F25A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */,
+				CB0FDEA825A7A420009D7BDB /* SignUpRouting.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB41433E25A71BBD006D06F2 /* CancelBag.swift in Sources */,

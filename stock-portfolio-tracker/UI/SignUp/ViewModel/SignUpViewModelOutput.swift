@@ -8,5 +8,5 @@
 import Foundation
 
 protocol SignUpViewModelOutputType {
-    
+    var state: SignUpViewState { get }
 }

@@ -10,8 +10,6 @@ import SwiftUI
 
 class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutputType>, LoginViewModelType {
     
-    @Published var routingState: LoginRouting
-    
     private let authService: AuthServiceType
     
     private var cancelBag = CancelBag()
@@ -24,10 +22,15 @@ class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutpu
         super.init(session: session)
     }
     
+    // MARK: - Input
+    
     @Published var email: String?
     @Published var password: String?
     
+    // MARK: - Output
+    
     @Published var state: LoginViewState = .start
+    @Published var routingState: LoginRouting
     
 }
 

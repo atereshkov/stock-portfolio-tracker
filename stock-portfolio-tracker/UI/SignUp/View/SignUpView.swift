@@ -26,6 +26,16 @@ struct SignUpView: View {
                 }
             }
         }
+        .alert(isPresented: $viewModel.routingState.showErrorAlert, content: {
+            switch viewModel.output.state {
+            case .signUpFailed(let error):
+                return Alert(title: Text("Error"),
+                             message: Text(error),
+                             dismissButton: .default(Text("OK")))
+            default:
+                return Alert(title: Text(""))
+            }
+        })
     }
     
     var logo: some View {
@@ -36,6 +46,17 @@ struct SignUpView: View {
     }
     
     var content: some View {
+        switch viewModel.state {
+        case .start:
+            return AnyView(form)
+        case .loading:
+            return AnyView(loadingIndicator)
+        case .signUpFailed(_):
+            return AnyView(form)
+        }
+    }
+    
+    var form: some View {
         VStack {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField
@@ -53,6 +74,14 @@ struct SignUpView: View {
             alreadyHaveAccountLabel
                 .padding()
                 .padding([.top], 18)
+        }
+    }
+    
+    var loadingIndicator: some View {
+        GeometryReader { metrics in
+            CircleLoadingView(color: Color.white)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: metrics.size.height * 0.2)
         }
     }
     

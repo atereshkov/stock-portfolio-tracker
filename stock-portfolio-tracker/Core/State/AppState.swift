@@ -33,6 +33,7 @@ extension AppState {
         var root = RootRouting()
         
         var login = LoginRouting()
+        var signUp = SignUpRouting()
     }
 }
 

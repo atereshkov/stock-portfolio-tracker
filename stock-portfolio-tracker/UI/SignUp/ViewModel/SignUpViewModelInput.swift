@@ -7,9 +7,7 @@
 
 import Foundation
 
-protocol SignUpViewModelInputType {
-    func viewDidLoad()
-    
+protocol SignUpViewModelInputType {    
     func signUpAction()
     
     var email: String? { get }
