@@ -9,11 +9,10 @@ import DICE
 
 class Session: SessionType {
     
-    let container: DIContainer
+    let container = DIContainer()
     let appState: Store<AppState>
     
-    init(container: DIContainer, appState: Store<AppState>) {
-        self.container = container
+    init(appState: Store<AppState>) {
         self.appState = appState
         bind()
     }

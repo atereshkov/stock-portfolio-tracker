@@ -12,7 +12,8 @@ import XCTest
 class SessionTests: XCTestCase {
     
     func testViewModelShouldBeRegistered() {
-        let session = Session()
+        let appState = Store<AppState>(AppState())
+        let session = Session(appState: appState)
         
         let _ : MainViewModel = session.resolve()
         let _ : WelcomeViewModel = session.resolve()

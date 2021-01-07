@@ -17,10 +17,8 @@ extension AppEnvironment {
     
     static func boot() -> AppEnvironment {
         FirebaseApp.configure()
-        
         let appState = Store<AppState>(AppState())
-        let container = DIContainer()
-        let session = Session(container: container, appState: appState)
+        let session = Session(appState: appState)
         return AppEnvironment(session: session, appState: appState)
     }
     
