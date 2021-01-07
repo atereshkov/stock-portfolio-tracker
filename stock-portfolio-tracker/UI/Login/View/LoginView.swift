@@ -83,6 +83,7 @@ struct LoginView: View {
         .textFieldStyle(PrimaryTextField())
         .keyboardType(.emailAddress)
         .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
@@ -93,6 +94,7 @@ struct LoginView: View {
         )
         .textFieldStyle(PrimaryTextField())
         .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     

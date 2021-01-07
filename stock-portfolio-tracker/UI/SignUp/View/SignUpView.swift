@@ -64,6 +64,7 @@ struct SignUpView: View {
         .textFieldStyle(PrimaryTextField())
         .keyboardType(.emailAddress)
         .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
@@ -74,6 +75,7 @@ struct SignUpView: View {
         )
         .textFieldStyle(PrimaryTextField())
         .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     
@@ -84,6 +86,7 @@ struct SignUpView: View {
         )
         .textFieldStyle(PrimaryTextField())
         .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("Confirm password"), show: viewModel.confirmPassword?.isEmpty ?? true)
     }
     
