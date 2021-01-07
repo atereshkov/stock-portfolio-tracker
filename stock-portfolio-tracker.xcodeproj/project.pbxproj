@@ -57,8 +57,8 @@
 		CB41433F25A71BBD006D06F2 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41433D25A71BBD006D06F2 /* CancelBag.swift */; };
 		CB41434A25A71C21006D06F2 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41434925A71C21006D06F2 /* AppViewModel.swift */; };
 		CB41434B25A71C21006D06F2 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41434925A71C21006D06F2 /* AppViewModel.swift */; };
-		CB41435925A72221006D06F2 /* AuthListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListenerService.swift */; };
-		CB41435A25A72221006D06F2 /* AuthListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListenerService.swift */; };
+		CB41435925A72221006D06F2 /* AuthListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListener.swift */; };
+		CB41435A25A72221006D06F2 /* AuthListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41435825A72221006D06F2 /* AuthListener.swift */; };
 		CB43648C2584DCCA0074FBD0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB4364902584DCCD0074FBD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB43648F2584DCCD0074FBD0 /* Images.xcassets */; };
@@ -160,7 +160,7 @@
 		CB41433525A71B79006D06F2 /* RootRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouting.swift; sourceTree = "<group>"; };
 		CB41433D25A71BBD006D06F2 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		CB41434925A71C21006D06F2 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		CB41435825A72221006D06F2 /* AuthListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthListenerService.swift; sourceTree = "<group>"; };
+		CB41435825A72221006D06F2 /* AuthListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthListener.swift; sourceTree = "<group>"; };
 		CB4364882584DCCA0074FBD0 /* stock-portfolio-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB43648B2584DCCA0074FBD0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		CB43648D2584DCCA0074FBD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0D1DB0259CA5B0004BA1FD /* AuthService.swift */,
-				CB41435825A72221006D06F2 /* AuthListenerService.swift */,
+				CB41435825A72221006D06F2 /* AuthListener.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1103,7 +1103,7 @@
 				CB0D1D9B259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CBE4E9D125960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
-				CB41435A25A72221006D06F2 /* AuthListenerService.swift in Sources */,
+				CB41435A25A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0D1D89259BB3E7004BA1FD /* SignUpView.swift in Sources */,
 				CB0D1D94259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
@@ -1153,7 +1153,7 @@
 				CB0D1D9A259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CBE4E9D025960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
-				CB41435925A72221006D06F2 /* AuthListenerService.swift in Sources */,
+				CB41435925A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */,
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,

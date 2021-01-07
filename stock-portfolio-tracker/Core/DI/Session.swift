@@ -63,8 +63,8 @@ private extension Session {
         container.register(AuthServiceType.self) { _ in
             return AuthService()
         }
-        container.register(AuthListenerServiceType.self, scope: .single) { _ in
-            return AuthListenerService(appState: self.appState)
+        container.register(AuthListenerType.self, scope: .single) { _ in
+            return AuthListener(appState: self.appState)
         }
     }
     

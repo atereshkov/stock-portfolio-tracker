@@ -8,11 +8,11 @@
 import DICE
 import FirebaseAuth
 
-protocol AuthListenerServiceType {
+protocol AuthListenerType {
     
 }
 
-class AuthListenerService: AuthListenerServiceType {
+class AuthListener: AuthListenerType {
     
     let appState: Store<AppState>
     
@@ -26,7 +26,7 @@ class AuthListenerService: AuthListenerServiceType {
     
 }
 
-private extension AuthListenerService {
+private extension AuthListener {
     
     private func listenAuthChanges() {
         Auth.auth().addStateDidChangeListener { [weak self] _, user in
