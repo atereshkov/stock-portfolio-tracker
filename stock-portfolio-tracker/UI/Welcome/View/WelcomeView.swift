@@ -17,7 +17,7 @@ struct WelcomeView: View {
             ZStack {
                 backgroundColor
                 GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.15) {
+                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
                         title.padding([.leading, .trailing], 21)
                         subtitle.padding([.leading, .trailing], 21)
                         startButton.padding([.leading, .trailing], 21)
@@ -53,7 +53,6 @@ struct WelcomeView: View {
         ) {
             Text(L10n.Welcome.Button.Start.title)
         }.buttonStyle(PrimaryButton())
-        // .navigationViewStyle(StackNavigationViewStyle())
     }
     
 }
