@@ -21,6 +21,8 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
     @Published var testString: String?
     var testPublisher: Published<String?>.Publisher { $testString }
     
+    @Published var selectedTab: Int = 0
+    
 }
 
 // MARK: - MainViewModelInputType

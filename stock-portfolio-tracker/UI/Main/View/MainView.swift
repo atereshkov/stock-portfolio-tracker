@@ -39,17 +39,19 @@ struct MainView: View {
     }
     
     var content: some View {
-        TabView {
+        TabView(selection: $viewModel.selectedTab) {
             HomeView()
                 .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("Menu")
+                    viewModel.selectedTab == 0 ? Image(systemName: "house.fill") : Image(systemName: "house")
+                    Text("Home")
                 }
+                .tag(0)
             DividendsView()
                 .tabItem {
-                    Image(systemName: "square.and.pencil")
+                    viewModel.selectedTab == 1 ? Image(systemName: "chart.bar.fill") : Image(systemName: "chart.bar")
                     Text("Dividends")
                 }
+                .tag(1)
         }
     }
     

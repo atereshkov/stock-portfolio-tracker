@@ -13,7 +13,17 @@ struct HomeView: View {
     @EnvironmentObservableInjected var viewModel: HomeViewModel
     
     var body: some View {
-        Text("Home").padding()
+        NavigationView {
+            Form {
+                Section {
+                    VStack {
+                        Text("Hello World")
+                        Text("Hello World")
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Dashboard"))
+        }
     }
     
 }
