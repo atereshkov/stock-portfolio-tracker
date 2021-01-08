@@ -1,14 +1,14 @@
 //
-//  AppViewModel.swift
+//  RootViewModel.swift
 //  stock-portfolio-tracker
 //
-//  Created by nb-058-41b on 1/7/21.
+//  Created by nb-058-41b on 1/8/21.
 //
 
 import SwiftUI
 import Combine
 
-class AppViewModel: ObservableObject {
+class RootViewModel: ObservableObject {
     
     @Published var routingState: RootRouting
     @Published var isAuthorized: Bool = true
