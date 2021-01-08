@@ -13,7 +13,21 @@ struct DividendsView: View {
     @EnvironmentObservableInjected var viewModel: HomeViewModel
     
     var body: some View {
-        Text("Dividends").padding()
+        content
+    }
+    
+    var content: some View {
+        NavigationView {
+            Form {
+                Section {
+                    VStack {
+                        Text("Hello World")
+                        Text("Hello World")
+                    }
+                }
+            }
+            .navigationBarTitle(Text("Dividends"))
+        }
     }
     
 }

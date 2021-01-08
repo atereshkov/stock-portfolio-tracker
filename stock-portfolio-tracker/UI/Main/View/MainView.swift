@@ -12,47 +12,36 @@ struct MainView: View {
     
     @EnvironmentObservableInjected var viewModel: MainViewModel
     
-    init() {
-        viewModel.input.viewDidLoad()
-        
-        _ = viewModel.output.testPublisher.sink { value in
-            Swift.print("[TEST] Value: \(String(describing: value))")
-        }
-    }
-    
     var body: some View {
         content
-//        NavigationView {
-//            ZStack {
-//                backgroundColor
-//                GeometryReader { metrics in
-//                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
-//                        Text(viewModel.output.testString ?? "")
-//                            .padding()
-//                        Button("Sign Out") {
-//                            viewModel.input.signOutAction()
-//                        }.buttonStyle(PrimaryButton())
-//                    }
-//                }
-//            }
-//        }
+            .onAppear {
+                viewModel.input.onViewAppear()
+            }
     }
     
     var content: some View {
         TabView(selection: $viewModel.selectedTab) {
-            HomeView()
-                .tabItem {
-                    viewModel.selectedTab == 0 ? Image(systemName: "house.fill") : Image(systemName: "house")
-                    Text("Home")
-                }
-                .tag(0)
-            DividendsView()
-                .tabItem {
-                    viewModel.selectedTab == 1 ? Image(systemName: "chart.bar.fill") : Image(systemName: "chart.bar")
-                    Text("Dividends")
-                }
-                .tag(1)
+            homeTab
+            dividendsTab
         }
+    }
+    
+    var homeTab: some View {
+        HomeView()
+            .tabItem {
+                viewModel.selectedTab == 0 ? Image(systemName: "house.fill") : Image(systemName: "house")
+                Text("Home")
+            }
+            .tag(0)
+    }
+    
+    var dividendsTab: some View {
+        DividendsView()
+            .tabItem {
+                viewModel.selectedTab == 1 ? Image(systemName: "chart.bar.fill") : Image(systemName: "chart.bar")
+                Text("Dividends")
+            }
+            .tag(1)
     }
     
     var backgroundColor: some View {

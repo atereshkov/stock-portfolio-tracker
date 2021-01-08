@@ -29,8 +29,8 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
 
 extension MainViewModel: MainViewModelInputType {
     
-    func viewDidLoad() {
-        Swift.print("[TEST] Main View Model onViewDidLoad")
+    func onViewAppear() {
+        
     }
     
     func signOutAction() {

@@ -13,6 +13,10 @@ struct HomeView: View {
     @EnvironmentObservableInjected var viewModel: HomeViewModel
     
     var body: some View {
+        content
+    }
+    
+    var content: some View {
         NavigationView {
             Form {
                 Section {
