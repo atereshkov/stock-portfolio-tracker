@@ -11,6 +11,4 @@ protocol MainViewModelInputType {
     var selectedTab: Int { get set }
     
     func onViewAppear()
-    
-    func signOutAction()
 }

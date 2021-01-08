@@ -18,9 +18,6 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
     
     // MARK: - MainViewModelOutputType
     
-    @Published var testString: String?
-    var testPublisher: Published<String?>.Publisher { $testString }
-    
     @Published var selectedTab: Int = 0
     
 }
@@ -31,10 +28,6 @@ extension MainViewModel: MainViewModelInputType {
     
     func onViewAppear() {
         
-    }
-    
-    func signOutAction() {
-        authService.logout()
     }
     
 }
