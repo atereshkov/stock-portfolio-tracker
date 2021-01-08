@@ -101,6 +101,11 @@
 		CB44666D25A8EE6B007C237E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44666C25A8EE6B007C237E /* RootView.swift */; };
 		CB44666E25A8EE6B007C237E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44666C25A8EE6B007C237E /* RootView.swift */; };
 		CB44668125A8EF63007C237E /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44668025A8EF63007C237E /* StringExtensionTests.swift */; };
+		CB44668F25A8F0C1007C237E /* RootViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44668E25A8F0C1007C237E /* RootViewModelOutput.swift */; };
+		CB44669525A8F10F007C237E /* RootViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669425A8F10F007C237E /* RootViewModelType.swift */; };
+		CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669425A8F10F007C237E /* RootViewModelType.swift */; };
+		CB4466A025A8F158007C237E /* RootViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669F25A8F158007C237E /* RootViewModelInput.swift */; };
+		CB4466A125A8F158007C237E /* RootViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669F25A8F158007C237E /* RootViewModelInput.swift */; };
 		CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */; };
 		CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
 		CB6F985F2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
@@ -229,6 +234,9 @@
 		CB44665F25A8EB7E007C237E /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
 		CB44666C25A8EE6B007C237E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CB44668025A8EF63007C237E /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		CB44668E25A8F0C1007C237E /* RootViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelOutput.swift; sourceTree = "<group>"; };
+		CB44669425A8F10F007C237E /* RootViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelType.swift; sourceTree = "<group>"; };
+		CB44669F25A8F158007C237E /* RootViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelInput.swift; sourceTree = "<group>"; };
 		CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyViewTests.swift; sourceTree = "<group>"; };
 		CB6F985D2597356B002A89AD /* PimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimaryButton.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -698,7 +706,10 @@
 		CB44666B25A8EE5F007C237E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CB44669425A8F10F007C237E /* RootViewModelType.swift */,
 				CB41434925A71C21006D06F2 /* RootViewModel.swift */,
+				CB44669F25A8F158007C237E /* RootViewModelInput.swift */,
+				CB44668E25A8F0C1007C237E /* RootViewModelOutput.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1308,6 +1319,7 @@
 				CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CB0D1D9B259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CBE4E9D125960707002ECCF0 /* BaseViewModel.swift in Sources */,
+				CB4466A125A8F158007C237E /* RootViewModelInput.swift in Sources */,
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
 				CB41435A25A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0D1D89259BB3E7004BA1FD /* SignUpView.swift in Sources */,
@@ -1344,6 +1356,7 @@
 				CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CB0FDEFB25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
+				CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA925A7A420009D7BDB /* SignUpRouting.swift in Sources */,
@@ -1375,6 +1388,7 @@
 				CB0D1D9A259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CBE4E9D025960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
+				CB44668F25A8F0C1007C237E /* RootViewModelOutput.swift in Sources */,
 				CB41435925A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */,
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
@@ -1410,9 +1424,11 @@
 				CB0FDE9F25A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */,
 				CB0FDEFA25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
+				CB4466A025A8F158007C237E /* RootViewModelInput.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA825A7A420009D7BDB /* SignUpRouting.swift in Sources */,
+				CB44669525A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB44666D25A8EE6B007C237E /* RootView.swift in Sources */,

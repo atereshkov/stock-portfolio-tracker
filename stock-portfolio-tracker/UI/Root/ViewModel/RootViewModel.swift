@@ -8,18 +8,17 @@
 import SwiftUI
 import Combine
 
-class RootViewModel: ObservableObject {
+class RootViewModel: BaseViewModel<RootViewModelInputType, RootViewModelOutputType>, RootViewModelType {
     
     @Published var routingState: RootRouting
     @Published var isAuthorized: Bool = true
     
-    let session: SessionType
     let cancelBag = CancelBag()
     
-    init(session: SessionType) {
-        self.session = session
-        
+    override init(session: SessionType) {
         _routingState = .init(initialValue: session.appState.value.routing.root)
+        
+        super.init(session: session)
         
         // TODO check local auth service/etc to and set isAuthorized to improve UX
         
@@ -28,5 +27,9 @@ class RootViewModel: ObservableObject {
             .assign(to: \.isAuthorized, on: self)
             .store(in: cancelBag)
     }
+    
+}
+
+extension RootViewModel: RootViewModelOutputType {
     
 }

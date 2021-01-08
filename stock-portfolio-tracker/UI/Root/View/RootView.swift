@@ -13,7 +13,7 @@ struct RootView: View {
     @EnvironmentObservableInjected var viewModel: RootViewModel
     
     var body: some View {
-        if viewModel.isAuthorized {
+        if viewModel.output.isAuthorized {
             MainView()
         } else {
             WelcomeView()
