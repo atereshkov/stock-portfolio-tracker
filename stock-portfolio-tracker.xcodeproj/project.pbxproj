@@ -100,6 +100,7 @@
 		CB44666025A8EB7E007C237E /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44665F25A8EB7E007C237E /* RootViewModelTests.swift */; };
 		CB44666D25A8EE6B007C237E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44666C25A8EE6B007C237E /* RootView.swift */; };
 		CB44666E25A8EE6B007C237E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44666C25A8EE6B007C237E /* RootView.swift */; };
+		CB44668125A8EF63007C237E /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44668025A8EF63007C237E /* StringExtensionTests.swift */; };
 		CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */; };
 		CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
 		CB6F985F2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
@@ -227,6 +228,7 @@
 		CB44665425A8E40B007C237E /* StubSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubSession.swift; sourceTree = "<group>"; };
 		CB44665F25A8EB7E007C237E /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
 		CB44666C25A8EE6B007C237E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CB44668025A8EF63007C237E /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyViewTests.swift; sourceTree = "<group>"; };
 		CB6F985D2597356B002A89AD /* PimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimaryButton.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -701,6 +703,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CB44667F25A8EF51007C237E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB44668025A8EF63007C237E /* StringExtensionTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CB6F984925972EAE002A89AD /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +874,7 @@
 				CB44664825A8E239007C237E /* UI */,
 				CB6F985225972EC3002A89AD /* View */,
 				CB6F984925972EAE002A89AD /* DI */,
+				CB44667F25A8EF51007C237E /* Utils */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -1413,6 +1424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB44668125A8EF63007C237E /* StringExtensionTests.swift in Sources */,
 				CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */,
 				CB43649E2584DCCE0074FBD0 /* SessionTests.swift in Sources */,
 				CB44665525A8E40B007C237E /* StubSession.swift in Sources */,
