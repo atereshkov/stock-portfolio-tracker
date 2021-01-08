@@ -20,6 +20,8 @@ class SignUpViewModel: BaseViewModel<SignUpViewModelInputType, SignUpViewModelOu
         _routingState = .init(initialValue: session.appState.value.routing.signUp)
         
         super.init(session: session)
+        
+        bindRouting(session: session)
     }
     
     // MARK: - Input
@@ -65,5 +67,19 @@ extension SignUpViewModel: SignUpViewModelInputType {
 // MARK: - SignUpViewModelOutputType
 
 extension SignUpViewModel: SignUpViewModelOutputType {
+    
+}
+
+private extension SignUpViewModel {
+    
+    private func bindRouting(session: SessionType) {
+        cancelBag.collect {
+            $routingState
+                .sink { session.appState[\.routing.signUp] = $0 }
+            session.appState.map(\.routing.signUp)
+                .removeDuplicates()
+                .assign(to: \.routingState, on: self)
+        }
+    }
     
 }

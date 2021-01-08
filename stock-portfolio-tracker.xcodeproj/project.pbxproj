@@ -106,6 +106,9 @@
 		CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669425A8F10F007C237E /* RootViewModelType.swift */; };
 		CB4466A025A8F158007C237E /* RootViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669F25A8F158007C237E /* RootViewModelInput.swift */; };
 		CB4466A125A8F158007C237E /* RootViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44669F25A8F158007C237E /* RootViewModelInput.swift */; };
+		CB4466A725A90C31007C237E /* DividendsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466A625A90C31007C237E /* DividendsViewModelTests.swift */; };
+		CB4466B525A90ED7007C237E /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466B425A90ED7007C237E /* LoginViewModelTests.swift */; };
+		CB4466C025A9105E007C237E /* AuthServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466BF25A9105E007C237E /* AuthServiceStub.swift */; };
 		CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */; };
 		CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
 		CB6F985F2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
@@ -237,6 +240,9 @@
 		CB44668E25A8F0C1007C237E /* RootViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelOutput.swift; sourceTree = "<group>"; };
 		CB44669425A8F10F007C237E /* RootViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelType.swift; sourceTree = "<group>"; };
 		CB44669F25A8F158007C237E /* RootViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelInput.swift; sourceTree = "<group>"; };
+		CB4466A625A90C31007C237E /* DividendsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewModelTests.swift; sourceTree = "<group>"; };
+		CB4466B425A90ED7007C237E /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		CB4466BF25A9105E007C237E /* AuthServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceStub.swift; sourceTree = "<group>"; };
 		CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyViewTests.swift; sourceTree = "<group>"; };
 		CB6F985D2597356B002A89AD /* PimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimaryButton.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -512,10 +518,10 @@
 				CB44666925A8EE3F007C237E /* Root */,
 				CBE4E90D2595025B002ECCF0 /* Welcome */,
 				CBE4E9F125966D6B002ECCF0 /* Login */,
+				CB0D1D84259BB3CE004BA1FD /* SignUp */,
 				CB378B612585474400A5F14D /* Main */,
 				CB0FDEB225A7ACA9009D7BDB /* Home */,
 				CB0FDEDC25A7AE3E009D7BDB /* Dividends */,
-				CB0D1D84259BB3CE004BA1FD /* SignUp */,
 				CBE4E9E525964E71002ECCF0 /* View */,
 				CBF8429625A660CC00C116B4 /* ViewModifier */,
 			);
@@ -682,6 +688,8 @@
 			isa = PBXGroup;
 			children = (
 				CB44665F25A8EB7E007C237E /* RootViewModelTests.swift */,
+				CB4466A625A90C31007C237E /* DividendsViewModelTests.swift */,
+				CB4466B425A90ED7007C237E /* LoginViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -720,6 +728,14 @@
 				CB44668025A8EF63007C237E /* StringExtensionTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB4466BE25A91055007C237E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CB4466BF25A9105E007C237E /* AuthServiceStub.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CB6F984925972EAE002A89AD /* DI */ = {
@@ -873,6 +889,7 @@
 			isa = PBXGroup;
 			children = (
 				CB44665325A8E402007C237E /* Session */,
+				CB4466BE25A91055007C237E /* Service */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -1443,6 +1460,9 @@
 				CB44668125A8EF63007C237E /* StringExtensionTests.swift in Sources */,
 				CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */,
 				CB43649E2584DCCE0074FBD0 /* SessionTests.swift in Sources */,
+				CB4466C025A9105E007C237E /* AuthServiceStub.swift in Sources */,
+				CB4466A725A90C31007C237E /* DividendsViewModelTests.swift in Sources */,
+				CB4466B525A90ED7007C237E /* LoginViewModelTests.swift in Sources */,
 				CB44665525A8E40B007C237E /* StubSession.swift in Sources */,
 				CB44664A25A8E28E007C237E /* AppTests.swift in Sources */,
 				CB44666025A8EB7E007C237E /* RootViewModelTests.swift in Sources */,

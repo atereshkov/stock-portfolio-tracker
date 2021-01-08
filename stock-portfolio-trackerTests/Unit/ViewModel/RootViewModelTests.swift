@@ -7,6 +7,8 @@
 
 import XCTest
 import SwiftUI
+import DICE
+
 @testable import stock_portfolio_tracker
 
 class RootViewModelTests: XCTestCase {
@@ -14,7 +16,7 @@ class RootViewModelTests: XCTestCase {
     private var defaultSesssion: SessionType {
         let state = AppState()
         let store = Store<AppState>(state)
-        let session = Session(appState: store)
+        let session = Session(container: DIContainer(), appState: store)
         return session
     }
     

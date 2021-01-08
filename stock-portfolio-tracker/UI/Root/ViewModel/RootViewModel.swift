@@ -20,8 +20,6 @@ class RootViewModel: BaseViewModel<RootViewModelInputType, RootViewModelOutputTy
         
         super.init(session: session)
         
-        // TODO check local auth service/etc to and set isAuthorized to improve UX
-        
         session.appState.map(\.auth.isAuthorized)
             .removeDuplicates()
             .assign(to: \.isAuthorized, on: self)

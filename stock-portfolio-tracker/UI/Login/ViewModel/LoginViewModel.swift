@@ -20,6 +20,8 @@ class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutpu
         _routingState = .init(initialValue: session.appState.value.routing.login)
         
         super.init(session: session)
+        
+        bindRouting(session: session)
     }
     
     // MARK: - Input
@@ -60,5 +62,19 @@ extension LoginViewModel: LoginViewModelInputType {
 }
 
 extension LoginViewModel: LoginViewModelOutputType {
+    
+}
+
+private extension LoginViewModel {
+    
+    private func bindRouting(session: SessionType) {
+        cancelBag.collect {
+            $routingState
+                .sink { session.appState[\.routing.login] = $0 }
+            session.appState.map(\.routing.login)
+                .removeDuplicates()
+                .assign(to: \.routingState, on: self)
+        }
+    }
     
 }
