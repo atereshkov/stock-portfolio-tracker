@@ -9,4 +9,5 @@ import Foundation
 
 protocol LoginViewModelOutputType {
     var state: LoginViewState { get }
+    var routingState: LoginRouting { get }
 }

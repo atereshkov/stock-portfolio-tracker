@@ -34,6 +34,9 @@ extension AppState {
         
         var login = LoginRouting()
         var signUp = SignUpRouting()
+        
+        var home = HomeRouting()
+        var createPortfolio = CreatePortfolioRouting()
     }
 }
 
