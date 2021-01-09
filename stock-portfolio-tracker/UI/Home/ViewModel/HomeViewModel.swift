@@ -27,8 +27,8 @@ class HomeViewModel: BaseViewModel<HomeViewModelInputType, HomeViewModelOutputTy
     
     @Published var routingState: HomeRouting
     @Published var portfolios: [PortfolioViewItem] = [
-        PortfolioViewItem(id: 1, name: "First"),
-        PortfolioViewItem(id: 2, name: "Second")
+        PortfolioViewItem(id: 1, name: "First", currency: "$"),
+        PortfolioViewItem(id: 2, name: "Second", currency: "€")
     ]
     
 }

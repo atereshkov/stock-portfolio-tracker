@@ -48,7 +48,12 @@ struct HomeView: View {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.portfolios) { portfolio in
-                    PortfolioRow(item: portfolio)
+                    NavigationLink(
+                        destination: portfolioView(portfolio),
+                        tag: portfolio.id,
+                        selection: $viewModel.routingState.portfolioDetails) {
+                        PortfolioRow(item: portfolio)
+                    }
                 }
             }
         }
@@ -58,15 +63,18 @@ struct HomeView: View {
         CreatePortfolio()
     }
     
-//    func portfolioList(List<Portfolio> portfolios) -> View {
-//        List(portfolios) { portfolio in
-//            NavigationLink(
-//                destination: portfolioView(portfolio: portfolio),
-//                tag: country.alpha3Code,
-//                selection: $viewModel.routingState.countryDetails) {
-//                    PortfolioRow(portfolio: portfolio)
-//                }
-//        }
-//    }
+    func portfolioView(_ item: PortfolioViewItem) -> some View {
+        Text(item.name)
+    }
     
 }
+
+// MARK: - Preview
+
+#if DEBUG
+struct HomeViewPreviews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+    }
+}
+#endif
