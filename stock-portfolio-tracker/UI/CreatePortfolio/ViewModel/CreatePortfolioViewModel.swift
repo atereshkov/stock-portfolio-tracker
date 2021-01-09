@@ -16,8 +16,6 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
         _routingState = .init(initialValue: session.appState.value.routing.createPortfolio)
         super.init(session: session)
         
-//        _currencyIndex = .init(initialValue: 0)
-        
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.createPortfolio] = $0 }
