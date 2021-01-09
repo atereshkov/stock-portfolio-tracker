@@ -16,7 +16,7 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
         _routingState = .init(initialValue: session.appState.value.routing.createPortfolio)
         super.init(session: session)
         
-        _currency = .init(initialValue: currencyOptions.first)
+//        _currencyIndex = .init(initialValue: 0)
         
         cancelBag.collect {
             $routingState
@@ -38,12 +38,14 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
     // MARK: - Input
     
     @Published var name: String?
-    @Published var currency: String?
     
     // MARK: - Output
     
     @Published var routingState: CreatePortfolioRouting
-    @Published var currencyOptions = ["Dollar", "Euro"]
+    @Published var currencyOptions = [
+        CurrencyViewItem(id: "USD", name: "USD"),
+        CurrencyViewItem(id: "EUR", name: "EUR")
+    ]
     @Published var title: String?
     
     // MARK: - Private
@@ -58,7 +60,7 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
 
 extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
     
-    func create() {
+    func create(currencyIndex: Int) {
         
     }
     

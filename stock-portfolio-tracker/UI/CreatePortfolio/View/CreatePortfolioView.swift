@@ -12,6 +12,8 @@ struct CreatePortfolioView: View {
     
     @EnvironmentObservableInjected var viewModel: CreatePortfolioViewModel
     
+    @State var currencyIndex: Int = 0
+    
     var body: some View {
         content
             .onDisappear(perform: viewModel.onDisappear)
@@ -26,20 +28,19 @@ struct CreatePortfolioView: View {
                                 set: { viewModel.name = $0 })
                     )
                     HStack {
-                        Picker("Currency", selection: $viewModel.currency) {
-                            Text(viewModel.currencyOptions[0])
-                                .tag(viewModel.currencyOptions[0])
-                            Text(viewModel.currencyOptions[1])
-                                .tag(viewModel.currencyOptions[1])
+                        Picker("Currency", selection: $currencyIndex) {
+                            ForEach(0..<viewModel.currencyOptions.count) { index in
+                                Text(viewModel.currencyOptions[index].name).tag(index)
+                            }
                         }
                         .pickerStyle(MenuPickerStyle())
                         Spacer()
-                        Text(viewModel.input.currency ?? "")
+                        Text(viewModel.currencyOptions[currencyIndex].name)
                     }
                 }
                 Section {
                     Button(action: {
-                        
+                        viewModel.create(currencyIndex: currencyIndex)
                     }, label: {
                         HStack {
                             Spacer()

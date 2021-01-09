@@ -41,6 +41,8 @@
 		CB0A5B6125AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */; };
 		CB0A5B6725AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */; };
 		CB0A5B6825AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */; };
+		CB0A5B6E25AA51500031F48F /* CurrencyViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */; };
+		CB0A5B6F25AA51500031F48F /* CurrencyViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */; };
 		CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */; };
@@ -140,8 +142,8 @@
 		CB4466B525A90ED7007C237E /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466B425A90ED7007C237E /* LoginViewModelTests.swift */; };
 		CB4466C025A9105E007C237E /* AuthServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466BF25A9105E007C237E /* AuthServiceStub.swift */; };
 		CB4466FE25A9A437007C237E /* WelcomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4466FD25A9A437007C237E /* WelcomeViewTests.swift */; };
-		CB44674625A9A9BD007C237E /* PortfolioDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44674525A9A9BD007C237E /* PortfolioDTO.swift */; };
-		CB44674725A9A9BD007C237E /* PortfolioDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44674525A9A9BD007C237E /* PortfolioDTO.swift */; };
+		CB44674625A9A9BD007C237E /* PortfolioViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */; };
+		CB44674725A9A9BD007C237E /* PortfolioViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */; };
 		CB6F985425972ED4002A89AD /* NavigationLazyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */; };
 		CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
 		CB6F985F2597356B002A89AD /* PimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6F985D2597356B002A89AD /* PimaryButton.swift */; };
@@ -228,6 +230,7 @@
 		CB0A5B5825AA45BA0031F48F /* AccountViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelInput.swift; sourceTree = "<group>"; };
 		CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelOutput.swift; sourceTree = "<group>"; };
 		CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModalRoutingType.swift; sourceTree = "<group>"; };
+		CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewItem.swift; sourceTree = "<group>"; };
 		CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CB0D1D92259BB40A004BA1FD /* SignUpViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelType.swift; sourceTree = "<group>"; };
@@ -292,7 +295,7 @@
 		CB4466B425A90ED7007C237E /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		CB4466BF25A9105E007C237E /* AuthServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceStub.swift; sourceTree = "<group>"; };
 		CB4466FD25A9A437007C237E /* WelcomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewTests.swift; sourceTree = "<group>"; };
-		CB44674525A9A9BD007C237E /* PortfolioDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDTO.swift; sourceTree = "<group>"; };
+		CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewItem.swift; sourceTree = "<group>"; };
 		CB6F985325972ED4002A89AD /* NavigationLazyViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyViewTests.swift; sourceTree = "<group>"; };
 		CB6F985D2597356B002A89AD /* PimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PimaryButton.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -467,6 +470,15 @@
 			path = Routing;
 			sourceTree = "<group>";
 		};
+		CB0A5B7C25AA516C0031F48F /* ViewItem */ = {
+			isa = PBXGroup;
+			children = (
+				CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */,
+				CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */,
+			);
+			path = ViewItem;
+			sourceTree = "<group>";
+		};
 		CB0D1D84259BB3CE004BA1FD /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +521,7 @@
 		CB0D1DAF259CA585004BA1FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB0A5B7C25AA516C0031F48F /* ViewItem */,
 				CB44674C25A9A9C0007C237E /* DTO */,
 			);
 			path = Model;
@@ -880,7 +893,6 @@
 		CB44674C25A9A9C0007C237E /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				CB44674525A9A9BD007C237E /* PortfolioDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -1502,7 +1514,7 @@
 				CB0A5B5325AA45650031F48F /* AccountViewModel.swift in Sources */,
 				CB0A5B1525A9C1210031F48F /* CreatePortfolioViewModelInput.swift in Sources */,
 				CB0A5B5A25AA45BA0031F48F /* AccountViewModelInput.swift in Sources */,
-				CB44674725A9A9BD007C237E /* PortfolioDTO.swift in Sources */,
+				CB44674725A9A9BD007C237E /* PortfolioViewItem.swift in Sources */,
 				CB0FDEDF25A7AE50009D7BDB /* DividendsView.swift in Sources */,
 				CB0FDED025A7AD59009D7BDB /* HomeViewModelInput.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
@@ -1527,6 +1539,7 @@
 				CB41433725A71B79006D06F2 /* RootRouting.swift in Sources */,
 				CBE4E9E825964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CB378AE6258513AE00A5F14D /* App.swift in Sources */,
+				CB0A5B6F25AA51500031F48F /* CurrencyViewItem.swift in Sources */,
 				CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432925A7121D006D06F2 /* Store.swift in Sources */,
 				CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */,
@@ -1567,10 +1580,11 @@
 				CB0FDEEF25A7AE65009D7BDB /* DividendsViewModelType.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */,
 				CB378B6C2585479900A5F14D /* MainViewModel.swift in Sources */,
+				CB0A5B6E25AA51500031F48F /* CurrencyViewItem.swift in Sources */,
 				CB0D1D9A259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CB0A5AF325A9C0E60031F48F /* CreatePortfolioView.swift in Sources */,
 				CBE4E9D025960707002ECCF0 /* BaseViewModel.swift in Sources */,
-				CB44674625A9A9BD007C237E /* PortfolioDTO.swift in Sources */,
+				CB44674625A9A9BD007C237E /* PortfolioViewItem.swift in Sources */,
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
 				CB44668F25A8F0C1007C237E /* RootViewModelOutput.swift in Sources */,
 				CB0A5B4B25AA45510031F48F /* AccountViewModelType.swift in Sources */,
