@@ -25,6 +25,8 @@
 		CB0A5B1C25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B1A25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift */; };
 		CB0A5B2325A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */; };
 		CB0A5B2425A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */; };
+		CB0A5B2E25AA0D7E0031F48F /* PortfolioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */; };
+		CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */; };
 		CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */; };
@@ -204,6 +206,7 @@
 		CB0A5B1325A9C1210031F48F /* CreatePortfolioViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePortfolioViewModelInput.swift; sourceTree = "<group>"; };
 		CB0A5B1A25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePortfolioViewModelOutput.swift; sourceTree = "<group>"; };
 		CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePortfolioRouting.swift; sourceTree = "<group>"; };
+		CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRow.swift; sourceTree = "<group>"; };
 		CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CB0D1D92259BB40A004BA1FD /* SignUpViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelType.swift; sourceTree = "<group>"; };
@@ -499,6 +502,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0FDEB525A7ACC4009D7BDB /* HomeView.swift */,
+				CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1442,6 +1446,7 @@
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
+				CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */,
 				CBF8429925A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CB0FDF0225A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */,
 				CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */,
@@ -1546,6 +1551,7 @@
 				CB44669525A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CB0A5AFE25A9C0F70031F48F /* CreatePortfolioViewModelType.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
+				CB0A5B2E25AA0D7E0031F48F /* PortfolioRow.swift in Sources */,
 				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB44666D25A8EE6B007C237E /* RootView.swift in Sources */,
 				CB41433E25A71BBD006D06F2 /* CancelBag.swift in Sources */,

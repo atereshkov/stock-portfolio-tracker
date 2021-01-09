@@ -24,22 +24,33 @@ struct HomeView: View {
     var content: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Section {
-                    Text("Test 1")
-                    Text("Test 2")
-                }
-                HStack {
-                    Text("Portfolios")
-                    Spacer()
-                    Button(action: {
-                        viewModel.input.newPortfolioAction()
-                    }, label: {
-                        Image(systemName: "plus")
-                    })
+                portfoliosRow
+                portfolios
+            }
+            .padding([.leading, .trailing], 18)
+            .navigationBarTitle(Text("Dashboard"))
+        }
+    }
+    
+    var portfoliosRow: some View {
+        HStack {
+            Text("Portfolios")
+            Spacer()
+            Button(action: {
+                viewModel.input.newPortfolioAction()
+            }, label: {
+                Image(systemName: "plus")
+            })
+        }
+    }
+    
+    var portfolios: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.portfolios) { portfolio in
+                    PortfolioRow(item: portfolio)
                 }
             }
-            .padding([.leading, .trailing], 21)
-            .navigationBarTitle(Text("Dashboard"))
         }
     }
     

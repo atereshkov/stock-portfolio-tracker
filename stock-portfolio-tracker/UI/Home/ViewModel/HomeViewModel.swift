@@ -26,6 +26,10 @@ class HomeViewModel: BaseViewModel<HomeViewModelInputType, HomeViewModelOutputTy
     // MARK: - Output
     
     @Published var routingState: HomeRouting
+    @Published var portfolios: [PortfolioViewItem] = [
+        PortfolioViewItem(id: 1, name: "First"),
+        PortfolioViewItem(id: 2, name: "Second")
+    ]
     
 }
 

@@ -9,4 +9,5 @@ import Foundation
 
 protocol HomeViewModelOutputType {
     var routingState: HomeRouting { get }
+    var portfolios: [PortfolioViewItem] { get }
 }
