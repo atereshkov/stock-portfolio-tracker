@@ -18,7 +18,38 @@ struct CreatePortfolio: View {
     }
     
     var content: some View {
-        Text("")
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Name", text: Binding(
+                                get: { viewModel.name ?? "" },
+                                set: { viewModel.name = $0 })
+                    )
+                    HStack {
+                        Picker("Currency", selection: $viewModel.currency) {
+                            Text(viewModel.currencyOptions[0])
+                                .tag(viewModel.currencyOptions[0])
+                            Text(viewModel.currencyOptions[1])
+                                .tag(viewModel.currencyOptions[1])
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        Spacer()
+                        Text(viewModel.input.currency ?? "")
+                    }
+                }
+                Section {
+                    Button(action: {
+                        
+                    }, label: {
+                        HStack {
+                            Spacer()
+                            Text("Create")
+                            Spacer()
+                        }
+                    })
+                }
+            }.navigationBarTitle(viewModel.title ?? "", displayMode: .inline)
+        }
     }
     
 }

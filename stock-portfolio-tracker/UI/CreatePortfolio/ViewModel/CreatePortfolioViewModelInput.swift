@@ -8,7 +8,10 @@
 import Foundation
 
 protocol CreatePortfolioViewModelInputType {
-    func closeAction()
+    func create()
     
     func onDisappear()
+    
+    var name: String? { get set }
+    var currency: String? { get set }
 }

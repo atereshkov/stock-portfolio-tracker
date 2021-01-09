@@ -23,14 +23,22 @@ struct HomeView: View {
     
     var content: some View {
         NavigationView {
-            HStack {
-                Text("Portfolios")
-                Button(action: {
-                    viewModel.input.newPortfolioAction()
-                }, label: {
-                    Image(systemName: "plus")
-                })
+            VStack(alignment: .leading) {
+                Section {
+                    Text("Test 1")
+                    Text("Test 2")
+                }
+                HStack {
+                    Text("Portfolios")
+                    Spacer()
+                    Button(action: {
+                        viewModel.input.newPortfolioAction()
+                    }, label: {
+                        Image(systemName: "plus")
+                    })
+                }
             }
+            .padding([.leading, .trailing], 21)
             .navigationBarTitle(Text("Dashboard"))
         }
     }

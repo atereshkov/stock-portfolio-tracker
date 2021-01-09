@@ -8,5 +8,6 @@
 import Foundation
 
 protocol CreatePortfolioViewModelOutputType {
-    
+    var title: String? { get }
+    var currencyOptions: [String] { get }
 }

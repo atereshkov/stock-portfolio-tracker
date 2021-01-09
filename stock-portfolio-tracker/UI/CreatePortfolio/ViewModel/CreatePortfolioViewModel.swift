@@ -16,6 +16,8 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
         _routingState = .init(initialValue: session.appState.value.routing.createPortfolio)
         super.init(session: session)
         
+        _currency = .init(initialValue: currencyOptions.first)
+        
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.createPortfolio] = $0 }
@@ -23,9 +25,32 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
                 .removeDuplicates()
                 .assign(to: \.routingState, on: self)
         }
+        
+        titlePublisher.sink { [weak self] value in
+            if let value = value, !value.isEmpty {
+                self?.title = value
+            } else {
+                self?.title = "New portfolio"
+            }
+        }.store(in: cancelBag)
     }
     
+    // MARK: - Input
+    
+    @Published var name: String?
+    @Published var currency: String?
+    
+    // MARK: - Output
+    
     @Published var routingState: CreatePortfolioRouting
+    @Published var currencyOptions = ["Dollar", "Euro"]
+    @Published var title: String?
+    
+    // MARK: - Private
+    
+    private lazy var titlePublisher: AnyPublisher<String?,Never> = {
+        $name.eraseToAnyPublisher()
+    }()
     
 }
 
@@ -33,8 +58,8 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
 
 extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
     
-    func closeAction() {
-        session.appState[\.routing.createPortfolio.isPresented] = false
+    func create() {
+        
     }
     
     func onDisappear() {
