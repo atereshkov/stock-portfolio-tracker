@@ -27,6 +27,20 @@
 		CB0A5B2425A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */; };
 		CB0A5B2E25AA0D7E0031F48F /* PortfolioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */; };
 		CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */; };
+		CB0A5B3925AA44DF0031F48F /* AccountRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B3825AA44DF0031F48F /* AccountRouting.swift */; };
+		CB0A5B3A25AA44DF0031F48F /* AccountRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B3825AA44DF0031F48F /* AccountRouting.swift */; };
+		CB0A5B4425AA450A0031F48F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B4325AA450A0031F48F /* AccountView.swift */; };
+		CB0A5B4525AA450A0031F48F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B4325AA450A0031F48F /* AccountView.swift */; };
+		CB0A5B4B25AA45510031F48F /* AccountViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B4A25AA45510031F48F /* AccountViewModelType.swift */; };
+		CB0A5B4C25AA45510031F48F /* AccountViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B4A25AA45510031F48F /* AccountViewModelType.swift */; };
+		CB0A5B5225AA45650031F48F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5125AA45650031F48F /* AccountViewModel.swift */; };
+		CB0A5B5325AA45650031F48F /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5125AA45650031F48F /* AccountViewModel.swift */; };
+		CB0A5B5925AA45BA0031F48F /* AccountViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5825AA45BA0031F48F /* AccountViewModelInput.swift */; };
+		CB0A5B5A25AA45BA0031F48F /* AccountViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5825AA45BA0031F48F /* AccountViewModelInput.swift */; };
+		CB0A5B6025AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */; };
+		CB0A5B6125AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */; };
+		CB0A5B6725AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */; };
+		CB0A5B6825AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */; };
 		CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */; };
 		CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */; };
@@ -207,6 +221,13 @@
 		CB0A5B1A25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePortfolioViewModelOutput.swift; sourceTree = "<group>"; };
 		CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePortfolioRouting.swift; sourceTree = "<group>"; };
 		CB0A5B2D25AA0D7E0031F48F /* PortfolioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRow.swift; sourceTree = "<group>"; };
+		CB0A5B3825AA44DF0031F48F /* AccountRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouting.swift; sourceTree = "<group>"; };
+		CB0A5B4325AA450A0031F48F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		CB0A5B4A25AA45510031F48F /* AccountViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelType.swift; sourceTree = "<group>"; };
+		CB0A5B5125AA45650031F48F /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		CB0A5B5825AA45BA0031F48F /* AccountViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelInput.swift; sourceTree = "<group>"; };
+		CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelOutput.swift; sourceTree = "<group>"; };
+		CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModalRoutingType.swift; sourceTree = "<group>"; };
 		CB0D1D7D259A7644004BA1FD /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		CB0D1D87259BB3E7004BA1FD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CB0D1D92259BB40A004BA1FD /* SignUpViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModelType.swift; sourceTree = "<group>"; };
@@ -367,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				CB0A5AE325A9BEAC0031F48F /* HomeRouting.swift */,
+				CB0A5B6625AA46BB0031F48F /* HomeModalRoutingType.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -404,6 +426,43 @@
 			isa = PBXGroup;
 			children = (
 				CB0A5B2225A9C2260031F48F /* CreatePortfolioRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		CB0A5B3425AA41E80031F48F /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CB0A5B3725AA44D00031F48F /* Routing */,
+				CB0A5B3625AA41FE0031F48F /* View */,
+				CB0A5B3525AA41F70031F48F /* ViewModel */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		CB0A5B3525AA41F70031F48F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB0A5B4A25AA45510031F48F /* AccountViewModelType.swift */,
+				CB0A5B5125AA45650031F48F /* AccountViewModel.swift */,
+				CB0A5B5825AA45BA0031F48F /* AccountViewModelInput.swift */,
+				CB0A5B5F25AA45CC0031F48F /* AccountViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB0A5B3625AA41FE0031F48F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB0A5B4325AA450A0031F48F /* AccountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB0A5B3725AA44D00031F48F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CB0A5B3825AA44DF0031F48F /* AccountRouting.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -596,6 +655,7 @@
 				CBE4E90D2595025B002ECCF0 /* Welcome */,
 				CBE4E9F125966D6B002ECCF0 /* Login */,
 				CB0D1D84259BB3CE004BA1FD /* SignUp */,
+				CB0A5B3425AA41E80031F48F /* Account */,
 				CB378B612585474400A5F14D /* Main */,
 				CB0FDEB225A7ACA9009D7BDB /* Home */,
 				CB0A5AEE25A9C0890031F48F /* CreatePortfolio */,
@@ -1439,13 +1499,16 @@
 				CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CB0FDEC225A7ACF9009D7BDB /* HomeViewModelType.swift in Sources */,
 				CB0FDF0925A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */,
+				CB0A5B5325AA45650031F48F /* AccountViewModel.swift in Sources */,
 				CB0A5B1525A9C1210031F48F /* CreatePortfolioViewModelInput.swift in Sources */,
+				CB0A5B5A25AA45BA0031F48F /* AccountViewModelInput.swift in Sources */,
 				CB44674725A9A9BD007C237E /* PortfolioDTO.swift in Sources */,
 				CB0FDEDF25A7AE50009D7BDB /* DividendsView.swift in Sources */,
 				CB0FDED025A7AD59009D7BDB /* HomeViewModelInput.swift in Sources */,
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
 				CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
+				CB0A5B6825AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */,
 				CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */,
 				CBF8429925A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CB0FDF0225A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */,
@@ -1456,6 +1519,7 @@
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E9572595122E002ECCF0 /* strings.swift in Sources */,
+				CB0A5B3A25AA44DF0031F48F /* AccountRouting.swift in Sources */,
 				CB0FDEC925A7AD1A009D7BDB /* HomeViewModel.swift in Sources */,
 				CB41432125A71006006D06F2 /* AuthRouting.swift in Sources */,
 				CBE4EA0F259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */,
@@ -1466,15 +1530,18 @@
 				CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432925A7121D006D06F2 /* Store.swift in Sources */,
 				CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */,
+				CB0A5B4525AA450A0031F48F /* AccountView.swift in Sources */,
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CB0FDEFB25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
 				CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA925A7A420009D7BDB /* SignUpRouting.swift in Sources */,
+				CB0A5B4C25AA45510031F48F /* AccountViewModelType.swift in Sources */,
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB44666E25A8EE6B007C237E /* RootView.swift in Sources */,
+				CB0A5B6125AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */,
 				CB41433F25A71BBD006D06F2 /* CancelBag.swift in Sources */,
 				CB0A5AE525A9BEAC0031F48F /* HomeRouting.swift in Sources */,
 			);
@@ -1496,6 +1563,7 @@
 				CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */,
 				CB41432F25A712A6006D06F2 /* AppEnvironment.swift in Sources */,
 				CB0FDED625A7AD6A009D7BDB /* HomeViewModelOutput.swift in Sources */,
+				CB0A5B3925AA44DF0031F48F /* AccountRouting.swift in Sources */,
 				CB0FDEEF25A7AE65009D7BDB /* DividendsViewModelType.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */,
 				CB378B6C2585479900A5F14D /* MainViewModel.swift in Sources */,
@@ -1505,6 +1573,7 @@
 				CB44674625A9A9BD007C237E /* PortfolioDTO.swift in Sources */,
 				CB378B532585470900A5F14D /* SessionType.swift in Sources */,
 				CB44668F25A8F0C1007C237E /* RootViewModelOutput.swift in Sources */,
+				CB0A5B4B25AA45510031F48F /* AccountViewModelType.swift in Sources */,
 				CB41435925A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0D1D88259BB3E7004BA1FD /* SignUpView.swift in Sources */,
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
@@ -1513,6 +1582,8 @@
 				CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
 				CB41437425A7426C006D06F2 /* CircleLoadingView.swift in Sources */,
 				CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
+				CB0A5B6725AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */,
+				CB0A5B5225AA45650031F48F /* AccountViewModel.swift in Sources */,
 				CB0FDEC125A7ACF9009D7BDB /* HomeViewModelType.swift in Sources */,
 				CB0FDF0825A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */,
 				CB0A5AE425A9BEAC0031F48F /* HomeRouting.swift in Sources */,
@@ -1527,6 +1598,7 @@
 				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DB259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB0FDEB625A7ACC4009D7BDB /* HomeView.swift in Sources */,
+				CB0A5B4425AA450A0031F48F /* AccountView.swift in Sources */,
 				CB0A5B0D25A9C1180031F48F /* CreatePortfolioViewModel.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
 				CB0A5B2325A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */,
@@ -1534,6 +1606,7 @@
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
 				CB0FDEC825A7AD1A009D7BDB /* HomeViewModel.swift in Sources */,
 				CB41432025A71006006D06F2 /* AuthRouting.swift in Sources */,
+				CB0A5B6025AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */,
 				CBE4EA0E259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */,
 				CB0D1DA8259BB429004BA1FD /* SignUpViewModelOutput.swift in Sources */,
 				CB41433625A71B79006D06F2 /* RootRouting.swift in Sources */,
@@ -1543,6 +1616,7 @@
 				CB41432825A7121D006D06F2 /* Store.swift in Sources */,
 				CB0FDE9F25A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CBE4E9F52596712D002ECCF0 /* LoginView.swift in Sources */,
+				CB0A5B5925AA45BA0031F48F /* AccountViewModelInput.swift in Sources */,
 				CB0FDEFA25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
 				CB4466A025A8F158007C237E /* RootViewModelInput.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,

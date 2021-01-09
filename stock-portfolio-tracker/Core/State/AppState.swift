@@ -37,6 +37,7 @@ extension AppState {
         
         var home = HomeRouting()
         var createPortfolio = CreatePortfolioRouting()
+        var account = AccountRouting()
     }
 }
 

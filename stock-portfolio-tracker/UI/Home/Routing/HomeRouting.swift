@@ -8,6 +8,12 @@
 import Foundation
 
 struct HomeRouting: Equatable {
+    
+    // MARK: - Sheet
     var showModalSheet: Bool = false
+    var currentModalSheet: HomeModalRoutingType?
+    
+    // MARK: - Portfolio
     var portfolioDetails: Int?
+    
 }

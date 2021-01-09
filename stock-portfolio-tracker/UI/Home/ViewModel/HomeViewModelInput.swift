@@ -9,4 +9,5 @@ import Foundation
 
 protocol HomeViewModelInputType {
     func newPortfolioAction()
+    func accountAction()
 }

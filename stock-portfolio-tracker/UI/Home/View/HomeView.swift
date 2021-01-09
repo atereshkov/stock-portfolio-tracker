@@ -29,6 +29,7 @@ struct HomeView: View {
             }
             .padding([.leading, .trailing], 18)
             .navigationBarTitle(Text("Dashboard"))
+            .navigationBarItems(trailing: accountButton)
         }
     }
     
@@ -60,7 +61,20 @@ struct HomeView: View {
     }
     
     var modalSheet: some View {
-        CreatePortfolio()
+        switch viewModel.routingState.currentModalSheet {
+        case .account:
+            return AnyView(AccountView())
+        case .createPortfolio:
+            return AnyView(CreatePortfolioView())
+        case .none:
+            return AnyView(Text(""))
+        }
+    }
+    
+    var accountButton: some View {
+        Button(action: viewModel.accountAction,
+               label: { Image(systemName: "person.crop.circle") }
+        ).imageScale(.large)
     }
     
     func portfolioView(_ item: PortfolioViewItem) -> some View {

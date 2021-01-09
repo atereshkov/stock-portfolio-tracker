@@ -63,6 +63,9 @@ private extension Session {
         container.register { _ in
             return CreatePortfolioViewModel(session: self)
         }
+        container.register { _ in
+            return AccountViewModel(session: self)
+        }
     }
     
 }

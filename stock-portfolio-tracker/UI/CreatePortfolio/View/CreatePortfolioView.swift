@@ -8,7 +8,7 @@
 import SwiftUI
 import DICE
 
-struct CreatePortfolio: View {
+struct CreatePortfolioView: View {
     
     @EnvironmentObservableInjected var viewModel: CreatePortfolioViewModel
     
