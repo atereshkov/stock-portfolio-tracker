@@ -79,6 +79,15 @@ private extension Session {
         container.register { _ in
             return TransactionsViewModel(session: self)
         }
+        container.register { _ in
+            return DividendsViewModel(session: self)
+        }
+        container.register { _ in
+            return DividendViewModel(session: self)
+        }
+        container.register { _ in
+            return AddDividendViewModel(session: self)
+        }
     }
     
 }
@@ -91,6 +100,9 @@ private extension Session {
         }
         container.register(PortfolioServiceType.self) { _ in
             return PortfolioService()
+        }
+        container.register(DividendServiceType.self) { _ in
+            return DividendService()
         }
     }
     
@@ -105,6 +117,9 @@ private extension Session {
         container.register(PortfolioListenerType.self, scope: .single) { _ in
             return PortfolioListener(session: self)
         }
+        container.register(DividendListenerType.self, scope: .single) { _ in
+            return DividendListener(session: self)
+        }
     }
     
 }
@@ -117,6 +132,9 @@ private extension Session {
         }
         container.register(PortfolioRepositoryType.self) { _ in
             return FirebasePortfolioRepository(appState: self.appState)
+        }
+        container.register(DividendRepositoryType.self) { _ in
+            return FirebaseDividendRepository(appState: self.appState)
         }
     }
     

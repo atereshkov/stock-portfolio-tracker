@@ -9,15 +9,42 @@ import Combine
 
 class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsViewModelOutputType>, DividendsViewModelType {
     
+    private var cancelBag = CancelBag()
+    
     override init(session: SessionType) {
+        _routingState = .init(initialValue: session.appState.value.routing.dividends)
+        
         super.init(session: session)
+        
+        cancelBag.collect {
+            $routingState
+                .sink { session.appState[\.routing.dividends] = $0 }
+            
+            session.appState.map(\.routing.addDividend.isPresented)
+                .removeDuplicates()
+                .assign(to: \.routingState.showModalSheet, on: self)
+            
+            session.appState.map(\.data.dividends)
+                .removeDuplicates()
+                .assign(to: \.dividends, on: self)
+        }
     }
+    
+    // MARK: - Output
+    
+    @Published var routingState: DividendsRouting
+    @Published var dividends: [DividendViewItem] = []
     
 }
 
 // MARK: - DividendsViewModelInputType
 
 extension DividendsViewModel: DividendsViewModelInputType {
+    
+    func addAction() {
+        routingState.currentModalSheet = .addDividend
+        session.appState[\.routing.addDividend.isPresented] = true
+    }
     
 }
 

@@ -31,6 +31,7 @@ extension AppState {
 extension AppState {
     struct DataState: Equatable {
         var portfolios: [PortfolioViewItem] = []
+        var dividends: [DividendViewItem] = []
     }
 }
 
@@ -47,6 +48,10 @@ extension AppState {
         var account = AccountRouting()
         var portfolio = PortfolioRouting()
         var portfolioSettings = PortfolioSettingsRouting()
+        
+        var dividends = DividendsRouting()
+        var addDividend = AddDividendRouting()
+        var dividend = DividendRouting()
     }
 }
 

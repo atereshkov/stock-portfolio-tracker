@@ -24,16 +24,17 @@ struct HomeView: View {
     var content: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                portfoliosRow
+                portfoliosSection
+                    .padding([.top], 12)
                 portfolios
             }
             .padding([.leading, .trailing], 18)
-            .navigationBarTitle(Text("Dashboard"))
+            .navigationBarTitle(Text("Dashboard"), displayMode: .inline)
             .navigationBarItems(trailing: accountButton)
         }
     }
     
-    var portfoliosRow: some View {
+    var portfoliosSection: some View {
         HStack {
             Text("Portfolios")
             Spacer()
