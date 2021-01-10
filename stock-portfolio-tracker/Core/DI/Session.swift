@@ -96,7 +96,7 @@ private extension Session {
             return FirebaseAuthRepository()
         }
         container.register(PortfolioRepositoryType.self) { _ in
-            return FirebasePortfolioRepository()
+            return FirebasePortfolioRepository(appState: self.appState)
         }
     }
     

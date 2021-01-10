@@ -10,13 +10,25 @@ import FirebaseFirestore
 
 class FirebasePortfolioRepository: PortfolioRepositoryType {
     
+    let appState: Store<AppState>
     let db = Firestore.firestore()
     
+    init(appState: Store<AppState>) {
+        self.appState = appState
+    }
+    
     func createPortfolio(name: String, currency: String) -> Future<Void, Error> {
+//        guard let userId = appState[\.user.id] else {
+//            return Future { resolve in
+//                resolve(.failure(.noUser))
+//            }
+//        }
+        
         return Future { [weak self] resolve in
             self?.db.collection("portfolio").addDocument(data: [
                 "name": name,
-                "currency": currency
+                "currency": currency,
+                "ownerUid": self?.appState[\.user.id] ?? ""
             ]) { error in
                 if let error = error {
                     resolve(.failure(error))
