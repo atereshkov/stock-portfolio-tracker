@@ -23,6 +23,8 @@ struct MainView: View {
         TabView(selection: $viewModel.selectedTab) {
             homeTab
             dividendsTab
+            feesTab
+            transactionsTab
         }
     }
     
@@ -44,8 +46,22 @@ struct MainView: View {
             .tag(1)
     }
     
-    var backgroundColor: some View {
-        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
+    var feesTab: some View {
+        FeesView()
+            .tabItem {
+                viewModel.selectedTab == 2 ? Image(systemName: "wallet.pass.fill") : Image(systemName: "wallet.pass")
+                Text("Fees")
+            }
+            .tag(2)
+    }
+    
+    var transactionsTab: some View {
+        TransactionsView()
+            .tabItem {
+                viewModel.selectedTab == 3 ? Image(systemName: "doc.on.doc.fill") : Image(systemName: "doc.on.doc")
+                Text("Transactions")
+            }
+            .tag(3)
     }
     
 }

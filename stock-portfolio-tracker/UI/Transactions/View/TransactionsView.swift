@@ -1,16 +1,16 @@
 //
-//  DividendsView.swift
+//  TransactionsView.swift
 //  stock-portfolio-tracker
 //
-//  Created by nb-058-41b on 1/8/21.
+//  Created by nb-058-41b on 1/10/21.
 //
 
 import SwiftUI
 import DICE
 
-struct DividendsView: View {
+struct TransactionsView: View {
     
-    @EnvironmentObservableInjected var viewModel: HomeViewModel
+    @EnvironmentObservableInjected var viewModel: TransactionsViewModel
     
     var body: some View {
         content
@@ -25,7 +25,7 @@ struct DividendsView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Dividends"))
+            .navigationBarTitle(Text("Transactions"))
         }
     }
     

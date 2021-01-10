@@ -179,6 +179,26 @@
 		CB76B97425AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B97225AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift */; };
 		CB76B97A25AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B97925AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift */; };
 		CB76B97B25AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B97925AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift */; };
+		CB76B98425AB174700E2920C /* FeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B98325AB174700E2920C /* FeesView.swift */; };
+		CB76B98525AB174700E2920C /* FeesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B98325AB174700E2920C /* FeesView.swift */; };
+		CB76B98B25AB176400E2920C /* FeesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B98A25AB176400E2920C /* FeesViewModelType.swift */; };
+		CB76B98C25AB176400E2920C /* FeesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B98A25AB176400E2920C /* FeesViewModelType.swift */; };
+		CB76B99225AB177700E2920C /* FeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99125AB177700E2920C /* FeesViewModel.swift */; };
+		CB76B99325AB177700E2920C /* FeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99125AB177700E2920C /* FeesViewModel.swift */; };
+		CB76B99925AB179900E2920C /* FeesViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99825AB179900E2920C /* FeesViewModelInput.swift */; };
+		CB76B99A25AB179900E2920C /* FeesViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99825AB179900E2920C /* FeesViewModelInput.swift */; };
+		CB76B9A025AB17AE00E2920C /* FeesViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99F25AB17AE00E2920C /* FeesViewModelOutput.swift */; };
+		CB76B9A125AB17AE00E2920C /* FeesViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B99F25AB17AE00E2920C /* FeesViewModelOutput.swift */; };
+		CB76B9AA25AB18E100E2920C /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9A925AB18E100E2920C /* TransactionsView.swift */; };
+		CB76B9AB25AB18E100E2920C /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9A925AB18E100E2920C /* TransactionsView.swift */; };
+		CB76B9B525AB191800E2920C /* TransactionsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9B425AB191800E2920C /* TransactionsViewModelType.swift */; };
+		CB76B9B625AB191800E2920C /* TransactionsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9B425AB191800E2920C /* TransactionsViewModelType.swift */; };
+		CB76B9BC25AB192E00E2920C /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9BB25AB192E00E2920C /* TransactionsViewModel.swift */; };
+		CB76B9BD25AB192E00E2920C /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9BB25AB192E00E2920C /* TransactionsViewModel.swift */; };
+		CB76B9C725AB197400E2920C /* TransactionsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9C625AB197400E2920C /* TransactionsViewModelInput.swift */; };
+		CB76B9C825AB197400E2920C /* TransactionsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9C625AB197400E2920C /* TransactionsViewModelInput.swift */; };
+		CB76B9CE25AB198A00E2920C /* TransactionsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */; };
+		CB76B9CF25AB198A00E2920C /* TransactionsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */; };
 		CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
 		CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
 		CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
@@ -347,6 +367,16 @@
 		CB76B96B25AB0B2100E2920C /* PortfolioSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSettingsViewModel.swift; sourceTree = "<group>"; };
 		CB76B97225AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSettingsViewModelInput.swift; sourceTree = "<group>"; };
 		CB76B97925AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioSettingsViewModelOutput.swift; sourceTree = "<group>"; };
+		CB76B98325AB174700E2920C /* FeesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesView.swift; sourceTree = "<group>"; };
+		CB76B98A25AB176400E2920C /* FeesViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesViewModelType.swift; sourceTree = "<group>"; };
+		CB76B99125AB177700E2920C /* FeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesViewModel.swift; sourceTree = "<group>"; };
+		CB76B99825AB179900E2920C /* FeesViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesViewModelInput.swift; sourceTree = "<group>"; };
+		CB76B99F25AB17AE00E2920C /* FeesViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesViewModelOutput.swift; sourceTree = "<group>"; };
+		CB76B9A925AB18E100E2920C /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		CB76B9B425AB191800E2920C /* TransactionsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelType.swift; sourceTree = "<group>"; };
+		CB76B9BB25AB192E00E2920C /* TransactionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		CB76B9C625AB197400E2920C /* TransactionsViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelInput.swift; sourceTree = "<group>"; };
+		CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelOutput.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelType.swift; sourceTree = "<group>"; };
 		CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -727,6 +757,8 @@
 				CB76B94A25AB0ABB00E2920C /* PortfolioSettings */,
 				CB0A5AEE25A9C0890031F48F /* CreatePortfolio */,
 				CB0FDEDC25A7AE3E009D7BDB /* Dividends */,
+				CB76B98025AB172400E2920C /* Fees */,
+				CB76B9A625AB18CF00E2920C /* Transactions */,
 				CBE4E9E525964E71002ECCF0 /* View */,
 				CBF8429625A660CC00C116B4 /* ViewModifier */,
 			);
@@ -1049,6 +1081,62 @@
 				CB76B94E25AB0AF600E2920C /* PortfolioSettingsRouting.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		CB76B98025AB172400E2920C /* Fees */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B98225AB173900E2920C /* View */,
+				CB76B98125AB173500E2920C /* ViewModel */,
+			);
+			path = Fees;
+			sourceTree = "<group>";
+		};
+		CB76B98125AB173500E2920C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B98A25AB176400E2920C /* FeesViewModelType.swift */,
+				CB76B99125AB177700E2920C /* FeesViewModel.swift */,
+				CB76B99825AB179900E2920C /* FeesViewModelInput.swift */,
+				CB76B99F25AB17AE00E2920C /* FeesViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB76B98225AB173900E2920C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B98325AB174700E2920C /* FeesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB76B9A625AB18CF00E2920C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B9A825AB18D900E2920C /* View */,
+				CB76B9A725AB18D600E2920C /* ViewModel */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		CB76B9A725AB18D600E2920C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B9B425AB191800E2920C /* TransactionsViewModelType.swift */,
+				CB76B9BB25AB192E00E2920C /* TransactionsViewModel.swift */,
+				CB76B9C625AB197400E2920C /* TransactionsViewModelInput.swift */,
+				CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB76B9A825AB18D900E2920C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB76B9A925AB18E100E2920C /* TransactionsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CBE4E8FC25950136002ECCF0 /* App */ = {
@@ -1621,7 +1709,9 @@
 				CB0A5AFF25A9C0F70031F48F /* CreatePortfolioViewModelType.swift in Sources */,
 				CB0D1DC2259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */,
 				CB76B94425AAFA0D00E2920C /* PortfolioViewModelInput.swift in Sources */,
+				CB76B9CF25AB198A00E2920C /* TransactionsViewModelOutput.swift in Sources */,
 				CB378B5B2585471A00A5F14D /* Session.swift in Sources */,
+				CB76B9AB25AB18E100E2920C /* TransactionsView.swift in Sources */,
 				CB76B93E25AAFA0900E2920C /* PortfolioViewModelType.swift in Sources */,
 				CB41434B25A71C21006D06F2 /* RootViewModel.swift in Sources */,
 				CB0D1DBA259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
@@ -1633,13 +1723,16 @@
 				CB41433025A712A6006D06F2 /* AppEnvironment.swift in Sources */,
 				CB0FDED725A7AD6A009D7BDB /* HomeViewModelOutput.swift in Sources */,
 				CB0FDEF025A7AE65009D7BDB /* DividendsViewModelType.swift in Sources */,
+				CB76B98C25AB176400E2920C /* FeesViewModelType.swift in Sources */,
 				CBE4E9592595122E002ECCF0 /* assets.swift in Sources */,
 				CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CB0D1D9B259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
+				CB76B98525AB174700E2920C /* FeesView.swift in Sources */,
 				CB76B97425AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift in Sources */,
 				CBE4E9D125960707002ECCF0 /* BaseViewModel.swift in Sources */,
 				CB0A5B0E25A9C1180031F48F /* CreatePortfolioViewModel.swift in Sources */,
 				CB4466A125A8F158007C237E /* RootViewModelInput.swift in Sources */,
+				CB76B9C825AB197400E2920C /* TransactionsViewModelInput.swift in Sources */,
 				CB378B542585470900A5F14D /* SessionType.swift in Sources */,
 				CB41435A25A72221006D06F2 /* AuthListener.swift in Sources */,
 				CB0A5AF425A9C0E60031F48F /* CreatePortfolioView.swift in Sources */,
@@ -1647,6 +1740,7 @@
 				CB0A5B1C25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift in Sources */,
 				CB0D1D89259BB3E7004BA1FD /* SignUpView.swift in Sources */,
 				CB0D1D94259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
+				CB76B99A25AB179900E2920C /* FeesViewModelInput.swift in Sources */,
 				CBE4EA16259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
@@ -1666,6 +1760,7 @@
 				CBE4E9C225960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB76B95B25AB0B0C00E2920C /* PortfolioSettingsView.swift in Sources */,
 				CBE4E97225951249002ECCF0 /* WelcomeView.swift in Sources */,
+				CB76B9B625AB191800E2920C /* TransactionsViewModelType.swift in Sources */,
 				CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
 				CB0A5B6825AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */,
 				CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */,
@@ -1676,6 +1771,8 @@
 				CB0FDEB725A7ACC4009D7BDB /* HomeView.swift in Sources */,
 				CB0A5B2425A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */,
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
+				CB76B9A125AB17AE00E2920C /* FeesViewModelOutput.swift in Sources */,
+				CB76B99325AB177700E2920C /* FeesViewModel.swift in Sources */,
 				CB76B96D25AB0B2100E2920C /* PortfolioSettingsViewModel.swift in Sources */,
 				CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CB76B94525AAFA0E00E2920C /* PortfolioViewModelOutput.swift in Sources */,
@@ -1706,6 +1803,7 @@
 				CBE4E96825951245002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CBE4EA082596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB76B92F25AAFA0000E2920C /* PortfolioModalRoutingType.swift in Sources */,
+				CB76B9BD25AB192E00E2920C /* TransactionsViewModel.swift in Sources */,
 				CB44666E25A8EE6B007C237E /* RootView.swift in Sources */,
 				CB0A5B6125AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */,
 				CB41433F25A71BBD006D06F2 /* CancelBag.swift in Sources */,
@@ -1720,6 +1818,7 @@
 				CB0D1DC1259CA98E004BA1FD /* AuthRepositoryType.swift in Sources */,
 				CB76B8F725AA60F600E2920C /* PortfolioListener.swift in Sources */,
 				CBE4E9582595122E002ECCF0 /* assets.swift in Sources */,
+				CB76B98B25AB176400E2920C /* FeesViewModelType.swift in Sources */,
 				CB41434A25A71C21006D06F2 /* RootViewModel.swift in Sources */,
 				CB0A5B1B25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift in Sources */,
 				CB0D1DB9259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
@@ -1731,6 +1830,7 @@
 				CB41432F25A712A6006D06F2 /* AppEnvironment.swift in Sources */,
 				CB0FDED625A7AD6A009D7BDB /* HomeViewModelOutput.swift in Sources */,
 				CB0A5B3925AA44DF0031F48F /* AccountRouting.swift in Sources */,
+				CB76B9B525AB191800E2920C /* TransactionsViewModelType.swift in Sources */,
 				CB0FDEEF25A7AE65009D7BDB /* DividendsViewModelType.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */,
 				CB378B6C2585479900A5F14D /* MainViewModel.swift in Sources */,
@@ -1750,9 +1850,11 @@
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CB76B8CE25AA5D2500E2920C /* FirebasePortfolioRepository.swift in Sources */,
+				CB76B99925AB179900E2920C /* FeesViewModelInput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
 				CB41437425A7426C006D06F2 /* CircleLoadingView.swift in Sources */,
+				CB76B9BC25AB192E00E2920C /* TransactionsViewModel.swift in Sources */,
 				CB0D1D7E259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CB0A5B6725AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */,
 				CB0A5B5225AA45650031F48F /* AccountViewModel.swift in Sources */,
@@ -1766,6 +1868,7 @@
 				CB0FDEDE25A7AE50009D7BDB /* DividendsView.swift in Sources */,
 				CB0A5B1425A9C1210031F48F /* CreatePortfolioViewModelInput.swift in Sources */,
 				CB0FDECF25A7AD59009D7BDB /* HomeViewModelInput.swift in Sources */,
+				CB76B9C725AB197400E2920C /* TransactionsViewModelInput.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CB0D1DA1259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
@@ -1780,6 +1883,7 @@
 				CB76B94F25AB0AF600E2920C /* PortfolioSettingsRouting.swift in Sources */,
 				CB0A5B0D25A9C1180031F48F /* CreatePortfolioViewModel.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
+				CB76B99225AB177700E2920C /* FeesViewModel.swift in Sources */,
 				CB0A5B2325A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */,
 				CBE4E9B625951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
@@ -1790,6 +1894,7 @@
 				CB0D1DA8259BB429004BA1FD /* SignUpViewModelOutput.swift in Sources */,
 				CB76B92E25AAFA0000E2920C /* PortfolioModalRoutingType.swift in Sources */,
 				CB41433625A71B79006D06F2 /* RootRouting.swift in Sources */,
+				CB76B9A025AB17AE00E2920C /* FeesViewModelOutput.swift in Sources */,
 				CBE4E9E725964E7D002ECCF0 /* NavigationLazyView.swift in Sources */,
 				CBE4E9562595122E002ECCF0 /* strings.swift in Sources */,
 				CB41437C25A787EB006D06F2 /* LoginRouting.swift in Sources */,
@@ -1802,7 +1907,10 @@
 				CB4466A025A8F158007C237E /* RootViewModelInput.swift in Sources */,
 				CB76B92125AAF88800E2920C /* PortfolioViewModelOutput.swift in Sources */,
 				CBE4E9AF2595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
+				CB76B9CE25AB198A00E2920C /* TransactionsViewModelOutput.swift in Sources */,
+				CB76B9AA25AB18E100E2920C /* TransactionsView.swift in Sources */,
 				CB76B97325AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift in Sources */,
+				CB76B98425AB174700E2920C /* FeesView.swift in Sources */,
 				CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA825A7A420009D7BDB /* SignUpRouting.swift in Sources */,
 				CB44669525A8F10F007C237E /* RootViewModelType.swift in Sources */,
