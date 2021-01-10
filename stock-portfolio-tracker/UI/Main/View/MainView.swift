@@ -49,7 +49,7 @@ struct MainView: View {
     var feesTab: some View {
         FeesView()
             .tabItem {
-                viewModel.selectedTab == 2 ? Image(systemName: "wallet.pass.fill") : Image(systemName: "wallet.pass")
+                viewModel.selectedTab == 2 ? Image(systemName: "doc.text.fill") : Image(systemName: "doc.text")
                 Text("Fees")
             }
             .tag(2)
@@ -58,7 +58,7 @@ struct MainView: View {
     var transactionsTab: some View {
         TransactionsView()
             .tabItem {
-                viewModel.selectedTab == 3 ? Image(systemName: "doc.on.doc.fill") : Image(systemName: "doc.on.doc")
+                viewModel.selectedTab == 3 ? Image(systemName: "arrow.up.arrow.down.square.fill") : Image(systemName: "arrow.up.arrow.down.square")
                 Text("Transactions")
             }
             .tag(3)
