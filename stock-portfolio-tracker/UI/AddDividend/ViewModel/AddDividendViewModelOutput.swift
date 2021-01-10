@@ -9,5 +9,7 @@ import Foundation
 
 protocol AddDividendViewModelOutputType {
     var title: String? { get }
-    var currencyOptions: [CurrencyViewItem] { get }
+    
+    var portfolioOptions: [PortfolioViewItem] { get }
+    var tickerOptions: [TickerViewItem] { get }
 }

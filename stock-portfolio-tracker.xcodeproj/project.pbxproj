@@ -240,6 +240,8 @@
 		CBC59BB725AB7F0400921D2E /* DividendRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BB525AB7F0400921D2E /* DividendRepositoryType.swift */; };
 		CBC59BC125AB7F2400921D2E /* FirebaseDividendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC025AB7F2400921D2E /* FirebaseDividendRepository.swift */; };
 		CBC59BC225AB7F2400921D2E /* FirebaseDividendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC025AB7F2400921D2E /* FirebaseDividendRepository.swift */; };
+		CBC59BC825AB888C00921D2E /* TickerViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC725AB888C00921D2E /* TickerViewitem.swift */; };
+		CBC59BC925AB888C00921D2E /* TickerViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC725AB888C00921D2E /* TickerViewitem.swift */; };
 		CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
 		CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
 		CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
@@ -438,6 +440,7 @@
 		CBC59BAD25AB7EE900921D2E /* DividendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendService.swift; sourceTree = "<group>"; };
 		CBC59BB525AB7F0400921D2E /* DividendRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendRepositoryType.swift; sourceTree = "<group>"; };
 		CBC59BC025AB7F2400921D2E /* FirebaseDividendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDividendRepository.swift; sourceTree = "<group>"; };
+		CBC59BC725AB888C00921D2E /* TickerViewitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewitem.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelType.swift; sourceTree = "<group>"; };
 		CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -616,6 +619,7 @@
 				CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */,
 				CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */,
 				CBC59B1125AB72BF00921D2E /* DividendViewItem.swift */,
+				CBC59BC725AB888C00921D2E /* TickerViewitem.swift */,
 			);
 			path = ViewItem;
 			sourceTree = "<group>";
@@ -1985,6 +1989,7 @@
 				CB76B8CF25AA5D2500E2920C /* FirebasePortfolioRepository.swift in Sources */,
 				CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
+				CBC59BC925AB888C00921D2E /* TickerViewitem.swift in Sources */,
 				CB41436A25A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA925A7A420009D7BDB /* SignUpRouting.swift in Sources */,
 				CBC59B6B25AB7C7700921D2E /* AddDividendViewModelInput.swift in Sources */,
@@ -2079,6 +2084,7 @@
 				CBF8429825A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CBC59B1225AB72BF00921D2E /* DividendViewItem.swift in Sources */,
 				CB0FDF0125A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */,
+				CBC59BC825AB888C00921D2E /* TickerViewitem.swift in Sources */,
 				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DB259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB76B92825AAF9EB00E2920C /* PortfolioRouting.swift in Sources */,

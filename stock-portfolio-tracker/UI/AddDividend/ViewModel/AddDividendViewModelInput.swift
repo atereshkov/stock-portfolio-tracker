@@ -8,9 +8,10 @@
 import Foundation
 
 protocol AddDividendViewModelInputType {
-    func create(currencyIndex: Int)
+    func add()
     
     func onDisappear()
     
-    var name: String? { get set }
+    var paid: String? { get set }
+    var tax: String? { get set }
 }

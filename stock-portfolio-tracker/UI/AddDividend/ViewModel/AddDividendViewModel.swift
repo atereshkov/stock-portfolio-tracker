@@ -28,33 +28,41 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
                 .assign(to: \.routingState, on: self)
         }
         
-        titlePublisher.sink { [weak self] value in
-            if let value = value, !value.isEmpty {
-                self?.title = value
-            } else {
-                self?.title = "New portfolio"
-            }
-        }.store(in: cancelBag)
+        session.appState.map(\.data.portfolios)
+            .removeDuplicates()
+            .assign(to: \.portfolioOptions, on: self)
+            .store(in: cancelBag)
+        
+//        titlePublisher.sink { [weak self] value in
+//            if let value = value, !value.isEmpty {
+//                self?.title = value
+//            } else {
+//                self?.title = "New portfolio"
+//            }
+//        }.store(in: cancelBag)
     }
     
     // MARK: - Input
     
-    @Published var name: String?
+    @Published var paid: String?
+    @Published var tax: String?
     
     // MARK: - Output
     
-    @Published var routingState: AddDividendRouting
-    @Published var currencyOptions = [
-        CurrencyViewItem(id: "USD", name: "USD"),
-        CurrencyViewItem(id: "EUR", name: "EUR")
+    @Published var portfolioOptions: [PortfolioViewItem] = []
+    @Published var tickerOptions: [TickerViewItem] = [
+        TickerViewItem(id: "1", ticker: "AAPL"),
+        TickerViewItem(id: "2", ticker: "SPY")
     ]
+    
+    @Published var routingState: AddDividendRouting
     @Published var title: String?
     
     // MARK: - Private
     
-    private lazy var titlePublisher: AnyPublisher<String?,Never> = {
-        $name.eraseToAnyPublisher()
-    }()
+//    private lazy var titlePublisher: AnyPublisher<String?,Never> = {
+//        $name.eraseToAnyPublisher()
+//    }()
     
 }
 
@@ -62,11 +70,12 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
 
 extension AddDividendViewModel: AddDividendViewModelInputType {
     
-    func create(currencyIndex: Int) {
-        guard let name = name?.trim() else { return }
+    func add() {
+        guard let paid = paid?.trim() else { return }
+        guard let tax = tax?.trim() else { return }
         
-        guard currencyIndex >= 0 && currencyIndex < currencyOptions.count else { return }
-        let currency = currencyOptions[currencyIndex]
+//        guard currencyIndex >= 0 && currencyIndex < currencyOptions.count else { return }
+//        let currency = currencyOptions[currencyIndex]
         
         dividendService
             .addDividend()
@@ -85,7 +94,7 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
     }
     
     func onDisappear() {
-        session.appState[\.routing.createPortfolio.isPresented] = false
+        session.appState[\.routing.addDividend.isPresented] = false
     }
     
 }

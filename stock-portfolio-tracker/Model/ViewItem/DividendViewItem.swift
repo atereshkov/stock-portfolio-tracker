@@ -13,6 +13,6 @@ struct DividendViewItem: Hashable, Identifiable {
     var portfolioId: String
     var ticker: String
     var date: Date
-    var paid: Float
+    var paid: Decimal
     var tax: Double
 }

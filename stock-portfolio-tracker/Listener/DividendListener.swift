@@ -49,9 +49,10 @@ private extension DividendListener {
                             portfolioId: $0.data()["portfolioId"] as? String ?? "",
                             ticker: $0.data()["ticker"] as? String ?? "",
                             date: $0.data()["date"] as? Date ?? Date(),
-                            paid: $0.data()["paid"] as? Float ?? 0.0,
+                            paid: ($0.data()["paid"] as? NSNumber)?.decimalValue ?? 0.0,
                             tax: $0.data()["tax"] as? Double ?? 0.0)
                         }
+                    
                     self?.session.appState[\.data.dividends] = dividends
                 }
             }

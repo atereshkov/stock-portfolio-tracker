@@ -12,7 +12,12 @@ struct AddDividendView: View {
     
     @EnvironmentObservableInjected var viewModel: AddDividendViewModel
     
-    @State var currencyIndex: Int = 0
+    @State var portfolioIndex: Int = 0
+    @State var tickerIndex: Int = 0
+    
+    @State var date = Date()
+    
+    @State var toggle: Bool = false
     
     var body: some View {
         content
@@ -23,33 +28,73 @@ struct AddDividendView: View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Name", text: Binding(
-                                get: { viewModel.name ?? "" },
-                                set: { viewModel.name = $0 })
-                    )
                     HStack {
-                        Picker("Currency", selection: $currencyIndex) {
-                            ForEach(0..<viewModel.currencyOptions.count) { index in
-                                Text(viewModel.currencyOptions[index].name).tag(index)
+                        Picker("Portfolio", selection: $portfolioIndex) {
+                            ForEach(0..<viewModel.portfolioOptions.count) { index in
+                                Text(viewModel.portfolioOptions[index].name).tag(index)
                             }
                         }
                         .pickerStyle(MenuPickerStyle())
                         Spacer()
-                        Text(viewModel.currencyOptions[currencyIndex].name)
+                        Text(viewModel.portfolioOptions[portfolioIndex].name)
+                    }
+                    HStack {
+                        Picker("Ticker", selection: $tickerIndex) {
+                            ForEach(0..<viewModel.tickerOptions.count) { index in
+                                Text(viewModel.tickerOptions[index].ticker).tag(index)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                        Spacer()
+                        Text(viewModel.tickerOptions[tickerIndex].ticker)
                     }
                 }
                 Section {
+                    HStack {
+                        TextField("Paid", text: Binding(
+                                    get: { viewModel.paid ?? "" },
+                                    set: { viewModel.paid = $0 })
+                        )
+                        .keyboardType(.decimalPad)
+                        if toggle {
+                            Spacer()
+                            Text("per share")
+                                .font(.system(size: 12))
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                    HStack {
+                        TextField("Tax", text: Binding(
+                                    get: { viewModel.tax ?? "" },
+                                    set: { viewModel.tax = $0 })
+                        )
+                        .keyboardType(.numberPad)
+                        Spacer()
+                        Text("%")
+                    }
+                    Toggle(isOn: $toggle) {
+                        Text("Per 1 share")
+                            .font(.system(size: 15))
+                            .foregroundColor(Color.gray)
+                    }
+                }
+                Section {
+                    DatePicker("Date", selection: $date, displayedComponents: .date)
+                        .datePickerStyle(DefaultDatePickerStyle())
+                        .frame(maxHeight: 400)
+                }
+                Section {
                     Button(action: {
-                        viewModel.create(currencyIndex: currencyIndex)
+                        viewModel.add()
                     }, label: {
                         HStack {
                             Spacer()
-                            Text("Create")
+                            Text("Add")
                             Spacer()
                         }
                     })
                 }
-            }.navigationBarTitle(viewModel.title ?? "", displayMode: .inline)
+            }.navigationBarTitle("Add dividends", displayMode: .inline)
         }
     }
     
