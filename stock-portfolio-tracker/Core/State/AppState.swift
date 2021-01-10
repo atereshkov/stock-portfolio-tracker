@@ -39,6 +39,7 @@ extension AppState {
         var createPortfolio = CreatePortfolioRouting()
         var account = AccountRouting()
         var portfolio = PortfolioRouting()
+        var portfolioSettings = PortfolioSettingsRouting()
     }
 }
 

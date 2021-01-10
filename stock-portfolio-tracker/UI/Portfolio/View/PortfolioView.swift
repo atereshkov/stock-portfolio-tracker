@@ -13,6 +13,15 @@ struct PortfolioView: View {
     @EnvironmentObservableInjected var viewModel: PortfolioViewModel
     
     var body: some View {
+        content
+            .sheet(
+                isPresented: $viewModel.routingState.showModalSheet,
+                content: {
+                    modalSheet
+                })
+    }
+    
+    var content: some View {
         Text("Portfolio")
             .padding()
             .navigationBarItems(trailing: settingsNavBarIcon)
@@ -23,6 +32,15 @@ struct PortfolioView: View {
             action: viewModel.settingsAction,
             label: { Image(systemName: "gearshape").imageScale(.large) }
         )
+    }
+    
+    var modalSheet: some View {
+        switch viewModel.routingState.currentModalSheet {
+        case .settings:
+            return AnyView(PortfolioSettingsView())
+        case .none:
+            return AnyView(Text(""))
+        }
     }
     
 }

@@ -19,9 +19,9 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.portfolio] = $0 }
-//            session.appState.map(\.routing.portfolioSettings.isPresented)
-//                .removeDuplicates()
-//                .assign(to: \.routingState.showModalSheet, on: self)
+            session.appState.map(\.routing.portfolioSettings.isPresented)
+                .removeDuplicates()
+                .assign(to: \.routingState.showModalSheet, on: self)
         }
     }
     
@@ -36,8 +36,8 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
 extension PortfolioViewModel: PortfolioViewModelInputType {
     
     func settingsAction() {
-//        routingState.currentModalSheet = .settings
-//        session.appState[\.routing.portfolioSettings.isPresented] = true
+        routingState.currentModalSheet = .settings
+        session.appState[\.routing.portfolioSettings.isPresented] = true
     }
     
 }
