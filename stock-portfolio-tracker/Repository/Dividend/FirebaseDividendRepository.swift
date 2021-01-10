@@ -21,7 +21,7 @@ class FirebaseDividendRepository: DividendRepositoryType {
 
 extension FirebaseDividendRepository {
     
-    func addDividend() -> Future<Void, Error> {
+    func addDividend(_ dto: AddDividendDTO) -> Future<Void, Error> {
 //        guard let userId = appState[\.user.id] else {
 //            return Future { resolve in
 //                resolve(.failure(.noUser))
@@ -30,7 +30,12 @@ extension FirebaseDividendRepository {
         
         return Future { [weak self] resolve in
             self?.db.collection("dividend").addDocument(data: [
-                "ownerUid": self?.appState[\.user.id] ?? ""
+                "ownerUid": self?.appState[\.user.id] ?? "",
+                "portfolioId": dto.portfolioId,
+                "date": dto.date,
+                "paid": dto.paid,
+                "tax": dto.tax,
+                "ticker": dto.ticker
             ]) { error in
                 if let error = error {
                     resolve(.failure(error))

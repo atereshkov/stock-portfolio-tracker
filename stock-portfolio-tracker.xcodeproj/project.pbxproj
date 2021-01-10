@@ -242,6 +242,8 @@
 		CBC59BC225AB7F2400921D2E /* FirebaseDividendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC025AB7F2400921D2E /* FirebaseDividendRepository.swift */; };
 		CBC59BC825AB888C00921D2E /* TickerViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC725AB888C00921D2E /* TickerViewitem.swift */; };
 		CBC59BC925AB888C00921D2E /* TickerViewitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BC725AB888C00921D2E /* TickerViewitem.swift */; };
+		CBC59BCF25ABA0E800921D2E /* AddDividendDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */; };
+		CBC59BD025ABA0E800921D2E /* AddDividendDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */; };
 		CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E910259502EF002ECCF0 /* WelcomeView.swift */; };
 		CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */; };
 		CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */; };
@@ -441,6 +443,7 @@
 		CBC59BB525AB7F0400921D2E /* DividendRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendRepositoryType.swift; sourceTree = "<group>"; };
 		CBC59BC025AB7F2400921D2E /* FirebaseDividendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDividendRepository.swift; sourceTree = "<group>"; };
 		CBC59BC725AB888C00921D2E /* TickerViewitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerViewitem.swift; sourceTree = "<group>"; };
+		CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDividendDTO.swift; sourceTree = "<group>"; };
 		CBE4E910259502EF002ECCF0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		CBE4E91A25950303002ECCF0 /* WelcomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModelType.swift; sourceTree = "<group>"; };
 		CBE4E92025950336002ECCF0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
@@ -1050,6 +1053,7 @@
 		CB44674C25A9A9C0007C237E /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -1986,6 +1990,7 @@
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBC59BA825AB7E2900921D2E /* DividendViewModelOutput.swift in Sources */,
 				CB0FDEFB25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
+				CBC59BD025ABA0E800921D2E /* AddDividendDTO.swift in Sources */,
 				CB76B8CF25AA5D2500E2920C /* FirebasePortfolioRepository.swift in Sources */,
 				CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
@@ -2016,6 +2021,7 @@
 				CB76B98B25AB176400E2920C /* FeesViewModelType.swift in Sources */,
 				CB41434A25A71C21006D06F2 /* RootViewModel.swift in Sources */,
 				CB0A5B1B25A9C1290031F48F /* CreatePortfolioViewModelOutput.swift in Sources */,
+				CBC59BCF25ABA0E800921D2E /* AddDividendDTO.swift in Sources */,
 				CB0D1DB9259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
 				CB41431825A70F4E006D06F2 /* AppState.swift in Sources */,
 				CB0D1DB1259CA5B0004BA1FD /* AuthService.swift in Sources */,

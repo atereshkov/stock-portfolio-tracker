@@ -70,15 +70,21 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
 
 extension AddDividendViewModel: AddDividendViewModelInputType {
     
-    func add() {
-        guard let paid = paid?.trim() else { return }
-        guard let tax = tax?.trim() else { return }
+    func add(portfolioIndex: Int, tickerIndex: Int, perShareToggle: Bool, date: Date) {
+        guard let paidStr = paid?.trim(), let paid = Decimal(string: paidStr) else { return }
+        guard let taxStr = tax?.trim(), let tax = Double(taxStr) else { return }
+        let portfolioId = portfolioOptions[portfolioIndex].id
+        let ticker = tickerOptions[tickerIndex].ticker
         
 //        guard currencyIndex >= 0 && currencyIndex < currencyOptions.count else { return }
 //        let currency = currencyOptions[currencyIndex]
         
+        let dto = AddDividendDTO(
+            portfolioId: portfolioId, ticker: ticker, date: date, paid: paid, tax: tax
+        )
+        
         dividendService
-            .addDividend()
+            .addDividend(dto)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {

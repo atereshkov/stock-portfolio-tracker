@@ -17,7 +17,7 @@ struct AddDividendView: View {
     
     @State var date = Date()
     
-    @State var toggle: Bool = false
+    @State var perShareToggle: Bool = false
     
     var body: some View {
         content
@@ -56,7 +56,7 @@ struct AddDividendView: View {
                                     set: { viewModel.paid = $0 })
                         )
                         .keyboardType(.decimalPad)
-                        if toggle {
+                        if perShareToggle {
                             Spacer()
                             Text("per share")
                                 .font(.system(size: 12))
@@ -72,7 +72,7 @@ struct AddDividendView: View {
                         Spacer()
                         Text("%")
                     }
-                    Toggle(isOn: $toggle) {
+                    Toggle(isOn: $perShareToggle) {
                         Text("Per 1 share")
                             .font(.system(size: 15))
                             .foregroundColor(Color.gray)
@@ -85,7 +85,7 @@ struct AddDividendView: View {
                 }
                 Section {
                     Button(action: {
-                        viewModel.add()
+                        viewModel.input.add(portfolioIndex: portfolioIndex, tickerIndex: tickerIndex, perShareToggle: perShareToggle, date: date)
                     }, label: {
                         HStack {
                             Spacer()

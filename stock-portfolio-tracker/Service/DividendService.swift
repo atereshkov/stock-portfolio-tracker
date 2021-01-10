@@ -10,7 +10,7 @@ import Combine
 
 protocol DividendServiceType {
     
-    func addDividend() -> Future<Void, Error>
+    func addDividend(_ dto: AddDividendDTO) -> Future<Void, Error>
     
 }
 
@@ -22,8 +22,8 @@ class DividendService: DividendServiceType {
 
 extension DividendService {
     
-    func addDividend() -> Future<Void, Error> {
-        return dividendRepository.addDividend()
+    func addDividend(_ dto: AddDividendDTO) -> Future<Void, Error> {
+        return dividendRepository.addDividend(dto)
     }
     
 }
