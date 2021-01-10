@@ -78,7 +78,9 @@ extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
                 case .finished:
                     break
                 }
-            }, receiveValue: { _ in })
+            }, receiveValue: { [weak self] _ in
+                self?.onDisappear()
+            })
             .store(in: cancelBag)
     }
     

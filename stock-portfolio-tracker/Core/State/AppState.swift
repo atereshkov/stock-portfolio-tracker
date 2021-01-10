@@ -11,8 +11,15 @@ import Combine
 struct AppState: Equatable {
     var auth = AuthState()
     var user = UserData()
+    var data = DataState()
     var routing = ViewRouting()
     var system = System()
+}
+
+extension AppState {
+    struct AuthState: Equatable {
+        var isAuthorized: Bool = false
+    }
 }
 
 extension AppState {
@@ -22,8 +29,8 @@ extension AppState {
 }
 
 extension AppState {
-    struct AuthState: Equatable {
-        var isAuthorized: Bool = false
+    struct DataState: Equatable {
+        var portfolios: [PortfolioViewItem] = []
     }
 }
 

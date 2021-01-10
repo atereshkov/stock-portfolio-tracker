@@ -8,7 +8,7 @@
 import Foundation
 
 struct PortfolioViewItem: Hashable, Identifiable {
-    var id: Int
+    var id: String
     var name: String
     var currency: String
 }

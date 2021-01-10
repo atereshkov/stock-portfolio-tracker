@@ -29,6 +29,7 @@ private extension Session {
     func bind() {
         bindViewModel()
         bindService()
+        bindListeners()
         bindRepository()
         
         DICE.use(container)
@@ -88,11 +89,21 @@ private extension Session {
         container.register(AuthServiceType.self) { _ in
             return AuthService()
         }
+        container.register(PortfolioServiceType.self) { _ in
+            return PortfolioService()
+        }
+    }
+    
+}
+
+private extension Session {
+    
+    func bindListeners() {
         container.register(AuthListenerType.self, scope: .single) { _ in
             return AuthListener(appState: self.appState)
         }
-        container.register(PortfolioServiceType.self) { _ in
-            return PortfolioService()
+        container.register(PortfolioListenerType.self, scope: .single) { _ in
+            return PortfolioListener(session: self)
         }
     }
     

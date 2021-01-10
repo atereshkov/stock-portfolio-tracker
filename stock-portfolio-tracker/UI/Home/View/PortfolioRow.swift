@@ -27,7 +27,7 @@ struct PortfolioRow: View {
 #if DEBUG
 struct PortfolioRowViewPreviews: PreviewProvider {
     static var previews: some View {
-        PortfolioRow(item: PortfolioViewItem(id: 1, name: "Name1", currency: "$"))
+        PortfolioRow(item: PortfolioViewItem(id: "1", name: "Name1", currency: "$"))
             .previewLayout(.fixed(width: 375, height: 40))
     }
 }

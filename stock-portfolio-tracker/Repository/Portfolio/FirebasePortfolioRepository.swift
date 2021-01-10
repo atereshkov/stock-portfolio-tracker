@@ -17,6 +17,10 @@ class FirebasePortfolioRepository: PortfolioRepositoryType {
         self.appState = appState
     }
     
+}
+
+extension FirebasePortfolioRepository {
+    
     func createPortfolio(name: String, currency: String) -> Future<Void, Error> {
 //        guard let userId = appState[\.user.id] else {
 //            return Future { resolve in

@@ -14,6 +14,6 @@ struct HomeRouting: Equatable {
     var currentModalSheet: HomeModalRoutingType?
     
     // MARK: - Portfolio
-    var portfolioDetails: Int?
+    var portfolioDetails: String?
     
 }

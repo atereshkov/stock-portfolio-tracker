@@ -25,16 +25,17 @@ class HomeViewModel: BaseViewModel<HomeViewModelInputType, HomeViewModelOutputTy
             session.appState.map(\.routing.account.isPresented)
                 .removeDuplicates()
                 .assign(to: \.routingState.showModalSheet, on: self)
+            
+            session.appState.map(\.data.portfolios)
+                .removeDuplicates()
+                .assign(to: \.portfolios, on: self)
         }
     }
     
     // MARK: - Output
     
     @Published var routingState: HomeRouting
-    @Published var portfolios: [PortfolioViewItem] = [
-        PortfolioViewItem(id: 1, name: "First", currency: "$"),
-        PortfolioViewItem(id: 2, name: "Second", currency: "€")
-    ]
+    @Published var portfolios: [PortfolioViewItem] = []
     
 }
 
