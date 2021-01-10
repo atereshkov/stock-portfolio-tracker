@@ -72,13 +72,14 @@ struct HomeView: View {
     }
     
     var accountButton: some View {
-        Button(action: viewModel.accountAction,
-               label: { Image(systemName: "person.crop.circle") }
-        ).imageScale(.large)
+        Button(
+            action: viewModel.accountAction,
+            label: { Image(systemName: "person.crop.circle").imageScale(.large) }
+        )
     }
     
     func portfolioView(_ item: PortfolioViewItem) -> some View {
-        Text(item.name)
+        PortfolioView()
     }
     
 }

@@ -16,6 +16,7 @@ struct PortfolioRow: View {
             VStack(alignment: .leading) {
                 Text(item.name)
                 Text(item.currency)
+                Divider()
             }
             Spacer()
         }

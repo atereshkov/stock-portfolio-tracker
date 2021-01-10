@@ -66,6 +66,9 @@ private extension Session {
         container.register { _ in
             return AccountViewModel(session: self)
         }
+        container.register { _ in
+            return PortfolioViewModel(session: self)
+        }
     }
     
 }
@@ -79,6 +82,9 @@ private extension Session {
         container.register(AuthListenerType.self, scope: .single) { _ in
             return AuthListener(appState: self.appState)
         }
+        container.register(PortfolioServiceType.self) { _ in
+            return PortfolioService()
+        }
     }
     
 }
@@ -88,6 +94,9 @@ private extension Session {
     func bindRepository() {
         container.register(AuthRepositoryType.self) { _ in
             return FirebaseAuthRepository()
+        }
+        container.register(PortfolioRepositoryType.self) { _ in
+            return FirebasePortfolioRepository()
         }
     }
     

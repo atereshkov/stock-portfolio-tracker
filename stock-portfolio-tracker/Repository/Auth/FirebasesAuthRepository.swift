@@ -10,8 +10,6 @@ import Combine
 
 class FirebaseAuthRepository: AuthRepositoryType {
     
-    private var cancelBag = CancelBag()
-    
     func createUser(email: String, password: String) -> Future<Void, Error> {
         return Future { resolve in
             Auth.auth().createUser(withEmail: email, password: password) { _, error in

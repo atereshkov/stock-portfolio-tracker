@@ -10,9 +10,13 @@ import SwiftUI
 
 class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType, CreatePortfolioViewModelOutputType>, CreatePortfolioViewModelType {
     
+    private let portfolioService: PortfolioServiceType
+    
     private var cancelBag = CancelBag()
     
     override init(session: SessionType) {
+        self.portfolioService = session.resolve()
+        
         _routingState = .init(initialValue: session.appState.value.routing.createPortfolio)
         super.init(session: session)
         
@@ -59,7 +63,23 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
 extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
     
     func create(currencyIndex: Int) {
+        guard let name = name?.trim() else { return }
         
+        guard currencyIndex >= 0 && currencyIndex < currencyOptions.count else { return }
+        let currency = currencyOptions[currencyIndex]
+        
+        portfolioService
+            .createPortfolio(name: name, currency: currency.id)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    Swift.print(error)
+                case .finished:
+                    break
+                }
+            }, receiveValue: { _ in })
+            .store(in: cancelBag)
     }
     
     func onDisappear() {
