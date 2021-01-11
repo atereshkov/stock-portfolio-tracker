@@ -76,9 +76,6 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
         let portfolioId = portfolioOptions[portfolioIndex].id
         let ticker = tickerOptions[tickerIndex].ticker
         
-//        guard currencyIndex >= 0 && currencyIndex < currencyOptions.count else { return }
-//        let currency = currencyOptions[currencyIndex]
-        
         let dto = AddDividendDTO(
             portfolioId: portfolioId, ticker: ticker, date: date, paid: paid, tax: tax
         )
