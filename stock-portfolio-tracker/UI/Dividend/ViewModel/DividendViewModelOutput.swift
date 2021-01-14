@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DividendViewModelOutputType {
-    
+    var routingState: DividendRouting { get }
 }

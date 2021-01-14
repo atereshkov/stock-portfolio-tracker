@@ -10,6 +10,10 @@ import DICE
 
 struct DividendView: View {
     
+    init(item: DividendViewItem) {
+        viewModel.dividend = item
+    }
+    
     @EnvironmentObservableInjected var viewModel: DividendViewModel
     
     var body: some View {
@@ -18,7 +22,7 @@ struct DividendView: View {
     }
     
     var content: some View {
-        Text("Dividend")
+        Text("Dividend \(viewModel.dividend?.ticker ?? "")")
     }
     
 }

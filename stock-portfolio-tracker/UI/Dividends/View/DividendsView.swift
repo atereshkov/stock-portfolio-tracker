@@ -62,7 +62,7 @@ struct DividendsView: View {
     }
     
     func dividendView(_ item: DividendViewItem) -> some View {
-        DividendView()
+        DividendView(item: item)
     }
     
 }

@@ -29,6 +29,12 @@ class DividendViewModel: BaseViewModel<DividendViewModelInputType, DividendViewM
         Swift.print("[DividendViewModel] Deinit")
     }
     
+    // MARK: - Input
+    
+    @Published var dividend: DividendViewItem?
+    
+    // MARK: - Output
+    
     @Published var routingState: DividendRouting
     
 }
