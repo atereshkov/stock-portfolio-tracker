@@ -37,6 +37,10 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
         }.store(in: cancelBag)
     }
     
+    deinit {
+        Swift.print("[CreatePortfolioViewModel] Deinit")
+    }
+    
     // MARK: - Input
     
     @Published var name: String?
@@ -86,6 +90,7 @@ extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
     
     func onDisappear() {
         session.appState[\.routing.createPortfolio.isPresented] = false
+        cancelBag.cancel()
     }
     
 }

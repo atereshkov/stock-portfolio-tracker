@@ -25,6 +25,14 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
         }
     }
     
+    deinit {
+        Swift.print("[PortfolioViewModel] Deinit")
+    }
+    
+    // MARK: - Input
+    
+    @Published var portfolio: PortfolioViewItem?
+    
     // MARK: - Output
     
     @Published var routingState: PortfolioRouting
@@ -38,6 +46,10 @@ extension PortfolioViewModel: PortfolioViewModelInputType {
     func settingsAction() {
         routingState.currentModalSheet = .settings
         session.appState[\.routing.portfolioSettings.isPresented] = true
+    }
+    
+    func onDisappear() {
+        cancelBag.cancel()
     }
     
 }

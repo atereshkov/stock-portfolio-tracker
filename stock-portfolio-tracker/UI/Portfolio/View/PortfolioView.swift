@@ -10,10 +10,15 @@ import DICE
 
 struct PortfolioView: View {
     
+    init(item: PortfolioViewItem) {
+        viewModel.portfolio = item
+    }
+    
     @EnvironmentObservableInjected var viewModel: PortfolioViewModel
     
     var body: some View {
         content
+            .onDisappear(perform: viewModel.onDisappear)
             .sheet(
                 isPresented: $viewModel.routingState.showModalSheet,
                 content: {
@@ -22,14 +27,16 @@ struct PortfolioView: View {
     }
     
     var content: some View {
-        Text("Portfolio")
+        Text("Portfolio \(viewModel.portfolio?.name ?? "")")
             .padding()
             .navigationBarItems(trailing: settingsNavBarIcon)
     }
     
     var settingsNavBarIcon: some View {
         Button(
-            action: viewModel.settingsAction,
+            action: { [weak viewModel] in
+                viewModel?.settingsAction()
+            },
             label: { Image(systemName: "gearshape").imageScale(.large) }
         )
     }

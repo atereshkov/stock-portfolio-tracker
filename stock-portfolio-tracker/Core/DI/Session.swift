@@ -62,30 +62,27 @@ private extension Session {
             return DividendsViewModel(session: self)
         }
         container.register { _ in
-            return CreatePortfolioViewModel(session: self)
-        }
-        container.register { _ in
-            return AccountViewModel(session: self)
-        }
-        container.register { _ in
-            return PortfolioViewModel(session: self)
-        }
-        container.register { _ in
-            return PortfolioSettingsViewModel(session: self)
-        }
-        container.register { _ in
             return FeesViewModel(session: self)
         }
         container.register { _ in
             return TransactionsViewModel(session: self)
         }
-        container.register { _ in
-            return DividendsViewModel(session: self)
+        container.register(CreatePortfolioViewModel.self, scope: .prototype) { _ in
+            return CreatePortfolioViewModel(session: self)
         }
-        container.register { _ in
+        container.register(AccountViewModel.self, scope: .prototype) { _ in
+            return AccountViewModel(session: self)
+        }
+        container.register(PortfolioViewModel.self, scope: .prototype) { _ in
+            return PortfolioViewModel(session: self)
+        }
+        container.register(PortfolioSettingsViewModel.self, scope: .prototype) { _ in
+            return PortfolioSettingsViewModel(session: self)
+        }
+        container.register(DividendViewModel.self, scope: .prototype) { _ in
             return DividendViewModel(session: self)
         }
-        container.register { _ in
+        container.register(AddDividendViewModel.self, scope: .prototype) { _ in
             return AddDividendViewModel(session: self)
         }
     }

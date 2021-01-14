@@ -42,6 +42,10 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
 //        }.store(in: cancelBag)
     }
     
+    deinit {
+        Swift.print("[AddDividendViewModel] Deinit")
+    }
+    
     // MARK: - Input
     
     @Published var paid: String?
@@ -98,6 +102,7 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
     
     func onDisappear() {
         session.appState[\.routing.addDividend.isPresented] = false
+        cancelBag.cancel()
     }
     
 }

@@ -25,6 +25,10 @@ class PortfolioSettingsViewModel: BaseViewModel<PortfolioSettingsViewModelInputT
         }
     }
     
+    deinit {
+        Swift.print("[PortfolioSettingsViewModel] Deinit")
+    }
+    
     @Published var routingState: PortfolioSettingsRouting
     
 }
@@ -35,6 +39,7 @@ extension PortfolioSettingsViewModel: PortfolioSettingsViewModelInputType {
     
     func onDisappear() {
         session.appState[\.routing.portfolioSettings.isPresented] = false
+        cancelBag.cancel()
     }
     
 }

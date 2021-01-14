@@ -80,7 +80,7 @@ struct HomeView: View {
     }
     
     func portfolioView(_ item: PortfolioViewItem) -> some View {
-        PortfolioView()
+        return PortfolioView(item: item)
     }
     
 }

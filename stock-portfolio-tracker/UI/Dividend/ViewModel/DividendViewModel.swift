@@ -25,6 +25,10 @@ class DividendViewModel: BaseViewModel<DividendViewModelInputType, DividendViewM
         }
     }
     
+    deinit {
+        Swift.print("[DividendViewModel] Deinit")
+    }
+    
     @Published var routingState: DividendRouting
     
 }
@@ -35,6 +39,7 @@ extension DividendViewModel: DividendViewModelInputType {
     
     func onDisappear() {
         session.appState[\.routing.dividend.isPresented] = false
+        cancelBag.cancel()
     }
     
 }

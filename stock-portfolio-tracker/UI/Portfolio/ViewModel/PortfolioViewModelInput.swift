@@ -8,5 +8,9 @@
 import Foundation
 
 protocol PortfolioViewModelInputType {
+    var portfolio: PortfolioViewItem? { get set }
+    
     func settingsAction()
+    
+    func onDisappear()
 }

@@ -27,6 +27,10 @@ class AccountViewModel: BaseViewModel<AccountViewModelInputType, AccountViewMode
     
     @Published var routingState: AccountRouting
     
+    deinit {
+        Swift.print("[AccountViewModel] Deinit")
+    }
+    
 }
 
 // MARK: - AccountViewModelInputType
@@ -35,6 +39,7 @@ extension AccountViewModel: AccountViewModelInputType {
     
     func onDisappear() {
         session.appState[\.routing.account.isPresented] = false
+        cancelBag.cancel()
     }
     
 }
