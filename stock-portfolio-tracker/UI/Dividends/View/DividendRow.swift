@@ -15,7 +15,7 @@ struct DividendRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(item.ticker)
-                Text(NSDecimalNumber(decimal: item.paid).stringValue)
+                Text(NSDecimalNumber(decimal: item.paid.value).stringValue)
                 Divider()
             }
             Spacer()

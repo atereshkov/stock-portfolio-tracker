@@ -29,14 +29,9 @@ extension FirebaseDividendRepository {
 //        }
         
         return Future { [weak self] resolve in
-            self?.db.collection("dividend").addDocument(data: [
-                "ownerUid": self?.appState[\.user.id] ?? "",
-                "portfolioId": dto.portfolioId,
-                "date": dto.date,
-                "paid": dto.paid,
-                "tax": dto.tax,
-                "ticker": dto.ticker
-            ]) { error in
+            var data = dto
+            data.ownerUid = self?.appState[\.user.id] ?? ""
+            self?.db.collection("dividend").addDocument(data: data.toDto()) { error in
                 if let error = error {
                     resolve(.failure(error))
                 } else {

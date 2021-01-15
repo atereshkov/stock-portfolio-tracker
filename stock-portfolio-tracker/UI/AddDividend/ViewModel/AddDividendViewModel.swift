@@ -58,8 +58,14 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
         TickerViewItem(id: "1", ticker: "AAPL"),
         TickerViewItem(id: "2", ticker: "SPY")
     ]
+    @Published var currencyOptions = [
+        CurrencyViewItem(id: "USD", name: "USD"),
+        CurrencyViewItem(id: "EUR", name: "EUR"),
+        CurrencyViewItem(id: "RUB", name: "RUB")
+    ]
     
     @Published var routingState: AddDividendRouting
+    @Published var state: AddDividendViewState = .start
     @Published var title: String?
     
     // MARK: - Private
@@ -74,15 +80,19 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
 
 extension AddDividendViewModel: AddDividendViewModelInputType {
     
-    func add(portfolioIndex: Int, tickerIndex: Int, perShareToggle: Bool, date: Date) {
-        guard let paidStr = paid?.trim(), let paid = Decimal(string: paidStr) else { return }
+    func add(portfolioIndex: Int, tickerIndex: Int, currencyIndex: Int, perShareToggle: Bool, date: Date) {
+        guard let paidStr = paid?.trim().replacingOccurrences(of: ",", with: "."), let paid = Decimal(string: paidStr) else { return }
         guard let taxStr = tax?.trim(), let tax = Double(taxStr) else { return }
         let portfolioId = portfolioOptions[portfolioIndex].id
         let ticker = tickerOptions[tickerIndex].ticker
+        let currency = currencyOptions[currencyIndex].id
         
+        let money = MoneyDTO(value: paid, currency: currency)
         let dto = AddDividendDTO(
-            portfolioId: portfolioId, ticker: ticker, date: date, paid: paid, tax: tax
+            portfolioId: portfolioId, ticker: ticker, date: date, paid: money, tax: tax
         )
+        
+        state = .loading
         
         dividendService
             .addDividend(dto)

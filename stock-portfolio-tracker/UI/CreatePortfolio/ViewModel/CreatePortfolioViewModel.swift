@@ -50,7 +50,8 @@ class CreatePortfolioViewModel: BaseViewModel<CreatePortfolioViewModelInputType,
     @Published var routingState: CreatePortfolioRouting
     @Published var currencyOptions = [
         CurrencyViewItem(id: "USD", name: "USD"),
-        CurrencyViewItem(id: "EUR", name: "EUR")
+        CurrencyViewItem(id: "EUR", name: "EUR"),
+        CurrencyViewItem(id: "RUB", name: "RUB")
     ]
     @Published var title: String?
     

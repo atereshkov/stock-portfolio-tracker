@@ -42,20 +42,25 @@ private extension DividendListener {
                 if let error = error {
                     Swift.print(error)
                 } else if let documents = querySnapshot?.documents {
-                    let dividends = documents
-                        .map { DividendViewItem(
-                            id: $0.documentID,
-                            ownerId: $0.data()["ownerUid"] as? String ?? "",
-                            portfolioId: $0.data()["portfolioId"] as? String ?? "",
-                            ticker: $0.data()["ticker"] as? String ?? "",
-                            date: $0.data()["date"] as? Date ?? Date(),
-                            paid: ($0.data()["paid"] as? NSNumber)?.decimalValue ?? 0.0,
-                            tax: $0.data()["tax"] as? Double ?? 0.0)
-                        }
-                    
+                    let dividends = documents.compactMap { self?.toDividendViewItem($0, $0.data()) }
                     self?.session.appState[\.data.dividends] = dividends
                 }
             }
+    }
+    
+    func toDividendViewItem(_ doc: QueryDocumentSnapshot, _ data: [String: Any]) -> DividendViewItem? {
+        guard let paidData = data["paid"] as? [String: Any] else { return nil }
+        let paidDto = MoneyDTO.from(paidData)
+        let paidViewItem = MoneyViewItem.from(paidDto)
+        
+        return DividendViewItem(
+            id: doc.documentID,
+            ownerId: data["ownerUid"] as? String ?? "",
+            portfolioId: data["portfolioId"] as? String ?? "",
+            ticker: data["ticker"] as? String ?? "",
+            date: data["date"] as? Date ?? Date(),
+            paid: paidViewItem,
+            tax: data["tax"] as? Double ?? 0.0)
     }
     
 }
