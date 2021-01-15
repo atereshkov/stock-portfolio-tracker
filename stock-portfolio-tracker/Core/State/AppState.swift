@@ -52,6 +52,7 @@ extension AppState {
         var dividends = DividendsRouting()
         var addDividend = AddDividendRouting()
         var dividend = DividendRouting()
+        var searchTicker = SearchTickerRouting()
     }
 }
 

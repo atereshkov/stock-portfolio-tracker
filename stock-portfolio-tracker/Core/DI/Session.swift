@@ -85,6 +85,9 @@ private extension Session {
         container.register(AddDividendViewModel.self, scope: .prototype) { _ in
             return AddDividendViewModel(session: self)
         }
+        container.register(SearchTickerViewModel.self, scope: .prototype) { _ in
+            return SearchTickerViewModel(session: self)
+        }
     }
     
 }

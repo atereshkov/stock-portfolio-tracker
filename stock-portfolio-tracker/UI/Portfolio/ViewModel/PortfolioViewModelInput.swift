@@ -11,6 +11,7 @@ protocol PortfolioViewModelInputType {
     var portfolio: PortfolioViewItem? { get set }
     
     func settingsAction()
+    func addTickerAction()
     
     func onDisappear()
 }

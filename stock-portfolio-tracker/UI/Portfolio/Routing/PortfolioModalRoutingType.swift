@@ -9,4 +9,5 @@ import Foundation
 
 enum PortfolioModalRoutingType {
     case settings
+    case addTicker
 }

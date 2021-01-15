@@ -27,9 +27,13 @@ struct PortfolioView: View {
     }
     
     var content: some View {
-        Text("Portfolio \(viewModel.portfolio?.name ?? "")")
-            .padding()
-            .navigationBarItems(trailing: settingsNavBarIcon)
+        VStack(alignment: .leading) {
+            Text("Portfolio \(viewModel.portfolio?.name ?? "")")
+                .padding()
+            portfoliosSection
+        }
+//        .navigationBarTitle(Text("Dashboard"), displayMode: .inline)
+        .navigationBarItems(trailing: settingsNavBarIcon)
     }
     
     var settingsNavBarIcon: some View {
@@ -41,10 +45,24 @@ struct PortfolioView: View {
         )
     }
     
+    var portfoliosSection: some View {
+        HStack {
+            Text("Portfolios")
+            Spacer()
+            Button(action: { [weak viewModel] in
+                viewModel?.input.addTickerAction()
+            }, label: {
+                Image(systemName: "plus")
+            })
+        }
+    }
+    
     var modalSheet: some View {
         switch viewModel.routingState.currentModalSheet {
         case .settings:
             return AnyView(PortfolioSettingsView())
+        case .addTicker:
+            return AnyView(SearchTickerView())
         case .none:
             return AnyView(Text(""))
         }
