@@ -31,13 +31,18 @@ class HoldingsViewModel: BaseViewModel<HoldingsViewModelInputType, HoldingsViewM
         }
         
         session.appState.map(\.data.lots)
-            .removeDuplicates()
             .compactMap { $0 }
             .sink { [weak self] lots in
                 guard let id = self?.holding?.id else { return }
                 self?.lots = lots[id] ?? []
             }
             .store(in: cancelBag)
+        
+        $holding
+            .compactMap { $0 }
+            .sink { [weak self] holding in
+                self?.lots = self?.session.appState[\.data.lots][holding.id] ?? []
+        }.store(in: cancelBag)
     }
     
     deinit {

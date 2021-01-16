@@ -14,14 +14,37 @@ struct LotRow: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(item.id)
-                Text("\(item.shares)")
+                HStack {
+                    sharesText
+                    Text(" | ")
+                    sharePriceText
+                    costText
+                }
                 Divider()
             }
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity)
     }
+    
+    var sharesText: some View {
+        item.shares == 1 ? Text("\(item.shares) share") : Text("\(item.shares) shares")
+    }
+    
+    var sharePriceText: some View {
+        Text("\(NSDecimalNumber(decimal: item.cost.value).stringValue) \(item.cost.currency)")
+    }
+    
+    var costText: some View {
+        let cost = item.cost.value * Decimal(item.shares)
+        let costStr = NSDecimalNumber(decimal: cost).stringValue
+        if item.shares > 1 {
+            return AnyView(Text("(\(costStr) \(item.cost.currency))"))
+        } else {
+            return AnyView(Text(""))
+        }
+    }
+    
 }
 
 #if DEBUG
