@@ -6,12 +6,17 @@
 //
 
 import Combine
+import SwiftUI
 
 class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioViewModelOutputType>, PortfolioViewModelType {
+    
+    private let portfolioService: PortfolioServiceType
     
     private var cancelBag = CancelBag()
     
     override init(session: SessionType) {
+        self.portfolioService = session.resolve()
+        
         _routingState = .init(initialValue: session.appState.value.routing.portfolio)
         
         super.init(session: session)
@@ -67,5 +72,28 @@ extension PortfolioViewModel: PortfolioViewModelInputType {
 // MARK: - PortfolioViewModelOutputType
 
 extension PortfolioViewModel: PortfolioViewModelOutputType {
+    
+}
+
+extension PortfolioViewModel: SearchTickerDelegate {
+    
+    func onTickerSelected(_ ticker: TickerViewItem) {
+        let dto = TickerDTO.from(ticker)
+        
+        portfolioService
+            .addTicker(ticker: dto, portfolioId: portfolio?.id ?? "")
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    Swift.print(error)
+                case .finished:
+                    break
+                }
+            }, receiveValue: { [weak self] _ in
+                self?.onDisappear()
+            })
+            .store(in: cancelBag)
+    }
     
 }

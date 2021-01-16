@@ -43,4 +43,16 @@ extension FirebasePortfolioRepository {
         }
     }
     
+    func addTicker(ticker: TickerDTO, portfolioId: String) -> Future<Void, Error> {
+        return Future { [weak self] resolve in
+            self?.db.collection("portfolio").document(portfolioId).collection("holdings").document(ticker.id).setData(ticker.toDto(), merge: true) { error in
+                if let error = error {
+                    resolve(.failure(error))
+                } else {
+                    resolve(.success(()))
+                }
+            }
+        }
+    }
+    
 }

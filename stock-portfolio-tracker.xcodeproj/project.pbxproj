@@ -219,6 +219,10 @@
 		CBBB97D625B2349E00DB3BBC /* SearchTickerViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97D425B2349E00DB3BBC /* SearchTickerViewModelOutput.swift */; };
 		CBBB97DC25B23A4A00DB3BBC /* SearchTickerViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97DB25B23A4A00DB3BBC /* SearchTickerViewState.swift */; };
 		CBBB97DD25B23A4A00DB3BBC /* SearchTickerViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97DB25B23A4A00DB3BBC /* SearchTickerViewState.swift */; };
+		CBBB97E325B23FB100DB3BBC /* TickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97E225B23FB100DB3BBC /* TickerRow.swift */; };
+		CBBB97E425B23FB100DB3BBC /* TickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97E225B23FB100DB3BBC /* TickerRow.swift */; };
+		CBBB97F925B2E75E00DB3BBC /* TickerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97F825B2E75E00DB3BBC /* TickerDTO.swift */; };
+		CBBB97FA25B2E75E00DB3BBC /* TickerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97F825B2E75E00DB3BBC /* TickerDTO.swift */; };
 		CBC59B1225AB72BF00921D2E /* DividendViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59B1125AB72BF00921D2E /* DividendViewItem.swift */; };
 		CBC59B1325AB72BF00921D2E /* DividendViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59B1125AB72BF00921D2E /* DividendViewItem.swift */; };
 		CBC59B1925AB739500921D2E /* DividendListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC59B1825AB739500921D2E /* DividendListener.swift */; };
@@ -452,6 +456,8 @@
 		CBBB97CD25B2349500DB3BBC /* SearchTickerViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewModelInput.swift; sourceTree = "<group>"; };
 		CBBB97D425B2349E00DB3BBC /* SearchTickerViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewModelOutput.swift; sourceTree = "<group>"; };
 		CBBB97DB25B23A4A00DB3BBC /* SearchTickerViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewState.swift; sourceTree = "<group>"; };
+		CBBB97E225B23FB100DB3BBC /* TickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRow.swift; sourceTree = "<group>"; };
+		CBBB97F825B2E75E00DB3BBC /* TickerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDTO.swift; sourceTree = "<group>"; };
 		CBC59B1125AB72BF00921D2E /* DividendViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendViewItem.swift; sourceTree = "<group>"; };
 		CBC59B1825AB739500921D2E /* DividendListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendListener.swift; sourceTree = "<group>"; };
 		CBC59B3025AB78D100921D2E /* DividendsRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsRouting.swift; sourceTree = "<group>"; };
@@ -652,8 +658,8 @@
 				CB0A5B6D25AA51500031F48F /* CurrencyViewItem.swift */,
 				CB44674525A9A9BD007C237E /* PortfolioViewItem.swift */,
 				CBC59B1125AB72BF00921D2E /* DividendViewItem.swift */,
-				CBC59BC725AB888C00921D2E /* TickerViewitem.swift */,
 				CB42D09025B0E4DB00C08D36 /* MoneyViewItem.swift */,
+				CBC59BC725AB888C00921D2E /* TickerViewitem.swift */,
 			);
 			path = ViewItem;
 			sourceTree = "<group>";
@@ -1087,6 +1093,7 @@
 			children = (
 				CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */,
 				CB42D08925B0DF7F00C08D36 /* MoneyDTO.swift */,
+				CBBB97F825B2E75E00DB3BBC /* TickerDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -1273,6 +1280,7 @@
 			children = (
 				CBBB97B825B2347500DB3BBC /* SearchTickerView.swift */,
 				CBBB97DB25B23A4A00DB3BBC /* SearchTickerViewState.swift */,
+				CBBB97E225B23FB100DB3BBC /* TickerRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2045,9 +2053,11 @@
 				CB378B662585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CBC59B4425AB794400921D2E /* DividendRow.swift in Sources */,
 				CB76B9A125AB17AE00E2920C /* FeesViewModelOutput.swift in Sources */,
+				CBBB97E425B23FB100DB3BBC /* TickerRow.swift in Sources */,
 				CB76B99325AB177700E2920C /* FeesViewModel.swift in Sources */,
 				CBC59B6425AB7C1900921D2E /* AddDividendViewModel.swift in Sources */,
 				CB76B96D25AB0B2100E2920C /* PortfolioSettingsViewModel.swift in Sources */,
+				CBBB97FA25B2E75E00DB3BBC /* TickerDTO.swift in Sources */,
 				CBE4E9B725951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CB76B94525AAFA0E00E2920C /* PortfolioViewModelOutput.swift in Sources */,
 				CB76B93F25AAFA0B00E2920C /* PortfolioViewModel.swift in Sources */,
@@ -2177,6 +2187,7 @@
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
 				CB0D1DA1259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
+				CBBB97E325B23FB100DB3BBC /* TickerRow.swift in Sources */,
 				CBF8429825A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CBC59B1225AB72BF00921D2E /* DividendViewItem.swift in Sources */,
 				CB0FDF0125A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */,
@@ -2199,6 +2210,7 @@
 				CBE4E9B625951636002ECCF0 /* MainViewModelOutput.swift in Sources */,
 				CBE4E911259502EF002ECCF0 /* WelcomeView.swift in Sources */,
 				CB0FDEC825A7AD1A009D7BDB /* HomeViewModel.swift in Sources */,
+				CBBB97F925B2E75E00DB3BBC /* TickerDTO.swift in Sources */,
 				CB41432025A71006006D06F2 /* AuthRouting.swift in Sources */,
 				CB0A5B6025AA45CC0031F48F /* AccountViewModelOutput.swift in Sources */,
 				CBE4EA0E259671A0002ECCF0 /* LoginViewModelInput.swift in Sources */,

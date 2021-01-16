@@ -12,4 +12,6 @@ protocol PortfolioRepositoryType {
     
     func createPortfolio(name: String, currency: String) -> Future<Void, Error>
     
+    func addTicker(ticker: TickerDTO, portfolioId: String) -> Future<Void, Error>
+    
 }

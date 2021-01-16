@@ -12,6 +12,13 @@ struct SearchTickerView: View {
     
     @EnvironmentObservableInjected var viewModel: SearchTickerViewModel
     
+    @State private var searchText = ""
+    @State private var showCancelButton: Bool = false
+    
+    init(delegate: SearchTickerDelegate?) {
+        viewModel.delegate = delegate
+    }
+    
     var body: some View {
         content
             .onDisappear(perform: viewModel.onDisappear)
@@ -20,8 +27,60 @@ struct SearchTickerView: View {
     var content: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                Text("Empty")
-            }.navigationBarTitle("Search symbol", displayMode: .inline)
+                searchBar
+                tickers
+            }
+            .padding([.leading, .trailing], 18)
+            .navigationBarTitle("Search symbol")
+        }
+    }
+    
+    var searchBar: some View {
+        HStack {
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .padding([.leading], 12)
+                
+                TextField("Search for symbols or companies", text: $searchText, onEditingChanged: { _ in
+                    self.showCancelButton = true
+                }, onCommit: {
+                    print("onCommit")
+                })
+                .foregroundColor(.primary)
+                
+                Button(action: {
+                    self.searchText = ""
+                }, label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .padding([.trailing], 6)
+                        .opacity(searchText == "" ? 0 : 1)
+                })
+                if showCancelButton {
+                    Button("Cancel") {
+                        self.searchText = ""
+                        self.showCancelButton = false
+                    }
+                    .padding([.trailing], 12)
+                    .foregroundColor(Color(.systemBlue))
+                }
+            }
+            .padding([.top, .bottom], 8)
+            .foregroundColor(.secondary)
+            .background(Color(.secondarySystemBackground))
+            .cornerRadius(10.0)
+        }
+    }
+    
+    var tickers: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.tickers) { ticker in
+                    TickerRow(item: ticker)
+                        .onTapGesture { [weak viewModel] in
+                            viewModel?.input.onRowTapAction(ticker)
+                        }
+                }
+            }
         }
     }
     

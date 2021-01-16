@@ -10,4 +10,8 @@ import Foundation
 struct TickerViewItem: Identifiable {
     var id: String
     var ticker: String
+    
+    static func from(_ dto: TickerDTO) -> TickerViewItem {
+        return TickerViewItem(id: dto.id, ticker: dto.ticker)
+    }
 }

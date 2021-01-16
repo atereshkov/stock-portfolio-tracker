@@ -9,4 +9,5 @@ import Foundation
 
 protocol SearchTickerViewModelOutputType {
     var state: SearchTickerViewState { get }
+    var tickers: [TickerViewItem] { get }
 }

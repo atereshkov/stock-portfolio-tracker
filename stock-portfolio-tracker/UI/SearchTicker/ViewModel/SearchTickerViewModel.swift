@@ -8,6 +8,10 @@
 import Combine
 import SwiftUI
 
+protocol SearchTickerDelegate: class {
+    func onTickerSelected(_ ticker: TickerViewItem)
+}
+
 class SearchTickerViewModel: BaseViewModel<SearchTickerViewModelInputType, SearchTickerViewModelOutputType>, SearchTickerViewModelType {
     
     private var cancelBag = CancelBag()
@@ -31,16 +35,29 @@ class SearchTickerViewModel: BaseViewModel<SearchTickerViewModelInputType, Searc
     
     // MARK: - Input
     
+    weak var delegate: SearchTickerDelegate?
+    
     // MARK: - Output
     
     @Published var routingState: SearchTickerRouting
     @Published var state: SearchTickerViewState = .start
+    @Published var tickers: [TickerViewItem] = [
+        TickerViewItem(id: "AAPL", ticker: "AAPL"),
+        TickerViewItem(id: "SPY", ticker: "SPY"),
+        TickerViewItem(id: "VOO", ticker: "VOO"),
+        TickerViewItem(id: "IBM", ticker: "IBM")
+    ]
     
 }
 
 // MARK: - SearchTickerViewModelInputType
 
 extension SearchTickerViewModel: SearchTickerViewModelInputType {
+    
+    func onRowTapAction(_ ticker: TickerViewItem) {
+        delegate?.onTickerSelected(ticker)
+        session.appState[\.routing.searchTicker.isPresented] = false
+    }
     
     func onDisappear() {
         session.appState[\.routing.searchTicker.isPresented] = false

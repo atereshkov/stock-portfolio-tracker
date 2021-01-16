@@ -47,7 +47,7 @@ struct PortfolioView: View {
     
     var portfoliosSection: some View {
         HStack {
-            Text("Portfolios")
+            Text("Holdings")
             Spacer()
             Button(action: { [weak viewModel] in
                 viewModel?.input.addTickerAction()
@@ -62,7 +62,7 @@ struct PortfolioView: View {
         case .settings:
             return AnyView(PortfolioSettingsView())
         case .addTicker:
-            return AnyView(SearchTickerView())
+            return AnyView(SearchTickerView(delegate: viewModel))
         case .none:
             return AnyView(Text(""))
         }
