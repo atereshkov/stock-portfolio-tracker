@@ -13,11 +13,9 @@ struct AddDividendDTO {
     var date: Date
     var paid: MoneyDTO
     var tax: Double
-    var ownerUid: String = ""
     
     func toDto() -> [String: Any] {
         return [
-            "ownerUid": ownerUid,
             "portfolioId": portfolioId,
             "date": date,
             "paid": paid.toDto(),

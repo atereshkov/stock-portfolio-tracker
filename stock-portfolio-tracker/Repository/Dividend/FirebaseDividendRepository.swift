@@ -21,22 +21,29 @@ class FirebaseDividendRepository: DividendRepositoryType {
 
 extension FirebaseDividendRepository {
     
-    func addDividend(_ dto: AddDividendDTO) -> Future<Void, Error> {
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error> {
 //        guard let userId = appState[\.user.id] else {
 //            return Future { resolve in
 //                resolve(.failure(.noUser))
 //            }
 //        }
         
+        var data = dto.toDto()
+        data["ownerUid"] = appState[\.user.id] ?? ""
+        data["createdAt"] = Date().timeIntervalSince1970
+        data["updatedAt"] = Date().timeIntervalSince1970
+        
         return Future { [weak self] resolve in
-            var data = dto
-            data.ownerUid = self?.appState[\.user.id] ?? ""
-            self?.db.collection("dividend").addDocument(data: data.toDto()) { error in
-                if let error = error {
-                    resolve(.failure(error))
-                } else {
-                    resolve(.success(()))
-                }
+            self?.db
+                .collection("portfolio_dividends")
+                .document(portfolioId)
+                .collection("dividends")
+                .addDocument(data: data) { error in
+                    if let error = error {
+                        resolve(.failure(error))
+                    } else {
+                        resolve(.success(()))
+                    }
             }
         }
     }

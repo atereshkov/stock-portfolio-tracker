@@ -10,12 +10,12 @@ import SwiftUI
 
 class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioViewModelOutputType>, PortfolioViewModelType {
     
-    private let portfolioService: PortfolioServiceType
+    private let holdingService: HoldingServiceType
     
     private var cancelBag = CancelBag()
     
     override init(session: SessionType) {
-        self.portfolioService = session.resolve()
+        self.holdingService = session.resolve()
         
         _routingState = .init(initialValue: session.appState.value.routing.portfolio)
         
@@ -32,6 +32,10 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
             session.appState.map(\.routing.searchTicker.isPresented)
                 .removeDuplicates()
                 .assign(to: \.routingState.showModalSheet, on: self)
+            
+            session.appState.map(\.data.holdings)
+                .removeDuplicates()
+                .assign(to: \.holdings, on: self)
         }
     }
     
@@ -46,6 +50,7 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
     // MARK: - Output
     
     @Published var routingState: PortfolioRouting
+    @Published var holdings: [HoldingViewItem] = []
     
 }
 
@@ -63,6 +68,10 @@ extension PortfolioViewModel: PortfolioViewModelInputType {
         session.appState[\.routing.searchTicker.isPresented] = true
     }
     
+    func onAppear() {
+        holdings = holdings.filter { $0.portfolioId == portfolio?.id }
+    }
+    
     func onDisappear() {
         cancelBag.cancel()
     }
@@ -78,10 +87,11 @@ extension PortfolioViewModel: PortfolioViewModelOutputType {
 extension PortfolioViewModel: SearchTickerDelegate {
     
     func onTickerSelected(_ ticker: TickerViewItem) {
-        let dto = TickerDTO.from(ticker)
+        let dto = HoldingDTO(id: ticker.id, ticker: ticker.ticker, createdAt: Date(), updatedAt: Date(), portfolioId: portfolio?.id ?? "")
+        // TODO use AddHoldingDTO
         
-        portfolioService
-            .addTicker(ticker: dto, portfolioId: portfolio?.id ?? "")
+        holdingService
+            .addHolding(holding: dto, portfolioId: portfolio?.id ?? "")
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {

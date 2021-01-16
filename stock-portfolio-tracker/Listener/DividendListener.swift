@@ -36,8 +36,9 @@ class DividendListener: DividendListenerType {
 private extension DividendListener {
     
     private func listenDividendChanges(userId: String) {
-        db.collection("dividend")
+        db.collectionGroup("dividends")
             .whereField("ownerUid", isEqualTo: userId)
+            .order(by: "updatedAt", descending: true)
             .addSnapshotListener { [weak self] querySnapshot, error in
                 if let error = error {
                     Swift.print(error)
@@ -55,7 +56,6 @@ private extension DividendListener {
         
         return DividendViewItem(
             id: doc.documentID,
-            ownerId: data["ownerUid"] as? String ?? "",
             portfolioId: data["portfolioId"] as? String ?? "",
             ticker: data["ticker"] as? String ?? "",
             date: data["date"] as? Date ?? Date(),

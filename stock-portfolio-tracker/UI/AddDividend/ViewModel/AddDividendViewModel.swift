@@ -95,7 +95,7 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
         state = .loading
         
         dividendService
-            .addDividend(dto)
+            .addDividend(dto, portfolioId: portfolioId)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch completion {

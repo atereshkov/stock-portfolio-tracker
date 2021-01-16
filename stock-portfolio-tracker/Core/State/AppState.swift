@@ -32,6 +32,8 @@ extension AppState {
     struct DataState: Equatable {
         var portfolios: [PortfolioViewItem] = []
         var dividends: [DividendViewItem] = []
+        
+        var holdings: [HoldingViewItem] = []
     }
 }
 

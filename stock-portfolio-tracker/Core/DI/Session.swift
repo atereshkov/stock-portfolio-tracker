@@ -104,6 +104,9 @@ private extension Session {
         container.register(DividendServiceType.self) { _ in
             return DividendService()
         }
+        container.register(HoldingServiceType.self) { _ in
+            return HoldingService()
+        }
     }
     
 }
@@ -120,6 +123,9 @@ private extension Session {
         container.register(DividendListenerType.self, scope: .single) { _ in
             return DividendListener(session: self)
         }
+        container.register(HoldingListenerType.self, scope: .single) { _ in
+            return HoldingListener(session: self)
+        }
     }
     
 }
@@ -135,6 +141,9 @@ private extension Session {
         }
         container.register(DividendRepositoryType.self) { _ in
             return FirebaseDividendRepository(appState: self.appState)
+        }
+        container.register(HoldingRepositoryType.self) { _ in
+            return FirebaseHoldingRepository(appState: self.appState)
         }
     }
     

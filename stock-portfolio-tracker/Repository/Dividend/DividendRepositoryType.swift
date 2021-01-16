@@ -10,6 +10,6 @@ import Combine
 
 protocol DividendRepositoryType {
     
-    func addDividend(_ dto: AddDividendDTO) -> Future<Void, Error>
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error>
     
 }

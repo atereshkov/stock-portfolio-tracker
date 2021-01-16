@@ -28,29 +28,24 @@ extension FirebasePortfolioRepository {
 //            }
 //        }
         
+        let data = [
+            "name": name,
+            "currency": currency
+        ]
+        
+        let userId = appState[\.user.id] ?? ""
+        
         return Future { [weak self] resolve in
-            self?.db.collection("portfolio").addDocument(data: [
-                "name": name,
-                "currency": currency,
-                "ownerUid": self?.appState[\.user.id] ?? ""
-            ]) { error in
-                if let error = error {
-                    resolve(.failure(error))
-                } else {
-                    resolve(.success(()))
-                }
-            }
-        }
-    }
-    
-    func addTicker(ticker: TickerDTO, portfolioId: String) -> Future<Void, Error> {
-        return Future { [weak self] resolve in
-            self?.db.collection("portfolio").document(portfolioId).collection("holdings").document(ticker.id).setData(ticker.toDto(), merge: true) { error in
-                if let error = error {
-                    resolve(.failure(error))
-                } else {
-                    resolve(.success(()))
-                }
+            self?.db
+                .collection("user_portfolios")
+                .document(userId)
+                .collection("portfolios")
+                .addDocument(data: data) { error in
+                    if let error = error {
+                        resolve(.failure(error))
+                    } else {
+                        resolve(.success(()))
+                    }
             }
         }
     }

@@ -12,8 +12,6 @@ protocol PortfolioServiceType {
     
     func createPortfolio(name: String, currency: String) -> Future<Void, Error>
     
-    func addTicker(ticker: TickerDTO, portfolioId: String) -> Future<Void, Error>
-    
 }
 
 class PortfolioService: PortfolioServiceType {
@@ -26,10 +24,6 @@ extension PortfolioService {
     
     func createPortfolio(name: String, currency: String) -> Future<Void, Error> {
         return portfolioRepository.createPortfolio(name: name, currency: currency)
-    }
-    
-    func addTicker(ticker: TickerDTO, portfolioId: String) -> Future<Void, Error> {
-        return portfolioRepository.addTicker(ticker: ticker, portfolioId: portfolioId)
     }
     
 }

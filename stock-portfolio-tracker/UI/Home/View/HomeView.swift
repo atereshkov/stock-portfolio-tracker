@@ -41,7 +41,7 @@ struct HomeView: View {
             Button(action: {
                 viewModel.input.newPortfolioAction()
             }, label: {
-                Image(systemName: "plus")
+                Image(systemName: "plus").imageScale(.large)
             })
         }
     }

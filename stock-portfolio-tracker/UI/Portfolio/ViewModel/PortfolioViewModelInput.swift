@@ -13,5 +13,6 @@ protocol PortfolioViewModelInputType {
     func settingsAction()
     func addTickerAction()
     
+    func onAppear()
     func onDisappear()
 }

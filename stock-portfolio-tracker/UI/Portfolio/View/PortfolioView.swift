@@ -18,6 +18,7 @@ struct PortfolioView: View {
     
     var body: some View {
         content
+            .onAppear(perform: viewModel.onAppear)
             .onDisappear(perform: viewModel.onDisappear)
             .sheet(
                 isPresented: $viewModel.routingState.showModalSheet,
@@ -28,11 +29,12 @@ struct PortfolioView: View {
     
     var content: some View {
         VStack(alignment: .leading) {
-            Text("Portfolio \(viewModel.portfolio?.name ?? "")")
-                .padding()
-            portfoliosSection
+            holdingsSection
+                .padding([.top], 12)
+            holdings
         }
-//        .navigationBarTitle(Text("Dashboard"), displayMode: .inline)
+        .padding([.leading, .trailing], 18)
+        .navigationBarTitle(viewModel.portfolio?.name ?? "", displayMode: .inline)
         .navigationBarItems(trailing: settingsNavBarIcon)
     }
     
@@ -45,16 +47,36 @@ struct PortfolioView: View {
         )
     }
     
-    var portfoliosSection: some View {
+    var holdingsSection: some View {
         HStack {
             Text("Holdings")
             Spacer()
             Button(action: { [weak viewModel] in
                 viewModel?.input.addTickerAction()
             }, label: {
-                Image(systemName: "plus")
+                Image(systemName: "plus").imageScale(.large)
             })
         }
+    }
+    
+    var holdings: some View {
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.holdings) { holding in
+                    NavigationLink(
+                        destination: holdingsView(holding),
+                        tag: holding.id,
+                        selection: $viewModel.routingState.holdingDetails) {
+                        HoldingRow(item: holding)
+                    }
+                }
+            }
+        }
+    }
+    
+    func holdingsView(_ item: HoldingViewItem) -> some View {
+//        return HoldingView(item: item)
+        return Text(item.ticker)
     }
     
     var modalSheet: some View {

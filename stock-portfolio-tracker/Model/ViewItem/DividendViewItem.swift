@@ -9,7 +9,6 @@ import Foundation
 
 struct DividendViewItem: Hashable, Identifiable {
     var id: String
-    var ownerId: String
     var portfolioId: String
     var ticker: String
     var date: Date

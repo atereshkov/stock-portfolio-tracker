@@ -36,21 +36,26 @@ class PortfolioListener: PortfolioListenerType {
 private extension PortfolioListener {
     
     private func listenPortfolioChanges(userId: String) {
-        db.collection("portfolio")
-            .whereField("ownerUid", isEqualTo: userId)
+        db.collection("user_portfolios")
+            .document(userId)
+            .collection("portfolios")
             .addSnapshotListener { [weak self] querySnapshot, error in
                 if let error = error {
                     Swift.print(error)
                 } else if let documents = querySnapshot?.documents {
                     let portfolios = documents
-                        .map { PortfolioViewItem(
-                            id: $0.documentID,
-                            name: $0.data()["name"] as? String ?? "",
-                            currency: $0.data()["currency"] as? String ?? "")
-                        }
+                        .compactMap { self?.toPortfolioViewItem($0, $0.data()) }
                     self?.session.appState[\.data.portfolios] = portfolios
                 }
             }
+    }
+    
+    private func toPortfolioViewItem(_ doc: QueryDocumentSnapshot, _ data: [String: Any]) -> PortfolioViewItem? {
+        return PortfolioViewItem(
+            id: doc.documentID,
+            name: data["name"] as? String ?? "",
+            currency: data["currency"] as? String ?? ""
+        )
     }
     
 }

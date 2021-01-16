@@ -11,4 +11,7 @@ struct PortfolioRouting: Equatable {
     var showModalSheet: Bool = false
     var currentModalSheet: PortfolioModalRoutingType?
     
+    // MARK: - Holdings
+    var holdingDetails: String?
+    
 }

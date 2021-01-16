@@ -9,4 +9,5 @@ import Foundation
 
 protocol PortfolioViewModelOutputType {
     var routingState: PortfolioRouting { get }
+    var holdings: [HoldingViewItem] { get }
 }
