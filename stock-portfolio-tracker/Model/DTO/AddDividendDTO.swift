@@ -8,7 +8,6 @@
 import Foundation
 
 struct AddDividendDTO {
-    var portfolioId: String
     var ticker: String
     var date: Date
     var paid: MoneyDTO
@@ -16,7 +15,6 @@ struct AddDividendDTO {
     
     func toDto() -> [String: Any] {
         return [
-            "portfolioId": portfolioId,
             "date": date,
             "paid": paid.toDto(),
             "tax": tax,

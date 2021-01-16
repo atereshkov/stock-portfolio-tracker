@@ -17,6 +17,10 @@ struct MoneyDTO {
         return MoneyDTO(value: value, currency: currency)
     }
     
+    static func from(_ vi: MoneyViewItem) -> MoneyDTO {
+        return MoneyDTO(value: vi.value, currency: vi.currency)
+    }
+    
     func toDto() -> [String: Any] {
         return [
             "value": value,

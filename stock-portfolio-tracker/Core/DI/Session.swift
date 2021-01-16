@@ -88,6 +88,12 @@ private extension Session {
         container.register(SearchTickerViewModel.self, scope: .prototype) { _ in
             return SearchTickerViewModel(session: self)
         }
+        container.register(HoldingsViewModel.self, scope: .prototype) { _ in
+            return HoldingsViewModel(session: self)
+        }
+        container.register(AddLotViewModel.self, scope: .prototype) { _ in
+            return AddLotViewModel(session: self)
+        }
     }
     
 }
@@ -105,7 +111,7 @@ private extension Session {
             return DividendService()
         }
         container.register(HoldingServiceType.self) { _ in
-            return HoldingService()
+            return HoldingService(session: self)
         }
     }
     

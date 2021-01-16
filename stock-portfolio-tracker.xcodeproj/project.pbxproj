@@ -207,6 +207,42 @@
 		CB76B9CF25AB198A00E2920C /* TransactionsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */; };
 		CBB329F025B3323E00229B53 /* AddHoldingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB329EF25B3323E00229B53 /* AddHoldingDTO.swift */; };
 		CBB329F125B3323E00229B53 /* AddHoldingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB329EF25B3323E00229B53 /* AddHoldingDTO.swift */; };
+		CBB329FF25B34F7100229B53 /* HoldingsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB329FE25B34F7100229B53 /* HoldingsRouting.swift */; };
+		CBB32A0025B34F7100229B53 /* HoldingsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB329FE25B34F7100229B53 /* HoldingsRouting.swift */; };
+		CBB32A1525B34FE800229B53 /* HoldingsModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A1425B34FE800229B53 /* HoldingsModalRoutingType.swift */; };
+		CBB32A1625B34FE800229B53 /* HoldingsModalRoutingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A1425B34FE800229B53 /* HoldingsModalRoutingType.swift */; };
+		CBB32A1C25B3501A00229B53 /* HoldingsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A1B25B3501A00229B53 /* HoldingsViewModelType.swift */; };
+		CBB32A1D25B3501A00229B53 /* HoldingsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A1B25B3501A00229B53 /* HoldingsViewModelType.swift */; };
+		CBB32A2325B3502000229B53 /* HoldingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A2225B3502000229B53 /* HoldingsViewModel.swift */; };
+		CBB32A2425B3502000229B53 /* HoldingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A2225B3502000229B53 /* HoldingsViewModel.swift */; };
+		CBB32A2A25B3502700229B53 /* HoldingsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A2925B3502700229B53 /* HoldingsViewModelInput.swift */; };
+		CBB32A2B25B3502700229B53 /* HoldingsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A2925B3502700229B53 /* HoldingsViewModelInput.swift */; };
+		CBB32A3125B3502E00229B53 /* HoldingsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3025B3502E00229B53 /* HoldingsViewModelOutput.swift */; };
+		CBB32A3225B3502E00229B53 /* HoldingsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3025B3502E00229B53 /* HoldingsViewModelOutput.swift */; };
+		CBB32A3825B3532E00229B53 /* HoldingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3725B3532E00229B53 /* HoldingsView.swift */; };
+		CBB32A3925B3532E00229B53 /* HoldingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3725B3532E00229B53 /* HoldingsView.swift */; };
+		CBB32A3F25B3534100229B53 /* LotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3E25B3534100229B53 /* LotRow.swift */; };
+		CBB32A4025B3534100229B53 /* LotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A3E25B3534100229B53 /* LotRow.swift */; };
+		CBB32A4625B354AE00229B53 /* LotViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A4525B354AE00229B53 /* LotViewItem.swift */; };
+		CBB32A4725B354AE00229B53 /* LotViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A4525B354AE00229B53 /* LotViewItem.swift */; };
+		CBB32A4D25B355F500229B53 /* LotDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A4C25B355F500229B53 /* LotDTO.swift */; };
+		CBB32A4E25B355F500229B53 /* LotDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A4C25B355F500229B53 /* LotDTO.swift */; };
+		CBB32A5C25B36B5200229B53 /* AddLotRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A5B25B36B5200229B53 /* AddLotRouting.swift */; };
+		CBB32A5D25B36B5200229B53 /* AddLotRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A5B25B36B5200229B53 /* AddLotRouting.swift */; };
+		CBB32A6325B36B5900229B53 /* AddLotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A6225B36B5900229B53 /* AddLotView.swift */; };
+		CBB32A6425B36B5900229B53 /* AddLotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A6225B36B5900229B53 /* AddLotView.swift */; };
+		CBB32A6A25B36B6500229B53 /* AddLotViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A6925B36B6500229B53 /* AddLotViewModelType.swift */; };
+		CBB32A6B25B36B6500229B53 /* AddLotViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A6925B36B6500229B53 /* AddLotViewModelType.swift */; };
+		CBB32A7125B36B6A00229B53 /* AddLotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7025B36B6A00229B53 /* AddLotViewModel.swift */; };
+		CBB32A7225B36B6A00229B53 /* AddLotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7025B36B6A00229B53 /* AddLotViewModel.swift */; };
+		CBB32A7825B36B7200229B53 /* AddLotViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7725B36B7200229B53 /* AddLotViewModelInput.swift */; };
+		CBB32A7925B36B7200229B53 /* AddLotViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7725B36B7200229B53 /* AddLotViewModelInput.swift */; };
+		CBB32A7F25B36B7900229B53 /* AddLotViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7E25B36B7900229B53 /* AddLotViewModelOutput.swift */; };
+		CBB32A8025B36B7900229B53 /* AddLotViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A7E25B36B7900229B53 /* AddLotViewModelOutput.swift */; };
+		CBB32A8625B36FFA00229B53 /* AddLotViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A8525B36FFA00229B53 /* AddLotViewState.swift */; };
+		CBB32A8725B36FFA00229B53 /* AddLotViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A8525B36FFA00229B53 /* AddLotViewState.swift */; };
+		CBB32A8D25B372A100229B53 /* AddLotDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A8C25B372A100229B53 /* AddLotDTO.swift */; };
+		CBB32A8E25B372A100229B53 /* AddLotDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB32A8C25B372A100229B53 /* AddLotDTO.swift */; };
 		CBBB97AE25B2346C00DB3BBC /* SearchTickerRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97AD25B2346C00DB3BBC /* SearchTickerRouting.swift */; };
 		CBBB97AF25B2346C00DB3BBC /* SearchTickerRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97AD25B2346C00DB3BBC /* SearchTickerRouting.swift */; };
 		CBBB97B925B2347500DB3BBC /* SearchTickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB97B825B2347500DB3BBC /* SearchTickerView.swift */; };
@@ -466,6 +502,24 @@
 		CB76B9C625AB197400E2920C /* TransactionsViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelInput.swift; sourceTree = "<group>"; };
 		CB76B9CD25AB198A00E2920C /* TransactionsViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewModelOutput.swift; sourceTree = "<group>"; };
 		CBB329EF25B3323E00229B53 /* AddHoldingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHoldingDTO.swift; sourceTree = "<group>"; };
+		CBB329FE25B34F7100229B53 /* HoldingsRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsRouting.swift; sourceTree = "<group>"; };
+		CBB32A1425B34FE800229B53 /* HoldingsModalRoutingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsModalRoutingType.swift; sourceTree = "<group>"; };
+		CBB32A1B25B3501A00229B53 /* HoldingsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModelType.swift; sourceTree = "<group>"; };
+		CBB32A2225B3502000229B53 /* HoldingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModel.swift; sourceTree = "<group>"; };
+		CBB32A2925B3502700229B53 /* HoldingsViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModelInput.swift; sourceTree = "<group>"; };
+		CBB32A3025B3502E00229B53 /* HoldingsViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewModelOutput.swift; sourceTree = "<group>"; };
+		CBB32A3725B3532E00229B53 /* HoldingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsView.swift; sourceTree = "<group>"; };
+		CBB32A3E25B3534100229B53 /* LotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotRow.swift; sourceTree = "<group>"; };
+		CBB32A4525B354AE00229B53 /* LotViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotViewItem.swift; sourceTree = "<group>"; };
+		CBB32A4C25B355F500229B53 /* LotDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotDTO.swift; sourceTree = "<group>"; };
+		CBB32A5B25B36B5200229B53 /* AddLotRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotRouting.swift; sourceTree = "<group>"; };
+		CBB32A6225B36B5900229B53 /* AddLotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotView.swift; sourceTree = "<group>"; };
+		CBB32A6925B36B6500229B53 /* AddLotViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotViewModelType.swift; sourceTree = "<group>"; };
+		CBB32A7025B36B6A00229B53 /* AddLotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotViewModel.swift; sourceTree = "<group>"; };
+		CBB32A7725B36B7200229B53 /* AddLotViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotViewModelInput.swift; sourceTree = "<group>"; };
+		CBB32A7E25B36B7900229B53 /* AddLotViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotViewModelOutput.swift; sourceTree = "<group>"; };
+		CBB32A8525B36FFA00229B53 /* AddLotViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotViewState.swift; sourceTree = "<group>"; };
+		CBB32A8C25B372A100229B53 /* AddLotDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLotDTO.swift; sourceTree = "<group>"; };
 		CBBB97AD25B2346C00DB3BBC /* SearchTickerRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerRouting.swift; sourceTree = "<group>"; };
 		CBBB97B825B2347500DB3BBC /* SearchTickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerView.swift; sourceTree = "<group>"; };
 		CBBB97BF25B2348100DB3BBC /* SearchTickerViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewModelType.swift; sourceTree = "<group>"; };
@@ -685,6 +739,7 @@
 				CB42D09025B0E4DB00C08D36 /* MoneyViewItem.swift */,
 				CBC59BC725AB888C00921D2E /* TickerViewitem.swift */,
 				CBBB981125B2EC0300DB3BBC /* HoldingViewItem.swift */,
+				CBB32A4525B354AE00229B53 /* LotViewItem.swift */,
 			);
 			path = ViewItem;
 			sourceTree = "<group>";
@@ -891,6 +946,8 @@
 				CB76B90025AAF83400E2920C /* Portfolio */,
 				CB76B94A25AB0ABB00E2920C /* PortfolioSettings */,
 				CB0A5AEE25A9C0890031F48F /* CreatePortfolio */,
+				CBB329FA25B34E9000229B53 /* Holdings */,
+				CBB32A5325B36A6C00229B53 /* AddLot */,
 				CB0FDEDC25A7AE3E009D7BDB /* Dividends */,
 				CBC59B7725AB7CBE00921D2E /* Dividend */,
 				CBC59B4925AB7A3500921D2E /* AddDividend */,
@@ -1120,9 +1177,11 @@
 			children = (
 				CBC59BCE25ABA0E800921D2E /* AddDividendDTO.swift */,
 				CBB329EF25B3323E00229B53 /* AddHoldingDTO.swift */,
+				CBB32A8C25B372A100229B53 /* AddLotDTO.swift */,
 				CB42D08925B0DF7F00C08D36 /* MoneyDTO.swift */,
 				CBBB97F825B2E75E00DB3BBC /* TickerDTO.swift */,
 				CBBB980A25B2EB6F00DB3BBC /* HoldingDTO.swift */,
+				CBB32A4C25B355F500229B53 /* LotDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -1282,6 +1341,83 @@
 				CB76B9A925AB18E100E2920C /* TransactionsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CBB329FA25B34E9000229B53 /* Holdings */ = {
+			isa = PBXGroup;
+			children = (
+				CBB329FD25B34EAE00229B53 /* Routing */,
+				CBB329FC25B34EAA00229B53 /* View */,
+				CBB329FB25B34EA400229B53 /* ViewModel */,
+			);
+			path = Holdings;
+			sourceTree = "<group>";
+		};
+		CBB329FB25B34EA400229B53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A1B25B3501A00229B53 /* HoldingsViewModelType.swift */,
+				CBB32A2225B3502000229B53 /* HoldingsViewModel.swift */,
+				CBB32A2925B3502700229B53 /* HoldingsViewModelInput.swift */,
+				CBB32A3025B3502E00229B53 /* HoldingsViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB329FC25B34EAA00229B53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A3725B3532E00229B53 /* HoldingsView.swift */,
+				CBB32A3E25B3534100229B53 /* LotRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB329FD25B34EAE00229B53 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CBB329FE25B34F7100229B53 /* HoldingsRouting.swift */,
+				CBB32A1425B34FE800229B53 /* HoldingsModalRoutingType.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		CBB32A5325B36A6C00229B53 /* AddLot */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A5625B36A7900229B53 /* Routing */,
+				CBB32A5525B36A7600229B53 /* View */,
+				CBB32A5425B36A7300229B53 /* ViewModel */,
+			);
+			path = AddLot;
+			sourceTree = "<group>";
+		};
+		CBB32A5425B36A7300229B53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A6925B36B6500229B53 /* AddLotViewModelType.swift */,
+				CBB32A7025B36B6A00229B53 /* AddLotViewModel.swift */,
+				CBB32A7725B36B7200229B53 /* AddLotViewModelInput.swift */,
+				CBB32A7E25B36B7900229B53 /* AddLotViewModelOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB32A5525B36A7600229B53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A6225B36B5900229B53 /* AddLotView.swift */,
+				CBB32A8525B36FFA00229B53 /* AddLotViewState.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB32A5625B36A7900229B53 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CBB32A5B25B36B5200229B53 /* AddLotRouting.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		CBBB97A925B233D700DB3BBC /* SearchTicker */ = {
@@ -2016,11 +2152,13 @@
 				CBBB981325B2EC0300DB3BBC /* HoldingViewItem.swift in Sources */,
 				CBBB97DD25B23A4A00DB3BBC /* SearchTickerViewState.swift in Sources */,
 				CB76B9AB25AB18E100E2920C /* TransactionsView.swift in Sources */,
+				CBB32A4725B354AE00229B53 /* LotViewItem.swift in Sources */,
 				CB76B93E25AAFA0900E2920C /* PortfolioViewModelType.swift in Sources */,
 				CB41434B25A71C21006D06F2 /* RootViewModel.swift in Sources */,
 				CB0D1DBA259CA961004BA1FD /* FirebasesAuthRepository.swift in Sources */,
 				CB41431925A70F4E006D06F2 /* AppState.swift in Sources */,
 				CB0D1DB2259CA5B0004BA1FD /* AuthService.swift in Sources */,
+				CBB32A7225B36B6A00229B53 /* AddLotViewModel.swift in Sources */,
 				CBB329F125B3323E00229B53 /* AddHoldingDTO.swift in Sources */,
 				CBE4E96D25951247002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB378AE5258513AE00A5F14D /* MainView.swift in Sources */,
@@ -2037,6 +2175,7 @@
 				CB42D08B25B0DF8000C08D36 /* MoneyDTO.swift in Sources */,
 				CB378B6D2585479900A5F14D /* MainViewModel.swift in Sources */,
 				CB0D1D9B259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
+				CBB32A8E25B372A100229B53 /* AddLotDTO.swift in Sources */,
 				CB76B98525AB174700E2920C /* FeesView.swift in Sources */,
 				CB76B97425AB0B2A00E2920C /* PortfolioSettingsViewModelInput.swift in Sources */,
 				CBE4E9D125960707002ECCF0 /* BaseViewModel.swift in Sources */,
@@ -2060,19 +2199,27 @@
 				CBE4E9C925960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1E00259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
 				CBBB97C825B2348B00DB3BBC /* SearchTickerViewModel.swift in Sources */,
+				CBB32A8725B36FFA00229B53 /* AddLotViewState.swift in Sources */,
 				CB41437525A7426C006D06F2 /* CircleLoadingView.swift in Sources */,
+				CBB32A8025B36B7900229B53 /* AddLotViewModelOutput.swift in Sources */,
 				CB76B93425AAFA0400E2920C /* PortfolioRouting.swift in Sources */,
 				CB0D1D7F259A7644004BA1FD /* PrimaryTextField.swift in Sources */,
 				CB0FDEC225A7ACF9009D7BDB /* HomeViewModelType.swift in Sources */,
 				CBC59B2425AB73A600921D2E /* PortfolioListener.swift in Sources */,
+				CBB32A0025B34F7100229B53 /* HoldingsRouting.swift in Sources */,
 				CB0FDF0925A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */,
 				CB0A5B5325AA45650031F48F /* AccountViewModel.swift in Sources */,
 				CB0A5B1525A9C1210031F48F /* CreatePortfolioViewModelInput.swift in Sources */,
+				CBB32A2B25B3502700229B53 /* HoldingsViewModelInput.swift in Sources */,
+				CBB32A3925B3532E00229B53 /* HoldingsView.swift in Sources */,
 				CB0A5B5A25AA45BA0031F48F /* AccountViewModelInput.swift in Sources */,
 				CB76B97B25AB0B3300E2920C /* PortfolioSettingsViewModelOutput.swift in Sources */,
 				CBC59B7225AB7C8B00921D2E /* AddDividendViewModelOutput.swift in Sources */,
+				CBB32A2425B3502000229B53 /* HoldingsViewModel.swift in Sources */,
 				CB76B96625AB0B1A00E2920C /* PortfolioSettingsViewModelType.swift in Sources */,
+				CBB32A4025B3534100229B53 /* LotRow.swift in Sources */,
 				CBBB97CF25B2349500DB3BBC /* SearchTickerViewModelInput.swift in Sources */,
+				CBB32A4E25B355F500229B53 /* LotDTO.swift in Sources */,
 				CB44674725A9A9BD007C237E /* PortfolioViewItem.swift in Sources */,
 				CB0FDEDF25A7AE50009D7BDB /* DividendsView.swift in Sources */,
 				CBC59B5D25AB7C0400921D2E /* AddDividendViewModelType.swift in Sources */,
@@ -2084,6 +2231,8 @@
 				CB0D1DA2259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
 				CB0A5B6825AA46BB0031F48F /* HomeModalRoutingType.swift in Sources */,
 				CBC59B1325AB72BF00921D2E /* DividendViewItem.swift in Sources */,
+				CBB32A3225B3502E00229B53 /* HoldingsViewModelOutput.swift in Sources */,
+				CBB32A6B25B36B6500229B53 /* AddLotViewModelType.swift in Sources */,
 				CB0A5B2F25AA0D7E0031F48F /* PortfolioRow.swift in Sources */,
 				CBC59B5625AB7BB900921D2E /* AddDividendView.swift in Sources */,
 				CBF8429925A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
@@ -2092,6 +2241,7 @@
 				CBBB980C25B2EB6F00DB3BBC /* HoldingDTO.swift in Sources */,
 				CBBB97BA25B2347500DB3BBC /* SearchTickerView.swift in Sources */,
 				CBE4EA0125967150002ECCF0 /* LoginViewModelType.swift in Sources */,
+				CBB32A7925B36B7200229B53 /* AddLotViewModelInput.swift in Sources */,
 				CBE4E9DC259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB0FDEB725A7ACC4009D7BDB /* HomeView.swift in Sources */,
 				CB0A5B2425A9C2260031F48F /* CreatePortfolioRouting.swift in Sources */,
@@ -2101,6 +2251,7 @@
 				CBBB97E425B23FB100DB3BBC /* TickerRow.swift in Sources */,
 				CBBB982D25B2F72700DB3BBC /* FirebaseHoldingRepository.swift in Sources */,
 				CB76B99325AB177700E2920C /* FeesViewModel.swift in Sources */,
+				CBB32A1625B34FE800229B53 /* HoldingsModalRoutingType.swift in Sources */,
 				CBC59B6425AB7C1900921D2E /* AddDividendViewModel.swift in Sources */,
 				CB76B96D25AB0B2100E2920C /* PortfolioSettingsViewModel.swift in Sources */,
 				CBBB97FA25B2E75E00DB3BBC /* TickerDTO.swift in Sources */,
@@ -2123,14 +2274,17 @@
 				CB0A5B6F25AA51500031F48F /* CurrencyViewItem.swift in Sources */,
 				CB41437D25A787EB006D06F2 /* LoginRouting.swift in Sources */,
 				CB41432925A7121D006D06F2 /* Store.swift in Sources */,
+				CBB32A6425B36B5900229B53 /* AddLotView.swift in Sources */,
 				CB0FDEA025A7A398009D7BDB /* SignUpViewState.swift in Sources */,
 				CB0A5B4525AA450A0031F48F /* AccountView.swift in Sources */,
 				CBC59B3D25AB78DA00921D2E /* DividendsModalRoutingType.swift in Sources */,
+				CBB32A5D25B36B5200229B53 /* AddLotRouting.swift in Sources */,
 				CBE4E9F62596712D002ECCF0 /* LoginView.swift in Sources */,
 				CBC59BA825AB7E2900921D2E /* DividendViewModelOutput.swift in Sources */,
 				CB0FDEFB25A7AE86009D7BDB /* DividendsViewModel.swift in Sources */,
 				CBC59BD025ABA0E800921D2E /* AddDividendDTO.swift in Sources */,
 				CB76B8CF25AA5D2500E2920C /* FirebasePortfolioRepository.swift in Sources */,
+				CBB32A1D25B3501A00229B53 /* HoldingsViewModelType.swift in Sources */,
 				CB44669625A8F10F007C237E /* RootViewModelType.swift in Sources */,
 				CBE4E9B02595162B002ECCF0 /* MainViewModelInput.swift in Sources */,
 				CBBB983425B3075600DB3BBC /* HoldingListener.swift in Sources */,
@@ -2169,10 +2323,14 @@
 				CB41431825A70F4E006D06F2 /* AppState.swift in Sources */,
 				CB0D1DB1259CA5B0004BA1FD /* AuthService.swift in Sources */,
 				CB378B5A2585471A00A5F14D /* Session.swift in Sources */,
+				CBB32A4625B354AE00229B53 /* LotViewItem.swift in Sources */,
 				CBC59B6A25AB7C7700921D2E /* AddDividendViewModelInput.swift in Sources */,
 				CBE4E92125950336002ECCF0 /* WelcomeViewModel.swift in Sources */,
 				CB6F985E2597356B002A89AD /* PimaryButton.swift in Sources */,
+				CBB329FF25B34F7100229B53 /* HoldingsRouting.swift in Sources */,
+				CBB32A5C25B36B5200229B53 /* AddLotRouting.swift in Sources */,
 				CB41432F25A712A6006D06F2 /* AppEnvironment.swift in Sources */,
+				CBB32A2A25B3502700229B53 /* HoldingsViewModelInput.swift in Sources */,
 				CB0FDED625A7AD6A009D7BDB /* HomeViewModelOutput.swift in Sources */,
 				CBC59B5525AB7BB900921D2E /* AddDividendView.swift in Sources */,
 				CB0A5B3925AA44DF0031F48F /* AccountRouting.swift in Sources */,
@@ -2181,6 +2339,7 @@
 				CBC59B6325AB7C1900921D2E /* AddDividendViewModel.swift in Sources */,
 				CB0FDEEF25A7AE65009D7BDB /* DividendsViewModelType.swift in Sources */,
 				CB42D08A25B0DF8000C08D36 /* MoneyDTO.swift in Sources */,
+				CBB32A6325B36B5900229B53 /* AddLotView.swift in Sources */,
 				CB43648E2584DCCA0074FBD0 /* MainView.swift in Sources */,
 				CBBB980425B2EB0000DB3BBC /* HoldingRow.swift in Sources */,
 				CB378B6C2585479900A5F14D /* MainViewModel.swift in Sources */,
@@ -2188,9 +2347,12 @@
 				CB76B96C25AB0B2100E2920C /* PortfolioSettingsViewModel.swift in Sources */,
 				CB76B8BC25AA583900E2920C /* PortfolioService.swift in Sources */,
 				CBC59B9925AB7DD800921D2E /* DividendViewModel.swift in Sources */,
+				CBB32A3125B3502E00229B53 /* HoldingsViewModelOutput.swift in Sources */,
+				CBB32A8D25B372A100229B53 /* AddLotDTO.swift in Sources */,
 				CBBB97DC25B23A4A00DB3BBC /* SearchTickerViewState.swift in Sources */,
 				CB42D09825B0EA3F00C08D36 /* AddDividendViewState.swift in Sources */,
 				CB0A5B6E25AA51500031F48F /* CurrencyViewItem.swift in Sources */,
+				CBB32A6A25B36B6500229B53 /* AddLotViewModelType.swift in Sources */,
 				CB0D1D9A259BB411004BA1FD /* SignUpViewModel.swift in Sources */,
 				CB0A5AF325A9C0E60031F48F /* CreatePortfolioView.swift in Sources */,
 				CBBB97C025B2348100DB3BBC /* SearchTickerViewModelType.swift in Sources */,
@@ -2210,6 +2372,7 @@
 				CBE4EA15259671B5002ECCF0 /* LoginViewModelOutput.swift in Sources */,
 				CBBB982C25B2F72700DB3BBC /* FirebaseHoldingRepository.swift in Sources */,
 				CB76B8CE25AA5D2500E2920C /* FirebasePortfolioRepository.swift in Sources */,
+				CBB32A1C25B3501A00229B53 /* HoldingsViewModelType.swift in Sources */,
 				CB76B99925AB179900E2920C /* FeesViewModelInput.swift in Sources */,
 				CBE4E9C825960553002ECCF0 /* WelcomeViewModelOutput.swift in Sources */,
 				CB0D1DFF259CBE9F004BA1FD /* StringExtensions.swift in Sources */,
@@ -2223,29 +2386,35 @@
 				CB0A5B5225AA45650031F48F /* AccountViewModel.swift in Sources */,
 				CBBB97C725B2348B00DB3BBC /* SearchTickerViewModel.swift in Sources */,
 				CB0FDEC125A7ACF9009D7BDB /* HomeViewModelType.swift in Sources */,
+				CBB32A3825B3532E00229B53 /* HoldingsView.swift in Sources */,
 				CB76B91B25AAF87F00E2920C /* PortfolioViewModelInput.swift in Sources */,
 				CBC59B3125AB78D100921D2E /* DividendsRouting.swift in Sources */,
 				CB76B95A25AB0B0C00E2920C /* PortfolioSettingsView.swift in Sources */,
 				CBC59BB625AB7F0400921D2E /* DividendRepositoryType.swift in Sources */,
 				CB0FDF0825A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */,
+				CBB32A4D25B355F500229B53 /* LotDTO.swift in Sources */,
 				CB0A5AE425A9BEAC0031F48F /* HomeRouting.swift in Sources */,
 				CB76B96525AB0B1A00E2920C /* PortfolioSettingsViewModelType.swift in Sources */,
+				CBB32A1525B34FE800229B53 /* HoldingsModalRoutingType.swift in Sources */,
 				CBB329F025B3323E00229B53 /* AddHoldingDTO.swift in Sources */,
 				CB76B91525AAF87400E2920C /* PortfolioViewModel.swift in Sources */,
 				CBC59BA025AB7E1400921D2E /* DividendViewModelinput.swift in Sources */,
 				CB0FDEDE25A7AE50009D7BDB /* DividendsView.swift in Sources */,
 				CB0A5B1425A9C1210031F48F /* CreatePortfolioViewModelInput.swift in Sources */,
+				CBB32A8625B36FFA00229B53 /* AddLotViewState.swift in Sources */,
 				CB0FDECF25A7AD59009D7BDB /* HomeViewModelInput.swift in Sources */,
 				CB76B9C725AB197400E2920C /* TransactionsViewModelInput.swift in Sources */,
 				CBC59B8425AB7D8000921D2E /* DividendRouting.swift in Sources */,
 				CBE4E9C125960538002ECCF0 /* WelcomeViewModelInput.swift in Sources */,
 				CB378B652585478900A5F14D /* MainViewModelType.swift in Sources */,
+				CBB32A7825B36B7200229B53 /* AddLotViewModelInput.swift in Sources */,
 				CB0D1DA1259BB420004BA1FD /* SignUpViewModelInput.swift in Sources */,
 				CBBB97E325B23FB100DB3BBC /* TickerRow.swift in Sources */,
 				CBF8429825A660E700C116B4 /* PlaceholderViewModifier.swift in Sources */,
 				CBC59B1225AB72BF00921D2E /* DividendViewItem.swift in Sources */,
 				CB0FDF0125A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */,
 				CBC59BC825AB888C00921D2E /* TickerViewitem.swift in Sources */,
+				CBB32A7125B36B6A00229B53 /* AddLotViewModel.swift in Sources */,
 				CBE4EA0025967150002ECCF0 /* LoginViewModelType.swift in Sources */,
 				CBE4E9DB259608F7002ECCF0 /* ViewModelType.swift in Sources */,
 				CB76B92825AAF9EB00E2920C /* PortfolioRouting.swift in Sources */,
@@ -2257,6 +2426,7 @@
 				CBC59B1925AB739500921D2E /* DividendListener.swift in Sources */,
 				CB76B94F25AB0AF600E2920C /* PortfolioSettingsRouting.swift in Sources */,
 				CB0A5B0D25A9C1180031F48F /* CreatePortfolioViewModel.swift in Sources */,
+				CBB32A7F25B36B7900229B53 /* AddLotViewModelOutput.swift in Sources */,
 				CBC59B7125AB7C8B00921D2E /* AddDividendViewModelOutput.swift in Sources */,
 				CB43648C2584DCCA0074FBD0 /* App.swift in Sources */,
 				CB76B99225AB177700E2920C /* FeesViewModel.swift in Sources */,
@@ -2295,6 +2465,7 @@
 				CB41436925A73DE3006D06F2 /* LoginViewState.swift in Sources */,
 				CB0FDEA825A7A420009D7BDB /* SignUpRouting.swift in Sources */,
 				CB44669525A8F10F007C237E /* RootViewModelType.swift in Sources */,
+				CBB32A3F25B3534100229B53 /* LotRow.swift in Sources */,
 				CB0A5AFE25A9C0F70031F48F /* CreatePortfolioViewModelType.swift in Sources */,
 				CBE4E91B25950303002ECCF0 /* WelcomeViewModelType.swift in Sources */,
 				CB76B90425AAF85600E2920C /* PortfolioView.swift in Sources */,
@@ -2302,6 +2473,7 @@
 				CBE4EA072596715E002ECCF0 /* LoginViewModel.swift in Sources */,
 				CB44666D25A8EE6B007C237E /* RootView.swift in Sources */,
 				CB41433E25A71BBD006D06F2 /* CancelBag.swift in Sources */,
+				CBB32A2325B3502000229B53 /* HoldingsViewModel.swift in Sources */,
 				CBBB982125B2F68200DB3BBC /* HoldingRepositoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

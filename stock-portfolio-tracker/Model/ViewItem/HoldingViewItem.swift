@@ -14,6 +14,10 @@ struct HoldingViewItem: Identifiable, Equatable {
     var portfolioId: String
     
     static func from(_ dto: HoldingDTO) -> HoldingViewItem {
-        return HoldingViewItem(id: dto.id, ticker: dto.ticker, portfolioId: dto.portfolioId)
+        return HoldingViewItem(
+            id: dto.id,
+            ticker: dto.ticker,
+            portfolioId: dto.portfolioId
+        )
     }
 }

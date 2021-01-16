@@ -74,9 +74,9 @@ struct PortfolioView: View {
         }
     }
     
-    func holdingsView(_ item: HoldingViewItem) -> some View {
-//        return HoldingView(item: item)
-        return Text(item.ticker)
+    func holdingsView(_ holding: HoldingViewItem) -> some View {
+        guard let portfolio = viewModel.portfolio else { return AnyView(Text("")) }
+        return AnyView(HoldingsView(portfolio: portfolio, holding: holding))
     }
     
     var modalSheet: some View {
@@ -97,7 +97,7 @@ struct PortfolioView: View {
 #if DEBUG
 struct PortfolioViewPreviews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        PortfolioView(item: PortfolioViewItem(id: "", name: "", currency: ""))
     }
 }
 #endif

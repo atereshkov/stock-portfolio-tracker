@@ -88,9 +88,7 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
         let currency = currencyOptions[currencyIndex].id
         
         let money = MoneyDTO(value: paid, currency: currency)
-        let dto = AddDividendDTO(
-            portfolioId: portfolioId, ticker: ticker, date: date, paid: money, tax: tax
-        )
+        let dto = AddDividendDTO(ticker: ticker, date: date, paid: money, tax: tax)
         
         state = .loading
         

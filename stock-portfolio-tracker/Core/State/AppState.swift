@@ -32,8 +32,9 @@ extension AppState {
     struct DataState: Equatable {
         var portfolios: [PortfolioViewItem] = []
         var dividends: [DividendViewItem] = []
-        
         var holdings: [HoldingViewItem] = []
+        
+        var lots: [String: [LotViewItem]] = [:]
     }
 }
 
@@ -55,6 +56,8 @@ extension AppState {
         var addDividend = AddDividendRouting()
         var dividend = DividendRouting()
         var searchTicker = SearchTickerRouting()
+        var holdings = HoldingsRouting()
+        var addLot = AddLotRouting()
     }
 }
 

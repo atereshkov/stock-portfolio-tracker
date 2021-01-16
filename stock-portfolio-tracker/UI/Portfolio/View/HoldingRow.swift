@@ -27,7 +27,8 @@ struct HoldingRow: View {
 #if DEBUG
 struct HoldingRowViewPreviews: PreviewProvider {
     static var previews: some View {
-        HoldingRow(item: HoldingViewItem(id: "1", ticker: "SPY", portfolioId: ""))
+        let item = HoldingViewItem(id: "1", ticker: "SPY", portfolioId: "")
+        return HoldingRow(item: item)
             .previewLayout(.fixed(width: 375, height: 40))
     }
 }

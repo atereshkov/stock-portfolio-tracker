@@ -30,6 +30,7 @@ extension FirebaseDividendRepository {
         
         var data = dto.toDto()
         data["ownerUid"] = appState[\.user.id] ?? ""
+        data["portfolioId"] = portfolioId
         data["createdAt"] = Date().timeIntervalSince1970
         data["updatedAt"] = Date().timeIntervalSince1970
         
