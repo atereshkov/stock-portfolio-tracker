@@ -19,12 +19,6 @@ class HomeViewModel: BaseViewModel<HomeViewModelInputType, HomeViewModelOutputTy
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.home] = $0 }
-            session.appState.map(\.routing.createPortfolio.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
-            session.appState.map(\.routing.account.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
             
             session.appState.map(\.data.portfolios)
                 .removeDuplicates()
@@ -45,12 +39,12 @@ extension HomeViewModel: HomeViewModelInputType {
     
     func newPortfolioAction() {
         routingState.currentModalSheet = .createPortfolio
-        session.appState[\.routing.createPortfolio.isPresented] = true
+        routingState.showModalSheet = true
     }
     
     func accountAction() {
         routingState.currentModalSheet = .account
-        session.appState[\.routing.account.isPresented] = true
+        routingState.showModalSheet = true
     }
     
 }
