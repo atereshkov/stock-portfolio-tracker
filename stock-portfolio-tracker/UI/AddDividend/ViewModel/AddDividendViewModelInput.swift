@@ -10,6 +10,7 @@ import Foundation
 protocol AddDividendViewModelInputType {
     func add(portfolioIndex: Int, tickerIndex: Int, currencyIndex: Int, perShareToggle: Bool, date: Date)
     
+    func onAppear()
     func onDisappear()
     
     var paid: String? { get set }

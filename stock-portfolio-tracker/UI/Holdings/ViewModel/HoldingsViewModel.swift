@@ -24,10 +24,6 @@ class HoldingsViewModel: BaseViewModel<HoldingsViewModelInputType, HoldingsViewM
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.holdings] = $0 }
-            
-            session.appState.map(\.routing.addLot.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
         }
         
         session.appState.map(\.data.lots)
@@ -57,6 +53,7 @@ class HoldingsViewModel: BaseViewModel<HoldingsViewModelInputType, HoldingsViewM
     // MARK: - Output
     
     @Published var routingState: HoldingsRouting
+    // TODO @Published var showModalSheet = CombineLatest and check for currentModalSSheet not nil
     @Published var lots: [LotViewItem] = []
     
 }
@@ -67,7 +64,7 @@ extension HoldingsViewModel: HoldingsViewModelInputType {
     
     func addLotAction() {
         routingState.currentModalSheet = .addLot
-        session.appState[\.routing.addLot.isPresented] = true
+        routingState.showModalSheet = true
     }
     
     func onAppear() {

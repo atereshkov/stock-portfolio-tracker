@@ -96,8 +96,12 @@ extension AddLotViewModel: AddLotViewModelInputType {
             .store(in: cancelBag)
     }
     
+    func onAppear() {
+        routingState.isPresented = true
+    }
+    
     func onDisappear() {
-        session.appState[\.routing.addLot.isPresented] = false
+        routingState.isPresented = false
         cancelBag.cancel()
     }
     

@@ -21,6 +21,7 @@ struct SearchTickerView: View {
     
     var body: some View {
         content
+            .onAppear(perform: viewModel.onAppear)
             .onDisappear(perform: viewModel.onDisappear)
     }
     

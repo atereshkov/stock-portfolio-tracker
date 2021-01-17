@@ -25,14 +25,6 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
             $routingState
                 .sink { session.appState[\.routing.portfolio] = $0 }
             
-            session.appState.map(\.routing.portfolioSettings.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
-            
-            session.appState.map(\.routing.searchTicker.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
-            
             session.appState.map(\.data.holdings)
                 .removeDuplicates()
                 .assign(to: \.holdings, on: self)
@@ -60,12 +52,12 @@ extension PortfolioViewModel: PortfolioViewModelInputType {
     
     func settingsAction() {
         routingState.currentModalSheet = .settings
-        session.appState[\.routing.portfolioSettings.isPresented] = true
+        routingState.showModalSheet = true
     }
     
     func addTickerAction() {
         routingState.currentModalSheet = .addTicker
-        session.appState[\.routing.searchTicker.isPresented] = true
+        routingState.showModalSheet = true
     }
     
     func onAppear() {

@@ -10,5 +10,6 @@ import Foundation
 protocol SearchTickerViewModelInputType {
     func onRowTapAction(_ ticker: TickerViewItem)
     
+    func onAppear()
     func onDisappear()
 }

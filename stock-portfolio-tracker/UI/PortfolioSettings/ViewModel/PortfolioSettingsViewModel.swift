@@ -37,8 +37,12 @@ class PortfolioSettingsViewModel: BaseViewModel<PortfolioSettingsViewModelInputT
 
 extension PortfolioSettingsViewModel: PortfolioSettingsViewModelInputType {
     
+    func onAppear() {
+        routingState.isPresented = true
+    }
+    
     func onDisappear() {
-        session.appState[\.routing.portfolioSettings.isPresented] = false
+        routingState.isPresented = false
         cancelBag.cancel()
     }
     

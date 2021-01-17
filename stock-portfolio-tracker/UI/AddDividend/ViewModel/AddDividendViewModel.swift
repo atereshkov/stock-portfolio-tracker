@@ -108,8 +108,12 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
             .store(in: cancelBag)
     }
     
+    func onAppear() {
+        routingState.isPresented = true
+    }
+    
     func onDisappear() {
-        session.appState[\.routing.addDividend.isPresented] = false
+        routingState.isPresented = false
         cancelBag.cancel()
     }
     

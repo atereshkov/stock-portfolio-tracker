@@ -20,10 +20,6 @@ class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsVi
             $routingState
                 .sink { session.appState[\.routing.dividends] = $0 }
             
-            session.appState.map(\.routing.addDividend.isPresented)
-                .removeDuplicates()
-                .assign(to: \.routingState.showModalSheet, on: self)
-            
             session.appState.map(\.data.dividends)
                 .removeDuplicates()
                 .assign(to: \.dividends, on: self)
@@ -43,7 +39,7 @@ extension DividendsViewModel: DividendsViewModelInputType {
     
     func addAction() {
         routingState.currentModalSheet = .addDividend
-        session.appState[\.routing.addDividend.isPresented] = true
+        routingState.showModalSheet = true
     }
     
 }

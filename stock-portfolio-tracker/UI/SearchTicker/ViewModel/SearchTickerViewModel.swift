@@ -56,11 +56,15 @@ extension SearchTickerViewModel: SearchTickerViewModelInputType {
     
     func onRowTapAction(_ ticker: TickerViewItem) {
         delegate?.onTickerSelected(ticker)
-        session.appState[\.routing.searchTicker.isPresented] = false
+        routingState.isPresented = false
+    }
+    
+    func onAppear() {
+        routingState.isPresented = true
     }
     
     func onDisappear() {
-        session.appState[\.routing.searchTicker.isPresented] = false
+        routingState.isPresented = false
         cancelBag.cancel()
     }
     

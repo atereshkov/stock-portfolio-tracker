@@ -89,8 +89,12 @@ extension CreatePortfolioViewModel: CreatePortfolioViewModelInputType {
             .store(in: cancelBag)
     }
     
+    func onAppear() {
+        routingState.isPresented = true
+    }
+    
     func onDisappear() {
-        session.appState[\.routing.createPortfolio.isPresented] = false
+        routingState.isPresented = false
         cancelBag.cancel()
     }
     

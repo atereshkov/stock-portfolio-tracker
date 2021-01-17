@@ -10,6 +10,8 @@ import DICE
 
 struct PortfolioView: View {
     
+    private let cancelBag = CancelBag()
+    
     init(item: PortfolioViewItem) {
         viewModel.portfolio = item
     }
@@ -62,11 +64,8 @@ struct PortfolioView: View {
     var holdings: some View {
         ScrollView {
             LazyVStack {
-                ForEach(viewModel.holdings) { holding in
-                    NavigationLink(
-                        destination: holdingsView(holding),
-                        tag: holding.id,
-                        selection: $viewModel.routingState.holdingDetails) {
+                ForEach(viewModel.holdings, id: \.id) { holding in
+                    NavigationLink(destination: holdingsView(holding)) {
                         HoldingRow(item: holding)
                     }
                 }

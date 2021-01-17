@@ -49,11 +49,8 @@ struct HoldingsView: View {
     var lots: some View {
         ScrollView {
             LazyVStack {
-                ForEach(viewModel.lots) { lot in
-                    NavigationLink(
-                        destination: lotView(lot),
-                        tag: lot.id,
-                        selection: $viewModel.routingState.lotDetails) {
+                ForEach(viewModel.lots, id: \.id) { lot in
+                    NavigationLink(destination: lotView(lot)) {
                         LotRow(item: lot)
                     }
                 }
@@ -62,7 +59,7 @@ struct HoldingsView: View {
     }
     
     func lotView(_ item: LotViewItem) -> some View {
-        return Text("")
+        return Text("\(item.shares)")
     }
     
     var modalSheet: some View {

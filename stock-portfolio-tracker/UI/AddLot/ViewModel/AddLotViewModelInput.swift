@@ -10,6 +10,7 @@ import Foundation
 protocol AddLotViewModelInputType {
     func add(currencyIndex: Int, date: Date)
     
+    func onAppear()
     func onDisappear()
     
     var holding: HoldingViewItem? { get set }
