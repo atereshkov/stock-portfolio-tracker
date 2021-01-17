@@ -6,6 +6,7 @@
 //
 
 import Combine
+import Foundation
 
 class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsViewModelOutputType>, DividendsViewModelType {
     
@@ -24,12 +25,26 @@ class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsVi
                 .removeDuplicates()
                 .assign(to: \.dividends, on: self)
         }
+        
+        $dividends.sink { [weak self] in
+            let sum = $0.reduce(0) { $0 + $1.paid.value }
+            self?.dividendsValue = NSDecimalNumber(decimal: sum).stringValue
+            self?.dividendsSign = $0.first?.paid.currency
+        }.store(in: cancelBag)
     }
     
     // MARK: - Output
     
     @Published var routingState: DividendsRouting
     @Published var dividends: [DividendViewItem] = []
+    @Published var dividendsValue: String?
+    @Published var dividendsSign: String?
+    
+    @Published var currencyOptions = [
+        CurrencyViewItem(id: "USD", name: "USD"),
+        CurrencyViewItem(id: "EUR", name: "EUR"),
+        CurrencyViewItem(id: "RUB", name: "RUB")
+    ]
     
 }
 

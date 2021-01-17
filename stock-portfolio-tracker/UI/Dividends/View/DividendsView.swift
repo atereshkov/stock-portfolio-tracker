@@ -12,6 +12,8 @@ struct DividendsView: View {
     
     @EnvironmentObservableInjected var viewModel: DividendsViewModel
     
+    @State var currencyIndex: Int = 0
+    
     var body: some View {
         content
             .sheet(
@@ -23,9 +25,21 @@ struct DividendsView: View {
     
     var content: some View {
         NavigationView {
-            dividendsList
+            VStack(alignment: .leading) {
+                HStack {
+                    Picker(viewModel.output.dividendsSign ?? "", selection: $currencyIndex) {
+                        ForEach(0..<viewModel.currencyOptions.count) { index in
+                            Text(viewModel.currencyOptions[index].name).tag(index)
+                        }
+                    }
+                    .pickerStyle(MenuPickerStyle())
+                    Text(viewModel.output.dividendsValue ?? "")
+                }
+                .padding(.top, 12)
+                dividendsList
+            }
             .padding([.leading, .trailing], 18)
-            .navigationBarTitle(Text("Dividends"))
+            .navigationBarTitle(Text("Dividends"), displayMode: .inline)
             .navigationBarItems(trailing: addButton)
         }
     }
