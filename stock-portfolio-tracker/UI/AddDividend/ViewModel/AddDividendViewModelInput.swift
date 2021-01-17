@@ -15,4 +15,5 @@ protocol AddDividendViewModelInputType {
     
     var paid: String? { get set }
     var tax: String? { get set }
+    var portfolioIndex: Int? { get set }
 }

@@ -24,11 +24,13 @@ class PortfolioViewModel: BaseViewModel<PortfolioViewModelInputType, PortfolioVi
         cancelBag.collect {
             $routingState
                 .sink { session.appState[\.routing.portfolio] = $0 }
-            
-            session.appState.map(\.data.holdings)
-                .removeDuplicates()
-                .assign(to: \.holdings, on: self)
         }
+        
+        let itemsPublisher = session.appState.map(\.data.holdings)
+        let portfolioPublisher = $portfolio
+        Publishers.CombineLatest(itemsPublisher, portfolioPublisher).sink { [weak self] items, portfolio in
+            self?.holdings = items.filter { $0.portfolioId == portfolio?.id }
+        }.store(in: cancelBag)
     }
     
     deinit {
@@ -61,7 +63,7 @@ extension PortfolioViewModel: PortfolioViewModelInputType {
     }
     
     func onAppear() {
-        holdings = holdings.filter { $0.portfolioId == portfolio?.id }
+        
     }
     
     func onDisappear() {
@@ -79,22 +81,16 @@ extension PortfolioViewModel: PortfolioViewModelOutputType {
 extension PortfolioViewModel: SearchTickerDelegate {
     
     func onTickerSelected(_ ticker: TickerViewItem) {
+        routingState.currentModalSheet = nil
+        routingState.showModalSheet = false
+        
         let dto = HoldingDTO(id: ticker.id, ticker: ticker.ticker, createdAt: Date(), updatedAt: Date(), portfolioId: portfolio?.id ?? "")
         // TODO use AddHoldingDTO
         
         holdingService
             .addHolding(holding: dto, portfolioId: portfolio?.id ?? "")
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .failure(let error):
-                    Swift.print(error)
-                case .finished:
-                    break
-                }
-            }, receiveValue: { [weak self] _ in
-                self?.onDisappear()
-            })
+            .sink(receiveCompletion: { _ in }, receiveValue: { _ in })
             .store(in: cancelBag)
     }
     

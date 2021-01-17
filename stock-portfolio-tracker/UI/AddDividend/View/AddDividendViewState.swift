@@ -10,4 +10,5 @@ import Foundation
 enum AddDividendViewState {
     case start
     case loading
+    case loadingTickers
 }

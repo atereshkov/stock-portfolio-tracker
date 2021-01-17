@@ -18,6 +18,8 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
         self.dividendService = session.resolve()
         
         _routingState = .init(initialValue: session.appState.value.routing.addDividend)
+        _portfolioIndex = .init(initialValue: 0)
+        
         super.init(session: session)
         
         cancelBag.collect {
@@ -33,13 +35,15 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
             .assign(to: \.portfolioOptions, on: self)
             .store(in: cancelBag)
         
-//        titlePublisher.sink { [weak self] value in
-//            if let value = value, !value.isEmpty {
-//                self?.title = value
-//            } else {
-//                self?.title = "New portfolio"
-//            }
-//        }.store(in: cancelBag)
+        $portfolioIndex
+            .removeDuplicates()
+            .compactMap { $0 }
+            .sink { [weak self] index in
+                let portfolioId = self?.portfolioOptions[index].id
+                self?.tickerOptions = session.appState[\.data.holdings]
+                    .filter { $0.portfolioId == portfolioId }
+                    .map { TickerViewItem(id: $0.id, ticker: $0.ticker) }
+        }.store(in: cancelBag)
     }
     
     deinit {
@@ -50,29 +54,22 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
     
     @Published var paid: String?
     @Published var tax: String?
+    @Published var portfolioIndex: Int?
     
     // MARK: - Output
     
     @Published var portfolioOptions: [PortfolioViewItem] = []
-    @Published var tickerOptions: [TickerViewItem] = [
-        TickerViewItem(id: "1", ticker: "AAPL"),
-        TickerViewItem(id: "2", ticker: "SPY")
-    ]
     @Published var currencyOptions = [
         CurrencyViewItem(id: "USD", name: "USD"),
         CurrencyViewItem(id: "EUR", name: "EUR"),
         CurrencyViewItem(id: "RUB", name: "RUB")
     ]
     
+    @Published var tickerOptions: [TickerViewItem] = []
+    
     @Published var routingState: AddDividendRouting
     @Published var state: AddDividendViewState = .start
     @Published var title: String?
-    
-    // MARK: - Private
-    
-//    private lazy var titlePublisher: AnyPublisher<String?,Never> = {
-//        $name.eraseToAnyPublisher()
-//    }()
     
 }
 
@@ -122,5 +119,18 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
 // MARK: - AddDividendViewModelOutputType
 
 extension AddDividendViewModel: AddDividendViewModelOutputType {
+    
+    func selectedTicker(_ index: Int) -> TickerViewItem? {
+        guard index >= 0 && index < tickerOptions.count else { return nil }
+        return tickerOptions[index]
+    }
+    
+}
+
+private extension AddDividendViewModel {
+    
+    private func loadTickers(for portfolio: PortfolioViewItem) {
+        
+    }
     
 }

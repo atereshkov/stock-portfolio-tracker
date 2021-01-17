@@ -56,7 +56,7 @@ extension SearchTickerViewModel: SearchTickerViewModelInputType {
     
     func onRowTapAction(_ ticker: TickerViewItem) {
         delegate?.onTickerSelected(ticker)
-        routingState.isPresented = false
+        onDisappear()
     }
     
     func onAppear() {

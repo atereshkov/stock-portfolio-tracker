@@ -7,6 +7,7 @@
 
 import SwiftUI
 import DICE
+import Combine
 
 struct AddDividendView: View {
     
@@ -44,19 +45,32 @@ struct AddDividendView: View {
                     }
                 }
                 .pickerStyle(MenuPickerStyle())
+                .onChange(of: portfolioIndex) { [weak viewModel] value in
+                    viewModel?.portfolioIndex = value
+                }
                 Spacer()
                 Text(viewModel.portfolioOptions[portfolioIndex].name)
             }
-            HStack {
-                Picker("Ticker", selection: $tickerIndex) {
-                    ForEach(0..<viewModel.tickerOptions.count) { index in
-                        Text(viewModel.tickerOptions[index].ticker).tag(index)
-                    }
-                }
-                .pickerStyle(MenuPickerStyle())
-                Spacer()
-                Text(viewModel.tickerOptions[tickerIndex].ticker)
+            switch viewModel.output.state {
+            case .loadingTickers:
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+            default:
+                tickerPicker
             }
+        }
+    }
+    
+    var tickerPicker: some View {
+        HStack {
+            Picker("Ticker", selection: $tickerIndex) {
+                ForEach(0..<viewModel.tickerOptions.count, id: \.self) { index in
+                    Text(viewModel.selectedTicker(index)?.ticker ?? "").tag(index)
+                }
+            }
+            .pickerStyle(MenuPickerStyle())
+            Spacer()
+            Text(viewModel.selectedTicker(tickerIndex)?.ticker ?? "")
         }
     }
     
@@ -116,6 +130,10 @@ struct AddDividendView: View {
             return AnyView(addButton)
         case .loading:
             return AnyView(loadingView)
+        case .loadingTickers:
+            return AnyView(
+                addButton.disabled(true)
+            )
         }
     }
     

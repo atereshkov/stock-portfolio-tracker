@@ -28,6 +28,7 @@ extension FirebaseHoldingRepository {
         data["ownerUid"] = userId
         data["createdAt"] = Date().timeIntervalSince1970
         data["updatedAt"] = Date().timeIntervalSince1970
+        data["portfolioId"] = portfolioId
         
         return Future { [weak self] resolve in
             self?.db
