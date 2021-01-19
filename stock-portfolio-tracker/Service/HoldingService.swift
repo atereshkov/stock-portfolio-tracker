@@ -10,7 +10,7 @@ import Combine
 
 protocol HoldingServiceType {
     
-    func addHolding(holding: HoldingDTO, portfolioId: String) -> Future<Void, Error>
+    func addHolding(holding: AddHoldingDTO, portfolioId: String) -> Future<Void, Error>
     
     func loadLots(portfolioId: String, holdingId: String) -> Future<Void, Error>
     
@@ -34,7 +34,7 @@ class HoldingService: HoldingServiceType {
 
 extension HoldingService {
     
-    func addHolding(holding: HoldingDTO, portfolioId: String) -> Future<Void, Error> {
+    func addHolding(holding: AddHoldingDTO, portfolioId: String) -> Future<Void, Error> {
         return holdingRepository.addHolding(holding: holding, portfolioId: portfolioId)
     }
     

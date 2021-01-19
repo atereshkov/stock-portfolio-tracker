@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct AddHoldingDTO: Identifiable {
+    var id: String
+    var ticker: String
+    
+    func toDto() -> [String: Any] {
+        return [
+            "id": id,
+            "ticker": ticker
+        ]
+    }
+}

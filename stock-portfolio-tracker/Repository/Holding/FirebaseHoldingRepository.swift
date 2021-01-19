@@ -21,7 +21,7 @@ class FirebaseHoldingRepository: HoldingRepositoryType {
 
 extension FirebaseHoldingRepository {
     
-    func addHolding(holding: HoldingDTO, portfolioId: String) -> Future<Void, Error> {
+    func addHolding(holding: AddHoldingDTO, portfolioId: String) -> Future<Void, Error> {
         let userId = appState[\.user.id] ?? ""
         
         var data = holding.toDto()

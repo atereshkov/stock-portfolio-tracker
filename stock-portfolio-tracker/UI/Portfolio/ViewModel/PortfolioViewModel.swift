@@ -84,8 +84,7 @@ extension PortfolioViewModel: SearchTickerDelegate {
         routingState.currentModalSheet = nil
         routingState.showModalSheet = false
         
-        let dto = HoldingDTO(id: ticker.id, ticker: ticker.ticker, createdAt: Date(), updatedAt: Date(), portfolioId: portfolio?.id ?? "")
-        // TODO use AddHoldingDTO
+        let dto = AddHoldingDTO(id: ticker.id, ticker: ticker.ticker)
         
         holdingService
             .addHolding(holding: dto, portfolioId: portfolio?.id ?? "")

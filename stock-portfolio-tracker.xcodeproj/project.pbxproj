@@ -952,6 +952,7 @@
 				CBC59B7725AB7CBE00921D2E /* Dividend */,
 				CBC59B4925AB7A3500921D2E /* AddDividend */,
 				CB76B98025AB172400E2920C /* Fees */,
+				CB7EF52425B76C7E006165AC /* AddFee */,
 				CB76B9A625AB18CF00E2920C /* Transactions */,
 				CBBB97A925B233D700DB3BBC /* SearchTicker */,
 				CBE4E9E525964E71002ECCF0 /* View */,
@@ -1341,6 +1342,13 @@
 				CB76B9A925AB18E100E2920C /* TransactionsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CB7EF52425B76C7E006165AC /* AddFee */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddFee;
 			sourceTree = "<group>";
 		};
 		CBB329FA25B34E9000229B53 /* Holdings */ = {
