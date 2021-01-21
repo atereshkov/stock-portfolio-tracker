@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FeesViewModelInputType {
-    
+    func addAction()
 }

@@ -8,5 +8,9 @@
 import Foundation
 
 protocol FeesViewModelOutputType {
-    
+    var routingState: FeesRouting { get }
+    var fees: [FeeViewItem] { get }
+    var currencyOptions: [CurrencyViewItem] { get }
+    var feesValue: String? { get }
+    var feesSign: String? { get }
 }

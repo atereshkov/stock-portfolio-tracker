@@ -33,8 +33,8 @@ extension AppState {
         var portfolios: [PortfolioViewItem] = []
         var dividends: [DividendViewItem] = []
         var holdings: [HoldingViewItem] = []
-        
         var lots: [String: [LotViewItem]] = [:]
+        var fees: [FeeViewItem] = []
     }
 }
 
@@ -58,6 +58,8 @@ extension AppState {
         var searchTicker = SearchTickerRouting()
         var holdings = HoldingsRouting()
         var addLot = AddLotRouting()
+        var fees = FeesRouting()
+        var addFee = AddFeeRouting()
     }
 }
 

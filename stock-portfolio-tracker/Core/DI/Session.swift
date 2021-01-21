@@ -94,6 +94,9 @@ private extension Session {
         container.register(AddLotViewModel.self, scope: .prototype) { _ in
             return AddLotViewModel(session: self)
         }
+        container.register(AddFeeViewModel.self, scope: .prototype) { _ in
+            return AddFeeViewModel(session: self)
+        }
     }
     
 }
@@ -113,24 +116,8 @@ private extension Session {
         container.register(HoldingServiceType.self) { _ in
             return HoldingService(session: self)
         }
-    }
-    
-}
-
-private extension Session {
-    
-    func bindListeners() {
-        container.register(AuthListenerType.self, scope: .single) { _ in
-            return AuthListener(appState: self.appState)
-        }
-        container.register(PortfolioListenerType.self, scope: .single) { _ in
-            return PortfolioListener(session: self)
-        }
-        container.register(DividendListenerType.self, scope: .single) { _ in
-            return DividendListener(session: self)
-        }
-        container.register(HoldingListenerType.self, scope: .single) { _ in
-            return HoldingListener(session: self)
+        container.register(FeeServiceType.self) { _ in
+            return FeeService()
         }
     }
     
@@ -150,6 +137,28 @@ private extension Session {
         }
         container.register(HoldingRepositoryType.self) { _ in
             return FirebaseHoldingRepository(appState: self.appState)
+        }
+        container.register(FeeRepositoryType.self) { _ in
+            return FirebaseFeeRepository(appState: self.appState)
+        }
+    }
+    
+}
+
+private extension Session {
+    
+    func bindListeners() {
+        container.register(AuthListenerType.self, scope: .single) { _ in
+            return AuthListener(appState: self.appState)
+        }
+        container.register(PortfolioListenerType.self, scope: .single) { _ in
+            return PortfolioListener(session: self)
+        }
+        container.register(DividendListenerType.self, scope: .single) { _ in
+            return DividendListener(session: self)
+        }
+        container.register(HoldingListenerType.self, scope: .single) { _ in
+            return HoldingListener(session: self)
         }
     }
     
