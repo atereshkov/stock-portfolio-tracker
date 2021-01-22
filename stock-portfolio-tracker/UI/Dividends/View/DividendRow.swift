@@ -12,13 +12,24 @@ struct DividendRow: View {
     var item: DividendViewItem
 
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(item.ticker)
-                Text(NSDecimalNumber(decimal: item.paid.value).stringValue)
-                Divider()
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text(item.ticker).bold()
+                    Text(item.ticker)
+                }
+                Spacer()
+                HStack {
+                    HStack {
+                        Text(item.paid.currency)
+                        Text(NSDecimalNumber(decimal: item.paid.value).stringValue)
+                            .foregroundColor(.green)
+                    }
+                    Image(systemName: "arrow.right")
+                        .opacity(0.5)
+                }
             }
-            Spacer()
+            Divider()
         }
         .frame(minWidth: 0, maxWidth: .infinity)
     }

@@ -99,19 +99,19 @@ struct AddDividendView: View {
                         .foregroundColor(Color.gray)
                 }
             }
+            Toggle(isOn: $perShareToggle) {
+                Text("Per 1 share")
+                    .font(.system(size: 15))
+                    .foregroundColor(Color.gray)
+            }
             HStack {
                 TextField("Tax", text: Binding(
                             get: { viewModel.tax ?? "" },
                             set: { viewModel.tax = $0 })
                 )
-                .keyboardType(.numberPad)
+                .keyboardType(.decimalPad)
                 Spacer()
                 Text("%")
-            }
-            Toggle(isOn: $perShareToggle) {
-                Text("Per 1 share")
-                    .font(.system(size: 15))
-                    .foregroundColor(Color.gray)
             }
         }
     }

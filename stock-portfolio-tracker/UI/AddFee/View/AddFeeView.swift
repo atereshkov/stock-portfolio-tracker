@@ -116,7 +116,7 @@ struct AddFeeView: View {
                             get: { viewModel.tax ?? "" },
                             set: { viewModel.tax = $0 })
                 )
-                .keyboardType(.numberPad)
+                .keyboardType(.decimalPad)
                 Spacer()
                 Text("%")
             }
