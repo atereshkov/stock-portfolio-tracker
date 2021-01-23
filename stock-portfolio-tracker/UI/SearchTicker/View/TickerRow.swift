@@ -27,7 +27,7 @@ struct TickerRow: View {
 #if DEBUG
 struct TickerRowViewPreviews: PreviewProvider {
     static var previews: some View {
-        TickerRow(item: TickerViewItem(id: "1", ticker: "Name1"))
+        TickerRow(item: TickerViewItem(id: "1", ticker: "Name1", currencyCode: "USD"))
             .previewLayout(.fixed(width: 375, height: 40))
     }
 }

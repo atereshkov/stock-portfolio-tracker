@@ -10,9 +10,13 @@ import Foundation
 
 class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsViewModelOutputType>, DividendsViewModelType {
     
+    private let dividendService: DividendServiceType
+    
     private var cancelBag = CancelBag()
     
     override init(session: SessionType) {
+        self.dividendService = session.resolve()
+        
         _routingState = .init(initialValue: session.appState.value.routing.dividends)
         
         super.init(session: session)
@@ -55,6 +59,16 @@ extension DividendsViewModel: DividendsViewModelInputType {
     func addAction() {
         routingState.currentModalSheet = .addDividend
         routingState.showModalSheet = true
+    }
+    
+    func onAppear() {
+        _ = dividendService.loadDividends(limit: 15)
+    }
+    
+    func onRowAppear(item: DividendViewItem) {
+        guard dividends.firstIndex(of: item) == dividends.count - 1 else { return }
+        guard let lastItem = dividends.last else { return }
+        _ = dividendService.loadPagedDividends(limit: 15, lastItem: lastItem)
     }
     
 }

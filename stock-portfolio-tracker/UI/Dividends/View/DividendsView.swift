@@ -16,6 +16,7 @@ struct DividendsView: View {
     
     var body: some View {
         content
+            .onAppear(perform: viewModel.input.onAppear)
             .sheet(
                 isPresented: $viewModel.routingState.showModalSheet,
                 content: {
@@ -53,6 +54,9 @@ struct DividendsView: View {
                         tag: dividend.id,
                         selection: $viewModel.routingState.dividendDetails) {
                         DividendRow(item: dividend)
+                            .onAppear(perform: { [weak viewModel] in
+                                viewModel?.input.onRowAppear(item: dividend)
+                            })
                     }
                 }
             }

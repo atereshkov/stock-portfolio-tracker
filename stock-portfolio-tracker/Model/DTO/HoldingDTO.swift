@@ -9,7 +9,7 @@ import Foundation
 
 struct HoldingDTO: Identifiable {
     var id: String
-    var ticker: String
+    var ticker: TickerDTO
     
     var createdAt: Date
     var updatedAt: Date
@@ -18,7 +18,7 @@ struct HoldingDTO: Identifiable {
     
     static func from(_ data: [String: Any]) -> HoldingDTO {
         let id = data["id"] as? String ?? ""
-        let ticker = data["ticker"] as? String ?? ""
+        let ticker = TickerDTO.from(data["ticker"] as? [String: Any] ?? [:])
         let portfolioId = data["portfolioId"] as? String ?? ""
         
         return HoldingDTO(

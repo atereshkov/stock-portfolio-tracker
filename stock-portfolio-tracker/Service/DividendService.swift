@@ -10,6 +10,10 @@ import Combine
 
 protocol DividendServiceType {
     
+    func loadDividends(limit: Int) -> Future<Void, Error>
+    
+    func loadPagedDividends(limit: Int, lastItem: DividendViewItem) -> Future<Void, Error>
+    
     func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error>
     
 }
@@ -18,9 +22,56 @@ class DividendService: DividendServiceType {
     
     @Injected var dividendRepository: DividendRepositoryType
     
+    let session: SessionType
+    
+    init(session: SessionType) {
+        self.session = session
+    }
+    
+    private let cancelBag = CancelBag()
+    
 }
 
 extension DividendService {
+    
+    func loadDividends(limit: Int) -> Future<Void, Error> {
+        return Future<Void, Error> { [weak self] resolve in
+            guard let sself = self else { return }
+            self?.dividendRepository.loadDividends(limit: limit).sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    resolve(.failure(error))
+                case .finished:
+                    break
+                }
+            }, receiveValue: { [weak self] dividends in
+                let viewItems = dividends.compactMap { DividendViewItem.from($0) }
+                self?.session.appState[\.data.dividends] = viewItems
+                resolve(.success(()))
+            })
+            .store(in: sself.cancelBag)
+        }
+    }
+    
+    func loadPagedDividends(limit: Int, lastItem: DividendViewItem) -> Future<Void, Error> {
+        return Future<Void, Error> { [weak self] resolve in
+            guard let sself = self else { return }
+            self?.dividendRepository.loadPagedDividends(limit: limit, lastItem: lastItem).sink(receiveCompletion: { completion in
+                switch completion {
+                case .failure(let error):
+                    resolve(.failure(error))
+                case .finished:
+                    break
+                }
+            }, receiveValue: { [weak self] dividends in
+                let viewItems = dividends.compactMap { DividendViewItem.from($0) }
+                self?.session.appState[\.data.dividends].append(contentsOf: viewItems)
+                self?.session.appState[\.data.dividends].sort(by: { $0.createdAt > $1.createdAt })
+                resolve(.success(()))
+            })
+            .store(in: sself.cancelBag)
+        }
+    }
     
     func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error> {
         return dividendRepository.addDividend(dto, portfolioId: portfolioId)

@@ -9,14 +9,14 @@ import Foundation
 
 struct HoldingViewItem: Identifiable, Equatable {
     var id: String
-    var ticker: String
+    var ticker: TickerViewItem
     
     var portfolioId: String
     
     static func from(_ dto: HoldingDTO) -> HoldingViewItem {
         return HoldingViewItem(
             id: dto.id,
-            ticker: dto.ticker,
+            ticker: TickerViewItem.from(dto.ticker),
             portfolioId: dto.portfolioId
         )
     }

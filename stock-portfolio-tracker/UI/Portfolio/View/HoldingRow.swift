@@ -15,7 +15,7 @@ struct HoldingRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(item.id)
-                Text(item.ticker)
+                Text(item.ticker.ticker)
                 Divider()
             }
             Spacer()
@@ -27,7 +27,7 @@ struct HoldingRow: View {
 #if DEBUG
 struct HoldingRowViewPreviews: PreviewProvider {
     static var previews: some View {
-        let item = HoldingViewItem(id: "1", ticker: "SPY", portfolioId: "")
+        let item = HoldingViewItem(id: "1", ticker: TickerViewItem(id: "", ticker: "", currencyCode: ""), portfolioId: "")
         return HoldingRow(item: item)
             .previewLayout(.fixed(width: 375, height: 40))
     }

@@ -42,7 +42,7 @@ class AddFeeViewModel: BaseViewModel<AddFeeViewModelInputType, AddFeeViewModelOu
                 let portfolioId = self?.portfolioOptions[index].id
                 self?.tickerOptions = session.appState[\.data.holdings]
                     .filter { $0.portfolioId == portfolioId }
-                    .map { TickerViewItem(id: $0.id, ticker: $0.ticker) }
+                    .map { TickerViewItem(id: $0.id, ticker: $0.ticker.ticker, currencyCode: $0.ticker.currencyCode) }
         }.store(in: cancelBag)
         
         $typeIndex

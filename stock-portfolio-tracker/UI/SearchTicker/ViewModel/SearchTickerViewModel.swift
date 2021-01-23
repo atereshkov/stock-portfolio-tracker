@@ -42,10 +42,10 @@ class SearchTickerViewModel: BaseViewModel<SearchTickerViewModelInputType, Searc
     @Published var routingState: SearchTickerRouting
     @Published var state: SearchTickerViewState = .start
     @Published var tickers: [TickerViewItem] = [
-        TickerViewItem(id: "AAPL", ticker: "AAPL"),
-        TickerViewItem(id: "SPY", ticker: "SPY"),
-        TickerViewItem(id: "VOO", ticker: "VOO"),
-        TickerViewItem(id: "IBM", ticker: "IBM")
+        TickerViewItem(id: "AAPL", ticker: "AAPL", currencyCode: "USD"),
+        TickerViewItem(id: "SPY", ticker: "SPY", currencyCode: "USD"),
+        TickerViewItem(id: "VOO", ticker: "VOO", currencyCode: "USD"),
+        TickerViewItem(id: "IBM", ticker: "IBM", currencyCode: "USD")
     ]
     
 }

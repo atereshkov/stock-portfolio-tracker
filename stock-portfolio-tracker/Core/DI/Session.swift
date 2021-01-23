@@ -111,7 +111,7 @@ private extension Session {
             return PortfolioService()
         }
         container.register(DividendServiceType.self) { _ in
-            return DividendService()
+            return DividendService(session: self)
         }
         container.register(HoldingServiceType.self) { _ in
             return HoldingService(session: self)
@@ -153,9 +153,6 @@ private extension Session {
         }
         container.register(PortfolioListenerType.self, scope: .single) { _ in
             return PortfolioListener(session: self)
-        }
-        container.register(DividendListenerType.self, scope: .single) { _ in
-            return DividendListener(session: self)
         }
         container.register(HoldingListenerType.self, scope: .single) { _ in
             return HoldingListener(session: self)

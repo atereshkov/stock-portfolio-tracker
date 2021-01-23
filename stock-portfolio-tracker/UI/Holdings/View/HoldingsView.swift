@@ -33,7 +33,7 @@ struct HoldingsView: View {
             lots.padding(.top, 12)
         }
         .padding([.leading, .trailing], 18)
-        .navigationBarTitle(viewModel.holding?.ticker ?? "", displayMode: .inline)
+        .navigationBarTitle(viewModel.holding?.ticker.ticker ?? "", displayMode: .inline)
         .navigationBarItems(trailing: addLotNavBarIcon)
     }
     

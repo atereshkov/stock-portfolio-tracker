@@ -9,12 +9,12 @@ import Foundation
 
 struct AddHoldingDTO: Identifiable {
     var id: String
-    var ticker: String
+    var ticker: TickerDTO
     
     func toDto() -> [String: Any] {
         return [
             "id": id,
-            "ticker": ticker
+            "ticker": ticker.toDto()
         ]
     }
 }

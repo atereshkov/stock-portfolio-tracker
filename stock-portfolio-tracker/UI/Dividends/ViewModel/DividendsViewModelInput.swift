@@ -9,4 +9,7 @@ import Foundation
 
 protocol DividendsViewModelInputType {
     func addAction()
+    
+    func onAppear()
+    func onRowAppear(item: DividendViewItem)
 }

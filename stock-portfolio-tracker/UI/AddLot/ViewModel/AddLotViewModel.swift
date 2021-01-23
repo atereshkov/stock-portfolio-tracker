@@ -29,7 +29,7 @@ class AddLotViewModel: BaseViewModel<AddLotViewModelInputType, AddLotViewModelOu
         }
         
         $holding
-            .sink { [weak self] in self?.title = $0?.ticker ?? "" }
+            .sink { [weak self] in self?.title = $0?.ticker.ticker ?? "" }
             .store(in: cancelBag)
     }
     
@@ -70,7 +70,7 @@ extension AddLotViewModel: AddLotViewModelInputType {
         guard let costStr = cost?.trim().replacingOccurrences(of: ",", with: "."), let cost = Decimal(string: costStr) else { return }
         guard let feeStr = fee?.trim().replacingOccurrences(of: ",", with: "."), let fee = Decimal(string: feeStr) else { return }
         guard let sharesStr = shares, let sharesNumber = Int(sharesStr) else { return }
-        guard let ticker = holding?.ticker else { return }
+        guard let ticker = holding?.ticker.ticker else { return }
         guard let costCurrency = portfolio?.currency else { return }
         let feeCurrency = feeCurrencyOptions[currencyIndex].id
         

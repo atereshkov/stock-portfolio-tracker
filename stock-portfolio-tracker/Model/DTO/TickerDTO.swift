@@ -10,21 +10,24 @@ import Foundation
 struct TickerDTO: Identifiable {
     var id: String
     var ticker: String
+    var currencyCode: String
     
-    static func from(_ viewItem: TickerViewItem) -> TickerDTO {
-        return TickerDTO(id: viewItem.id, ticker: viewItem.ticker)
+    static func from(_ vi: TickerViewItem) -> TickerDTO {
+        return TickerDTO(id: vi.id, ticker: vi.ticker, currencyCode: vi.currencyCode)
     }
     
     static func from(_ data: [String: Any]) -> TickerDTO {
         let id = data["id"] as? String ?? ""
         let ticker = data["ticker"] as? String ?? ""
-        return TickerDTO(id: id, ticker: ticker)
+        let currencyCode = data["currencyCode"] as? String ?? ""
+        return TickerDTO(id: id, ticker: ticker, currencyCode: currencyCode)
     }
     
     func toDto() -> [String: Any] {
         return [
             "id": id,
-            "ticker": ticker
+            "ticker": ticker,
+            "currencyCode": currencyCode
         ]
     }
 }
