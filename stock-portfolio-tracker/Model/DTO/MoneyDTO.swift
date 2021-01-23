@@ -9,12 +9,12 @@ import Foundation
 
 struct MoneyDTO {
     var value: Decimal
-    var currency: String
+    var currency: Currency
     
     static func from(_ data: [String: Any]) -> MoneyDTO {
         let value = (data["value"] as? NSNumber)?.decimalValue ?? 0.0
-        let currency = data["currency"] as? String ?? ""
-        return MoneyDTO(value: value, currency: currency)
+        let currencyCode = data["currency"] as? String ?? ""
+        return MoneyDTO(value: value, currency: Currency(code: currencyCode))
     }
     
     static func from(_ vi: MoneyViewItem) -> MoneyDTO {

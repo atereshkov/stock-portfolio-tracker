@@ -21,7 +21,7 @@ struct DividendRow: View {
                 Spacer()
                 HStack {
                     HStack {
-                        Text(item.paid.currency)
+                        Text(item.paid.currency.symbol)
                         Text(NSDecimalNumber(decimal: item.paid.value).stringValue)
                             .foregroundColor(.green)
                     }

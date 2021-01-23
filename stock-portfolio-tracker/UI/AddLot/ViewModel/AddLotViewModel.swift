@@ -74,8 +74,8 @@ extension AddLotViewModel: AddLotViewModelInputType {
         guard let costCurrency = portfolio?.currency else { return }
         let feeCurrency = feeCurrencyOptions[currencyIndex].id
         
-        let costDTO = MoneyDTO(value: cost, currency: costCurrency)
-        let feeDTO = MoneyDTO(value: fee, currency: feeCurrency)
+        let costDTO = MoneyDTO(value: cost, currency: Currency(code: costCurrency))
+        let feeDTO = MoneyDTO(value: fee, currency: Currency(code: feeCurrency))
         let dto = AddLotDTO(ticker: ticker, date: date, cost: costDTO, fee: feeDTO, shares: sharesNumber)
         
         state = .loading

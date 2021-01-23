@@ -31,8 +31,12 @@ struct AddDividendView: View {
                 portfolioSection
                 moneySection
                 dateSection
-                addButtonSection
-            }.navigationBarTitle("Add dividends", displayMode: .inline)
+            }
+            .navigationBarTitle("Add dividends", displayMode: .inline)
+            .navigationBarItems(
+                leading: cancelButton.padding(.leading, 8),
+                trailing: addButtonView.padding(.trailing, 8)
+            )
         }
     }
     
@@ -124,7 +128,7 @@ struct AddDividendView: View {
         }
     }
     
-    var addButtonSection: some View {
+    var addButtonView: some View {
         switch viewModel.output.state {
         case .start:
             return AnyView(addButton)
@@ -138,17 +142,19 @@ struct AddDividendView: View {
     }
     
     var addButton: some View {
-        Section {
-            Button(action: {
-                viewModel.input.add(portfolioIndex: portfolioIndex, tickerIndex: tickerIndex, currencyIndex: currencyIndex, perShareToggle: perShareToggle, date: date)
-            }, label: {
-                HStack {
-                    Spacer()
-                    Text("Add")
-                    Spacer()
-                }
-            })
-        }
+        Button(action: {
+            viewModel.input.add(portfolioIndex: portfolioIndex, tickerIndex: tickerIndex, currencyIndex: currencyIndex, perShareToggle: perShareToggle, date: date)
+        }, label: {
+            Text("Add")
+        })
+    }
+    
+    var cancelButton: some View {
+        Button(action: {
+            viewModel.input.cancelAction()
+        }, label: {
+            Text("Cancel")
+        })
     }
     
     var loadingView: some View {

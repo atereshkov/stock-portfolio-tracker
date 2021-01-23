@@ -32,14 +32,14 @@ struct LotRow: View {
     }
     
     var sharePriceText: some View {
-        Text("\(NSDecimalNumber(decimal: item.cost.value).stringValue) \(item.cost.currency)")
+        Text("\(NSDecimalNumber(decimal: item.cost.value).stringValue) \(item.cost.currency.symbol)")
     }
     
     var costText: some View {
         let cost = item.cost.value * Decimal(item.shares)
         let costStr = NSDecimalNumber(decimal: cost).stringValue
         if item.shares > 1 {
-            return AnyView(Text("(\(costStr) \(item.cost.currency))"))
+            return AnyView(Text("(\(costStr) \(item.cost.currency.symbol))"))
         } else {
             return AnyView(Text(""))
         }
@@ -53,8 +53,8 @@ struct LotRowViewPreviews: PreviewProvider {
         LotRow(item: LotViewItem(
                 id: "",
                 shares: 0,
-                cost: MoneyViewItem(value: 0.0, currency: ""),
-                fee: MoneyViewItem(value: 0.0, currency: ""),
+                cost: MoneyViewItem(value: 0.0, currency: Currency(code: "USD")),
+                fee: MoneyViewItem(value: 0.0, currency: Currency(code: "USD")),
                 date: Date())
         )
         .previewLayout(.fixed(width: 375, height: 40))

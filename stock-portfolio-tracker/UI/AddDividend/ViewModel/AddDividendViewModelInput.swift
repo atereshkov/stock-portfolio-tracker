@@ -9,6 +9,7 @@ import Foundation
 
 protocol AddDividendViewModelInputType {
     func add(portfolioIndex: Int, tickerIndex: Int, currencyIndex: Int, perShareToggle: Bool, date: Date)
+    func cancelAction()
     
     func onAppear()
     func onDisappear()

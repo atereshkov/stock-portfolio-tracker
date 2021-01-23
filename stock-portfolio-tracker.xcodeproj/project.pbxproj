@@ -87,6 +87,8 @@
 		CB0FDF0225A7AEBF009D7BDB /* DividendsViewModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDF0025A7AEBF009D7BDB /* DividendsViewModelInput.swift */; };
 		CB0FDF0825A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDF0725A7AED0009D7BDB /* DividendsViewModelOutput.swift */; };
 		CB0FDF0925A7AED0009D7BDB /* DividendsViewModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0FDF0725A7AED0009D7BDB /* DividendsViewModelOutput.swift */; };
+		CB1847F225BC1F5A0064192B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1847F125BC1F5A0064192B /* Currency.swift */; };
+		CB1847F325BC1F5A0064192B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1847F125BC1F5A0064192B /* Currency.swift */; };
 		CB378AE5258513AE00A5F14D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648D2584DCCA0074FBD0 /* MainView.swift */; };
 		CB378AE6258513AE00A5F14D /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43648B2584DCCA0074FBD0 /* App.swift */; };
 		CB378AEA258513AE00A5F14D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4364922584DCCD0074FBD0 /* Preview Assets.xcassets */; };
@@ -460,6 +462,7 @@
 		CB0FDEF925A7AE86009D7BDB /* DividendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewModel.swift; sourceTree = "<group>"; };
 		CB0FDF0025A7AEBF009D7BDB /* DividendsViewModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewModelInput.swift; sourceTree = "<group>"; };
 		CB0FDF0725A7AED0009D7BDB /* DividendsViewModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsViewModelOutput.swift; sourceTree = "<group>"; };
+		CB1847F125BC1F5A0064192B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		CB378ADD2585102F00A5F14D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB378AF1258513AE00A5F14D /* stock-portfolio-tracker-prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stock-portfolio-tracker-prod.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB378AF2258513AF00A5F14D /* stock-portfolio-tracker-prod-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "stock-portfolio-tracker-prod-Info.plist"; path = "/Users/nb-058-41b/Personal/stock-portfolio-tracker/stock-portfolio-tracker-prod-Info.plist"; sourceTree = "<absolute>"; };
@@ -844,6 +847,7 @@
 			children = (
 				CB0A5B7C25AA516C0031F48F /* ViewItem */,
 				CB44674C25A9A9C0007C237E /* DTO */,
+				CB1847F125BC1F5A0064192B /* Currency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2392,6 +2396,7 @@
 				CB0A5B3A25AA44DF0031F48F /* AccountRouting.swift in Sources */,
 				CB0FDEC925A7AD1A009D7BDB /* HomeViewModel.swift in Sources */,
 				CB41432125A71006006D06F2 /* AuthRouting.swift in Sources */,
+				CB1847F325BC1F5A0064192B /* Currency.swift in Sources */,
 				CBC59BB725AB7F0400921D2E /* DividendRepositoryType.swift in Sources */,
 				CBC59BA125AB7E1400921D2E /* DividendViewModelinput.swift in Sources */,
 				CB76B8C425AA5CD500E2920C /* PortfolioRepositoryType.swift in Sources */,
@@ -2502,6 +2507,7 @@
 				CBC59BAE25AB7EE900921D2E /* DividendService.swift in Sources */,
 				CBD1C1F925BA0ECD00BC6481 /* AddFeeView.swift in Sources */,
 				CB42D09125B0E4DB00C08D36 /* MoneyViewItem.swift in Sources */,
+				CB1847F225BC1F5A0064192B /* Currency.swift in Sources */,
 				CB0D1D93259BB40A004BA1FD /* SignUpViewModelType.swift in Sources */,
 				CBBB981225B2EC0300DB3BBC /* HoldingViewItem.swift in Sources */,
 				CBC59B3C25AB78DA00921D2E /* DividendsModalRoutingType.swift in Sources */,

@@ -100,7 +100,7 @@ extension AddFeeViewModel: AddFeeViewModelInputType {
         let currency = currencyOptions[currencyIndex].id
         let type = typeOptions[typeIndex].id
         
-        let fee = MoneyDTO(value: paid, currency: currency)
+        let fee = MoneyDTO(value: paid, currency: Currency(code: currency))
         let dto = AddFeeDTO(type: type, ticker: ticker, date: date, fee: fee)
         
         state = .loading

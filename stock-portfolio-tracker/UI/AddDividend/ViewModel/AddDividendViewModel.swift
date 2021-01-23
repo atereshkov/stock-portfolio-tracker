@@ -84,7 +84,7 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
         let ticker = tickerOptions[tickerIndex].ticker
         let currency = currencyOptions[currencyIndex].id
         
-        let money = MoneyDTO(value: paid, currency: currency)
+        let money = MoneyDTO(value: paid, currency: Currency(code: currency))
         let dto = AddDividendDTO(ticker: ticker, date: date, paid: money, tax: tax)
         
         state = .loading
@@ -103,6 +103,10 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
                 self?.onDisappear()
             })
             .store(in: cancelBag)
+    }
+    
+    func cancelAction() {
+        onDisappear()
     }
     
     func onAppear() {

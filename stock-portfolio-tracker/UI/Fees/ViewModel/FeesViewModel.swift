@@ -29,7 +29,7 @@ class FeesViewModel: BaseViewModel<FeesViewModelInputType, FeesViewModelOutputTy
         $fees.sink { [weak self] in
             let sum = $0.reduce(0) { $0 + $1.fee.value }
             self?.feesValue = NSDecimalNumber(decimal: sum).stringValue
-            self?.feesSign = $0.first?.fee.currency
+            self?.feesSign = $0.first?.fee.currency.symbol
         }.store(in: cancelBag)
     }
     

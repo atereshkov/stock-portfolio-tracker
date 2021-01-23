@@ -10,11 +10,11 @@ import Foundation
 struct MoneyViewItem: Hashable, Identifiable {
     
     var id: String {
-        return currency
+        return currency.code
     }
     
     var value: Decimal
-    var currency: String
+    var currency: Currency
     
     static func from(_ dto: MoneyDTO) -> MoneyViewItem {
         return MoneyViewItem(value: dto.value, currency: dto.currency)

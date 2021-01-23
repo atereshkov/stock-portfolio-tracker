@@ -29,7 +29,7 @@ class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsVi
         $dividends.sink { [weak self] in
             let sum = $0.reduce(0) { $0 + $1.paid.value }
             self?.dividendsValue = NSDecimalNumber(decimal: sum).stringValue
-            self?.dividendsSign = $0.first?.paid.currency
+            self?.dividendsSign = $0.first?.paid.currency.symbol
         }.store(in: cancelBag)
     }
     
