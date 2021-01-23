@@ -24,7 +24,7 @@ struct MoneyDTO {
     func toDto() -> [String: Any] {
         return [
             "value": value,
-            "currency": currency
+            "currency": currency.code
         ]
     }
 }

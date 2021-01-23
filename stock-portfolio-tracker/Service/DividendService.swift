@@ -14,7 +14,7 @@ protocol DividendServiceType {
     
     func loadPagedDividends(limit: Int, lastItem: DividendViewItem) -> Future<Void, Error>
     
-    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error>
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String?) -> Future<Void, Error>
     
 }
 
@@ -73,7 +73,7 @@ extension DividendService {
         }
     }
     
-    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error> {
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String?) -> Future<Void, Error> {
         return dividendRepository.addDividend(dto, portfolioId: portfolioId)
     }
     

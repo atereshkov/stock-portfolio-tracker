@@ -27,6 +27,10 @@ class DividendsViewModel: BaseViewModel<DividendsViewModelInputType, DividendsVi
             
             session.appState.map(\.data.dividends)
                 .removeDuplicates()
+                .map { dividends in
+                    return dividends
+//                    return dividends.sorted(by: { $0.createdAt > $1.createdAt })
+                }
                 .assign(to: \.dividends, on: self)
         }
         

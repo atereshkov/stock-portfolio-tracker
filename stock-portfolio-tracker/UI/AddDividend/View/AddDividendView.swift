@@ -28,7 +28,7 @@ struct AddDividendView: View {
     var content: some View {
         NavigationView {
             Form {
-                portfolioSection
+                tickerSection
                 moneySection
                 dateSection
             }
@@ -40,41 +40,15 @@ struct AddDividendView: View {
         }
     }
     
-    var portfolioSection: some View {
+    var tickerSection: some View {
         Section {
             HStack {
-                Picker("Portfolio", selection: $portfolioIndex) {
-                    ForEach(0..<viewModel.portfolioOptions.count) { index in
-                        Text(viewModel.portfolioOptions[index].name).tag(index)
-                    }
-                }
-                .pickerStyle(MenuPickerStyle())
-                .onChange(of: portfolioIndex) { [weak viewModel] value in
-                    viewModel?.portfolioIndex = value
-                }
-                Spacer()
-                Text(viewModel.portfolioOptions[portfolioIndex].name)
+                TextField("Ticker", text: Binding(
+                            get: { viewModel.ticker ?? "" },
+                            set: { viewModel.ticker = $0 })
+                )
+                .keyboardType(.decimalPad)
             }
-            switch viewModel.output.state {
-            case .loadingTickers:
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle())
-            default:
-                tickerPicker
-            }
-        }
-    }
-    
-    var tickerPicker: some View {
-        HStack {
-            Picker("Ticker", selection: $tickerIndex) {
-                ForEach(0..<viewModel.tickerOptions.count, id: \.self) { index in
-                    Text(viewModel.selectedTicker(index)?.ticker ?? "").tag(index)
-                }
-            }
-            .pickerStyle(MenuPickerStyle())
-            Spacer()
-            Text(viewModel.selectedTicker(tickerIndex)?.ticker ?? "")
         }
     }
     
@@ -86,9 +60,13 @@ struct AddDividendView: View {
                         Text(viewModel.currencyOptions[index].name).tag(index)
                     }
                 }
+                .onChange(of: currencyIndex) { [weak viewModel] value in
+                    viewModel?.currencyIndex = value
+                }
                 .pickerStyle(MenuPickerStyle())
+                .disabled(viewModel.output.currencySelectionDisabled)
                 Spacer()
-                Text(viewModel.currencyOptions[currencyIndex].name)
+                Text(viewModel.output.currencyName ?? "")
             }
             HStack {
                 TextField("Paid", text: Binding(
@@ -143,7 +121,7 @@ struct AddDividendView: View {
     
     var addButton: some View {
         Button(action: {
-            viewModel.input.add(portfolioIndex: portfolioIndex, tickerIndex: tickerIndex, currencyIndex: currencyIndex, perShareToggle: perShareToggle, date: date)
+            viewModel.input.add(portfolioIndex: portfolioIndex, tickerIndex: tickerIndex, perShareToggle: perShareToggle, date: date)
         }, label: {
             Text("Add")
         })

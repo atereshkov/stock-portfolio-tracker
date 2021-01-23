@@ -45,7 +45,20 @@ class SearchTickerViewModel: BaseViewModel<SearchTickerViewModelInputType, Searc
         TickerViewItem(id: "AAPL", ticker: "AAPL", currencyCode: "USD"),
         TickerViewItem(id: "SPY", ticker: "SPY", currencyCode: "USD"),
         TickerViewItem(id: "VOO", ticker: "VOO", currencyCode: "USD"),
-        TickerViewItem(id: "IBM", ticker: "IBM", currencyCode: "USD")
+        TickerViewItem(id: "MSFT", ticker: "MSFT", currencyCode: "USD"),
+        TickerViewItem(id: "QQQ", ticker: "QQQ", currencyCode: "USD"),
+        TickerViewItem(id: "MCD", ticker: "MCD", currencyCode: "USD"),
+        TickerViewItem(id: "IXJ", ticker: "IXJ", currencyCode: "USD"),
+        TickerViewItem(id: "JNJ", ticker: "JNJ", currencyCode: "USD"),
+        TickerViewItem(id: "KO", ticker: "KO", currencyCode: "USD"),
+        TickerViewItem(id: "REET", ticker: "REET", currencyCode: "USD"),
+        TickerViewItem(id: "VNQ", ticker: "VNQ", currencyCode: "USD"),
+        TickerViewItem(id: "VYM", ticker: "VYM", currencyCode: "USD"),
+        TickerViewItem(id: "SPYD", ticker: "SPYD", currencyCode: "USD"),
+        TickerViewItem(id: "SBERP", ticker: "SBERP", currencyCode: "RUB"),
+        TickerViewItem(id: "MTSS", ticker: "MTSS", currencyCode: "RUB"),
+        TickerViewItem(id: "LKOH", ticker: "LKOH", currencyCode: "RUB"),
+        TickerViewItem(id: "GAZP", ticker: "GAZP", currencyCode: "RUB")
     ]
     
 }

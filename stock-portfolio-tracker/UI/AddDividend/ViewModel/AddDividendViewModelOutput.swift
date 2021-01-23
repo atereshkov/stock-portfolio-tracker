@@ -10,10 +10,8 @@ import Foundation
 protocol AddDividendViewModelOutputType {
     var state: AddDividendViewState { get }
     var title: String? { get }
+    var currencyName: String? { get }
+    var currencySelectionDisabled: Bool { get }
     
-    var portfolioOptions: [PortfolioViewItem] { get }
     var currencyOptions: [CurrencyViewItem] { get }
-    var tickerOptions: [TickerViewItem] { get }
-    
-    func selectedTicker(_ index: Int) -> TickerViewItem?
 }

@@ -26,7 +26,9 @@ extension FirebaseDividendRepository {
         
         return Future { [weak self] resolve in
             self?.db
-                .collectionGroup("dividends")
+                .collection("user_dividends")
+                .document(userId)
+                .collection("dividends")
                 .whereField("ownerUid", isEqualTo: userId)
                 .order(by: "createdAt", descending: true)
                 .limit(to: 10)
@@ -47,7 +49,9 @@ extension FirebaseDividendRepository {
         
         return Future { [weak self] resolve in
             self?.db
-                .collectionGroup("dividends")
+                .collection("user_dividends")
+                .document(userId)
+                .collection("dividends")
                 .whereField("ownerUid", isEqualTo: userId)
                 .order(by: "createdAt", descending: true)
                 .start(after: [lastItem.createdAt.timeIntervalSince1970])
@@ -64,23 +68,27 @@ extension FirebaseDividendRepository {
         }
     }
     
-    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error> {
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String?) -> Future<Void, Error> {
 //        guard let userId = appState[\.user.id] else {
 //            return Future { resolve in
 //                resolve(.failure(.noUser))
 //            }
 //        }
         
+        let userId = appState[\.user.id] ?? ""
+        
         var data = dto.toDto()
-        data["ownerUid"] = appState[\.user.id] ?? ""
-        data["portfolioId"] = portfolioId
+        if let portfolioId = portfolioId {
+            data["portfolioId"] = portfolioId
+        }
+        data["ownerUid"] = userId
         data["createdAt"] = Date().timeIntervalSince1970
         data["updatedAt"] = Date().timeIntervalSince1970
         
         return Future { [weak self] resolve in
             self?.db
-                .collection("portfolio_dividends")
-                .document(portfolioId)
+                .collection("user_dividends")
+                .document(userId)
                 .collection("dividends")
                 .addDocument(data: data) { error in
                     if let error = error {

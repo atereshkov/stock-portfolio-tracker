@@ -18,7 +18,6 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
         self.dividendService = session.resolve()
         
         _routingState = .init(initialValue: session.appState.value.routing.addDividend)
-        _portfolioIndex = .init(initialValue: 0)
         
         super.init(session: session)
         
@@ -30,19 +29,23 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
                 .assign(to: \.routingState, on: self)
         }
         
-        session.appState.map(\.data.portfolios)
+        $ticker
             .removeDuplicates()
-            .assign(to: \.portfolioOptions, on: self)
-            .store(in: cancelBag)
+            .compactMap { $0 }
+            .sink { [weak self] ticker in
+                self?.holding = session.appState[\.data.holdings]
+                    .first(where: { $0.id == ticker })
+                
+                self?.currencyName = self?.holding?.ticker.currencyCode
+                self?.currencySelectionDisabled = self?.holding != nil
+        }.store(in: cancelBag)
         
-        $portfolioIndex
+        $currencyIndex
             .removeDuplicates()
             .compactMap { $0 }
             .sink { [weak self] index in
-                let portfolioId = self?.portfolioOptions[index].id
-                self?.tickerOptions = session.appState[\.data.holdings]
-                    .filter { $0.portfolioId == portfolioId }
-                    .map { TickerViewItem(id: $0.id, ticker: $0.ticker.ticker, currencyCode: $0.ticker.currencyCode) }
+                self?.currencyName = self?.currencyOptions[index].name
+                self?.currencySelectionDisabled = false
         }.store(in: cancelBag)
     }
     
@@ -54,22 +57,27 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
     
     @Published var paid: String?
     @Published var tax: String?
-    @Published var portfolioIndex: Int?
+    @Published var ticker: String?
+    @Published var currencyIndex: Int?
     
     // MARK: - Output
     
-    @Published var portfolioOptions: [PortfolioViewItem] = []
     @Published var currencyOptions = [
         CurrencyViewItem(id: "USD", name: "USD"),
         CurrencyViewItem(id: "EUR", name: "EUR"),
-        CurrencyViewItem(id: "RUB", name: "RUB")
+        CurrencyViewItem(id: "RUB", name: "RUB"),
+        CurrencyViewItem(id: "BYN", name: "BYN")
     ]
-    
-    @Published var tickerOptions: [TickerViewItem] = []
     
     @Published var routingState: AddDividendRouting
     @Published var state: AddDividendViewState = .start
     @Published var title: String?
+    @Published var currencyName: String?
+    @Published var currencySelectionDisabled: Bool = true
+    
+    // MARK: - Private
+    
+    private var holding: HoldingViewItem?
     
 }
 
@@ -77,12 +85,12 @@ class AddDividendViewModel: BaseViewModel<AddDividendViewModelInputType, AddDivi
 
 extension AddDividendViewModel: AddDividendViewModelInputType {
     
-    func add(portfolioIndex: Int, tickerIndex: Int, currencyIndex: Int, perShareToggle: Bool, date: Date) {
+    func add(portfolioIndex: Int, tickerIndex: Int, perShareToggle: Bool, date: Date) {
         guard let paidStr = paid?.trim().replacingOccurrences(of: ",", with: "."), let paid = Decimal(string: paidStr) else { return }
         guard let taxStr = tax?.trim(), let tax = Double(taxStr) else { return }
-        let portfolioId = portfolioOptions[portfolioIndex].id
-        let ticker = tickerOptions[tickerIndex].ticker
-        let currency = currencyOptions[currencyIndex].id
+        guard let ticker = ticker?.trim() else { return }
+        let portfolioId = holding?.portfolioId
+        let currency = holding?.ticker.currencyCode ?? currencyName ?? ""
         
         let money = MoneyDTO(value: paid, currency: Currency(code: currency))
         let dto = AddDividendDTO(ticker: ticker, date: date, paid: money, tax: tax)
@@ -123,11 +131,6 @@ extension AddDividendViewModel: AddDividendViewModelInputType {
 // MARK: - AddDividendViewModelOutputType
 
 extension AddDividendViewModel: AddDividendViewModelOutputType {
-    
-    func selectedTicker(_ index: Int) -> TickerViewItem? {
-        guard index >= 0 && index < tickerOptions.count else { return nil }
-        return tickerOptions[index]
-    }
     
 }
 

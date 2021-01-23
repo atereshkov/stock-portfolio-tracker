@@ -14,6 +14,6 @@ protocol DividendRepositoryType {
     
     func loadPagedDividends(limit: Int, lastItem: DividendViewItem) -> Future<[DividendDTO], Error>
     
-    func addDividend(_ dto: AddDividendDTO, portfolioId: String) -> Future<Void, Error>
+    func addDividend(_ dto: AddDividendDTO, portfolioId: String?) -> Future<Void, Error>
     
 }
