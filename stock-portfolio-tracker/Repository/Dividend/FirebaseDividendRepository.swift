@@ -31,7 +31,7 @@ extension FirebaseDividendRepository {
                 .collection("dividends")
                 .whereField("ownerUid", isEqualTo: userId)
                 .order(by: "createdAt", descending: true)
-                .limit(to: 10)
+                .limit(to: limit)
                 .getDocuments { querySnapshot, error in
                     if let error = error {
                         resolve(.failure(error))

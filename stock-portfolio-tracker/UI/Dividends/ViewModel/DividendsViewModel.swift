@@ -66,13 +66,13 @@ extension DividendsViewModel: DividendsViewModelInputType {
     }
     
     func onAppear() {
-        _ = dividendService.loadDividends(limit: 15)
+        _ = dividendService.loadDividends(limit: 20)
     }
     
     func onRowAppear(item: DividendViewItem) {
         guard dividends.firstIndex(of: item) == dividends.count - 1 else { return }
         guard let lastItem = dividends.last else { return }
-        _ = dividendService.loadPagedDividends(limit: 15, lastItem: lastItem)
+        _ = dividendService.loadPagedDividends(limit: 20, lastItem: lastItem)
     }
     
 }

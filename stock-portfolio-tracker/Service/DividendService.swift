@@ -65,7 +65,12 @@ extension DividendService {
                 }
             }, receiveValue: { [weak self] dividends in
                 let viewItems = dividends.compactMap { DividendViewItem.from($0) }
-                self?.session.appState[\.data.dividends].append(contentsOf: viewItems)
+                let currentDividends = self?.session.appState[\.data.dividends] ?? []
+                for item in viewItems {
+                    if !currentDividends.contains(item) {
+                        self?.session.appState[\.data.dividends].append(item)
+                    }
+                }
                 self?.session.appState[\.data.dividends].sort(by: { $0.createdAt > $1.createdAt })
                 resolve(.success(()))
             })
