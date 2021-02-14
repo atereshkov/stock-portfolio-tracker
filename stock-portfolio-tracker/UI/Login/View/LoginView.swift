@@ -96,7 +96,8 @@ struct LoginView: View {
     var signInButton: some View {
         Button("Sign In") {
             viewModel.input.signInAction()
-        }.buttonStyle(PrimaryButton())
+        }
+        .buttonStyle(PrimaryButton(disabled: viewModel.email.isEmpty && viewModel.password.isEmpty))
     }
     
     var dontHaveAccountLabel: some View {
