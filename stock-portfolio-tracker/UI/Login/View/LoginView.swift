@@ -95,9 +95,16 @@ struct LoginView: View {
     
     var signInButton: some View {
         Button("Sign In") {
+            
+            guard validCredentials else { return }
+            
             viewModel.input.signInAction()
         }
-        .buttonStyle(PrimaryButton(disabled: viewModel.email.isEmpty && viewModel.password.isEmpty))
+        .buttonStyle(PrimaryButton(disabled: !validCredentials))
+    }
+    
+    var validCredentials : Bool {
+        return !viewModel.email.isEmpty && !viewModel.password.isEmpty
     }
     
     var dontHaveAccountLabel: some View {
