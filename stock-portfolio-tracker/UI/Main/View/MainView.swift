@@ -12,33 +12,56 @@ struct MainView: View {
     
     @EnvironmentObservableInjected var viewModel: MainViewModel
     
-    init() {
-        viewModel.input.viewDidLoad()
-        
-        _ = viewModel.output.testPublisher.sink { value in
-            Swift.print("[TEST] Value: \(String(describing: value))")
-        }
-    }
-    
     var body: some View {
-        NavigationView {
-            ZStack {
-                backgroundColor
-                GeometryReader { metrics in
-                    VStack(alignment: .leading, spacing: metrics.size.height * 0.1) {
-                        Text(viewModel.output.testString ?? "")
-                            .padding()
-                        Button("Sign Out") {
-                            viewModel.input.signOutAction()
-                        }.buttonStyle(PrimaryButton())
-                    }
-                }
+        content
+            .onAppear {
+                viewModel.input.onViewAppear()
             }
+    }
+    
+    var content: some View {
+        TabView(selection: $viewModel.selectedTab) {
+            homeTab
+            dividendsTab
+            feesTab
+            transactionsTab
         }
     }
     
-    var backgroundColor: some View {
-        Color(Asset.Colors.primary.color).edgesIgnoringSafeArea(.all)
+    var homeTab: some View {
+        HomeView()
+            .tabItem {
+                viewModel.selectedTab == 0 ? Image(systemName: "house.fill") : Image(systemName: "house")
+                Text("Home")
+            }
+            .tag(0)
+    }
+    
+    var dividendsTab: some View {
+        DividendsView()
+            .tabItem {
+                viewModel.selectedTab == 1 ? Image(systemName: "chart.bar.fill") : Image(systemName: "chart.bar")
+                Text("Dividends")
+            }
+            .tag(1)
+    }
+    
+    var feesTab: some View {
+        FeesView()
+            .tabItem {
+                viewModel.selectedTab == 2 ? Image(systemName: "doc.text.fill") : Image(systemName: "doc.text")
+                Text("Fees")
+            }
+            .tag(2)
+    }
+    
+    var transactionsTab: some View {
+        TransactionsView()
+            .tabItem {
+                viewModel.selectedTab == 3 ? Image(systemName: "arrow.up.arrow.down.square.fill") : Image(systemName: "arrow.up.arrow.down.square")
+                Text("Transactions")
+            }
+            .tag(3)
     }
     
 }

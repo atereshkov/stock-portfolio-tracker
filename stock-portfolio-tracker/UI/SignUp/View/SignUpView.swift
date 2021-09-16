@@ -26,6 +26,16 @@ struct SignUpView: View {
                 }
             }
         }
+        .alert(isPresented: $viewModel.routingState.showErrorAlert, content: {
+            switch viewModel.output.state {
+            case .signUpFailed(let error):
+                return Alert(title: Text("Error"),
+                             message: Text(error),
+                             dismissButton: .default(Text("OK")))
+            default:
+                return Alert(title: Text(""))
+            }
+        })
     }
     
     var logo: some View {
@@ -36,6 +46,17 @@ struct SignUpView: View {
     }
     
     var content: some View {
+        switch viewModel.output.state {
+        case .start:
+            return AnyView(form)
+        case .loading:
+            return AnyView(loadingIndicator)
+        case .signUpFailed(_):
+            return AnyView(form)
+        }
+    }
+    
+    var form: some View {
         VStack {
             emailTextField.padding([.leading, .trailing], 21)
             passwordTextField
@@ -56,12 +77,23 @@ struct SignUpView: View {
         }
     }
     
+    var loadingIndicator: some View {
+        GeometryReader { metrics in
+            CircleLoadingView(color: Color.white)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: metrics.size.height * 0.2)
+        }
+    }
+    
     var emailTextField: some View {
         TextField("", text: Binding(
                     get: { viewModel.email ?? "" },
                     set: { viewModel.email = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .keyboardType(.emailAddress)
+        .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("E-mail"), show: viewModel.email?.isEmpty ?? true)
     }
     
@@ -71,6 +103,8 @@ struct SignUpView: View {
                     set: { viewModel.password = $0 })
         )
         .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("Password"), show: viewModel.password?.isEmpty ?? true)
     }
     
@@ -78,7 +112,10 @@ struct SignUpView: View {
         SecureField("", text: Binding(
                     get: { viewModel.confirmPassword ?? "" },
                     set: { viewModel.confirmPassword = $0 })
-        ).textFieldStyle(PrimaryTextField())
+        )
+        .textFieldStyle(PrimaryTextField())
+        .disableAutocorrection(true)
+        .autocapitalization(.none)
         .placeHolder(Text("Confirm password"), show: viewModel.confirmPassword?.isEmpty ?? true)
     }
     

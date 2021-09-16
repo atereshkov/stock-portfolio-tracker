@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import DICE
+
 @testable import stock_portfolio_tracker
 
 // swiftlint:disable redundant_discardable_let
@@ -13,7 +15,7 @@ class SessionTests: XCTestCase {
     
     func testViewModelShouldBeRegistered() {
         let appState = Store<AppState>(AppState())
-        let session = Session(appState: appState)
+        let session = Session(container: DIContainer(), appState: appState)
         
         let _ : MainViewModel = session.resolve()
         let _ : WelcomeViewModel = session.resolve()

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MainViewModelInputType {
-    func viewDidLoad()
+    var selectedTab: Int { get set }
     
-    func signOutAction()
+    func onViewAppear()
 }

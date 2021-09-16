@@ -13,19 +13,13 @@ struct SPTApp: App {
     
     let environment = AppEnvironment.boot()
     
-    @EnvironmentObservableInjected var viewModel: AppViewModel
-    
     init() {
         
     }
     
     var body: some Scene {
         WindowGroup {
-            if viewModel.isAuthorized {
-                MainView()
-            } else {
-                WelcomeView()
-            }
+            RootView()
         }
     }
 }

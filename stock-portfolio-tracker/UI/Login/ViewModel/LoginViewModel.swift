@@ -10,8 +10,6 @@ import SwiftUI
 
 class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutputType>, LoginViewModelType {
     
-    @Published var routingState: LoginRouting
-    
     private let authService: AuthServiceType
     
     private var cancelBag = CancelBag()
@@ -22,22 +20,32 @@ class LoginViewModel: BaseViewModel<LoginViewModelInputType, LoginViewModelOutpu
         _routingState = .init(initialValue: session.appState.value.routing.login)
         
         super.init(session: session)
+        
+        bindRouting(session: session)
     }
     
-    @Published var email = ""
-    @Published var password = ""
+    // MARK: - Input
+    
+    @Published var email: String?
+    @Published var password: String?
+    
+    // MARK: - Output
     
     @Published var state: LoginViewState = .start
+    @Published var routingState: LoginRouting
     
 }
 
 extension LoginViewModel: LoginViewModelInputType {
     
     func signInAction() {
+        guard let email = email?.trim(), let pw = password?.trim() else { return }
+        guard !email.isEmpty, !pw.isEmpty else { return }
+        
         state = .loading
         
         authService
-            .signIn(email: email, password: password)
+            .signIn(email: email, password: pw)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
@@ -54,5 +62,19 @@ extension LoginViewModel: LoginViewModelInputType {
 }
 
 extension LoginViewModel: LoginViewModelOutputType {
+    
+}
+
+private extension LoginViewModel {
+    
+    private func bindRouting(session: SessionType) {
+        cancelBag.collect {
+            $routingState
+                .sink { session.appState[\.routing.login] = $0 }
+            session.appState.map(\.routing.login)
+                .removeDuplicates()
+                .assign(to: \.routingState, on: self)
+        }
+    }
     
 }

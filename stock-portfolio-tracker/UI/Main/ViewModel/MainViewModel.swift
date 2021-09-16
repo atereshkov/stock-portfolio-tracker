@@ -16,21 +16,18 @@ class MainViewModel: BaseViewModel<MainViewModelInputType, MainViewModelOutputTy
         super.init(session: session)
     }
     
-    // MARK: - MainViewModelOutputType Variables
+    // MARK: - MainViewModelOutputType
     
-    @Published var testString: String?
-    var testPublisher: Published<String?>.Publisher { $testString }
+    @Published var selectedTab: Int = 0
     
 }
 
+// MARK: - MainViewModelInputType
+
 extension MainViewModel: MainViewModelInputType {
     
-    func viewDidLoad() {
-        Swift.print("[TEST] Main View Model onViewDidLoad")
-    }
-    
-    func signOutAction() {
-        authService.logout()
+    func onViewAppear() {
+        
     }
     
 }

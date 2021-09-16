@@ -11,14 +11,9 @@ import Combine
 struct AppState: Equatable {
     var auth = AuthState()
     var user = UserData()
+    var data = DataState()
     var routing = ViewRouting()
     var system = System()
-}
-
-extension AppState {
-    struct UserData: Equatable {
-        var id: String?
-    }
 }
 
 extension AppState {
@@ -28,11 +23,43 @@ extension AppState {
 }
 
 extension AppState {
+    struct UserData: Equatable {
+        var id: String?
+    }
+}
+
+extension AppState {
+    struct DataState: Equatable {
+        var portfolios: [PortfolioViewItem] = []
+        var dividends: [DividendViewItem] = []
+        var holdings: [HoldingViewItem] = []
+        var lots: [String: [LotViewItem]] = [:]
+        var fees: [FeeViewItem] = []
+    }
+}
+
+extension AppState {
     struct ViewRouting: Equatable {
         var auth = AuthRouting()
         var root = RootRouting()
         
         var login = LoginRouting()
+        var signUp = SignUpRouting()
+        
+        var home = HomeRouting()
+        var createPortfolio = CreatePortfolioRouting()
+        var account = AccountRouting()
+        var portfolio = PortfolioRouting()
+        var portfolioSettings = PortfolioSettingsRouting()
+        
+        var dividends = DividendsRouting()
+        var addDividend = AddDividendRouting()
+        var dividend = DividendRouting()
+        var searchTicker = SearchTickerRouting()
+        var holdings = HoldingsRouting()
+        var addLot = AddLotRouting()
+        var fees = FeesRouting()
+        var addFee = AddFeeRouting()
     }
 }
 
